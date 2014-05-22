@@ -1,0 +1,39 @@
+{% extends "template_index.html" %}
+{% block components %}
+    <div class="well">
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+        THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+        CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+        DEALINGS IN THE SOFTWARE.
+    </div>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Download</h3></legend>
+        The first stable release of the Simulocean framework will be available for downloading at the end of July 2013.
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Bathymetry Model &amp; Data</h3></legend>
+        <strong>
+            Circa 2011 Bathymetric Dynamic Digital Elevation Model (Stage 2) for the Northern Gulf of Mexico</strong>
+
+        <p>
+            The Circa 2011 Bathymetric Dynamic Digital Elevation Model (BDDEM) is a digital elevation model developed to
+            support coastal hazards modeling and assessment efforts. The BDDEM contains National Ocean Service
+            bathymetric
+            data collected in the northern Gulf of Mexico (Alabama to Louisiana) from 1888 – 2011. The BDDEM bathymetry
+            integrates the National Geophysical Data Center’s digital elevation models in the northern Gulf of Mexico
+            with
+            all subsequent National Ocean Service bathymetric surveys from 2002 – 2011. The BDDEM was developed for the
+            Northern Gulf Coastal Hazards Collaboratory (a NSF – EPSCOR funded project) by the project team from The
+            University of Southern Mississippi’s Department of Marine Science.
+        </p>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Documentation</h3></legend>
+        <iframe id="doc_iframe" style="width: 100%; border: 0; height: 600px;"
+                src="{{ STATIC_URL }}doc/_build/html/index.html"></iframe>
+    </fieldset>
+{% endblock %}

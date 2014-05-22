@@ -1,0 +1,21 @@
+{% extends "registration/base.html" %}
+
+{% block title %}
+    Simulocean - User Profile
+{% endblock %}
+
+{% block shortcuts_title %}
+    Profile Panel
+{% endblock %}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree">
+{#   if there is no profile we will ask a user to create a new profile #}
+        <li>
+            <span class="file"><a href="{% url profiles_edit_profile %}">Edit profile</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url profiles_profile_list %}">List users</a></span>
+        </li>
+    </ul>
+{% endblock %}

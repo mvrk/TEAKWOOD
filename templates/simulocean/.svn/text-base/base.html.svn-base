@@ -1,0 +1,74 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Simulocean - About
+{% endblock %}
+
+{% block page_title %}
+    Architectural Overview
+{% endblock %}
+
+{#{% block shortcuts_title %}#}
+{#    About Simulocean#}
+{#{% endblock %}#}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url simulocean_home %}">Home</a>&gt;#}
+{#{% endblock %}#}
+{% block panelnavibar %}
+    <a class="brand" href="{% url simulocean_about %}">
+        <img class="infobox" src="{{ STATIC_URL }}simulocean/img/simulocean.png"/>About Simulocean</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Help<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url simulocean_tutorials %}"
+                       title="quick start tutorial">Tutorials
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url simulocean_doc %}"
+                       title="online documents">Online documents
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url simulocean_contact %}"
+                       title="simulocean contact">Contact
+                    </a>
+                </li>
+{#                <li role="presentation">#}
+{#                    <a role="menuitem" tabindex="-1" href="{% url simulocean_credit %}"#}
+{#                       title="simulocean credit">Credit#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li role="presentation">#}
+{#                    <a role="menuitem" tabindex="-1" href="{% url simulocean_license %}"#}
+{#                       title="simulocean license">Terms &amp; license#}
+{#                    </a>#}
+{#                </li>#}
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree">
+        <li>
+            <span class="file"><a href="{% url simulocean_tutorials %}">Tutorials</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url simulocean_doc %}">Documents</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url simulocean_contact %}">Contact</a></span>
+        </li>
+{#        <li>#}
+{#            <span class="file"><a href="{% url simulocean_credit %}">Credit</a></span>#}
+{#        </li>#}
+{#        <li>#}
+{#            <span class="file"><a href="{% url simulocean_license %}">License</a></span>#}
+{#        </li>#}
+    </ul>
+{% endblock %}

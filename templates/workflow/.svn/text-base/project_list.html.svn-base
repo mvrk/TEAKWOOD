@@ -1,0 +1,369 @@
+{% extends "workflow/base.html" %}
+{% block local_js %}
+    <script type="text/javascript" xmlns="http://www.w3.org/1999/html">
+        {#        $(function () {#}
+        {#            $("#detailed_table").click(function () {#}
+        {#                fnShowHide(2);#}
+        {#                fnShowHide(3);#}
+        {#            });#}
+        {#            $('#projecttable').dataTable({#}
+        {#                "bJQueryUI": true,#}
+        {#                "sPaginationType": "full_numbers",#}
+        {#                "iDisplayLength": 10,#}
+        {#                "aLengthMenu": [#}
+        {#                    [10, 25, 50, -1],#}
+        {#                    [10, 25, 50, "All"]#}
+        {#                ],#}
+        {#                "aaSorting": [],#}
+        {#                "aoColumns": [#}
+        {#                    /* id */  null,#}
+        {#                    /* name */ null,#}
+        {#                    /* user */  { "bVisible": false },#}
+        {#                    /* group */    { "bVisible": false },#}
+        {#                    /* model input */  null,#}
+        {#                    /* job */ null,#}
+        {#                    /* action */ null#}
+        {#                ] });#}
+        {#        });#}
+        {#        $("#projecttable").bind('tabsselect', function (event, ui) {#}
+        {#            if (ui.index === 1) {#}
+        {#                tables.statistics("metrics", "metric");#}
+        {#            }#}
+        {#        });#}
+        {##}
+        {#        function fnShowHide(iCol) {#}
+        {#            /* Get the DataTables object again - this is not a recreation, just a get of the object */#}
+        {#            var oTable = $('#projecttable').dataTable();#}
+        {#            var bVis = oTable.fnSettings().aoColumns[iCol].bVisible;#}
+        {#            oTable.fnSetColumnVis(iCol, bVis ? false : true);#}
+        {#        }#}
+    </script>
+{% endblock %}
+{% block page_title %}
+    <img class="infobox" src="{{ STATIC_URL }}workflow/img/application_cascade.png"/>
+    Project List
+    {#    <a href="{% url workflow_projectadd %}" title="Create a new project" style="float:right">#}
+    {#        <img style="padding-right: 20px;" src="{{ STATIC_URL }}workflow/img/application_form_add.png"#}
+    {#             alt="create a new project"/>#}
+    {#    </a>#}
+{% endblock %}
+
+{% block page_content %}
+    {% if object_list %}
+        {#        <div style="float:right; padding-bottom: 10px;">#}
+        {#            <button id="detailed_table" type="button" class="btn" data-toggle="button">Detailed Table</button>#}
+        {#        </div>#}
+
+        <table id="datatable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>User</th>
+            <th>Group</th>
+            <th>Domain</th>
+            <th>Model Input</th>
+            {#                <th>Mesh</th>#}
+            <th>Job</th>
+            {#                <th>Report</th>#}
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for p in object_list %}
+            <tr>
+            <td>
+                {{ p.id }}
+            </td>
+            <td>
+                <a href="{% url workflow_projectview p.id %}"
+                   title="{{ p.name }}{% if p.description %}: {{ p.description }}{% endif %}">
+                    {{ p.name }}
+                </a>
+            </td>
+            <td>{{ p.user }}</td>
+            <td>{{ p.group }}</td>
+            <td>
+                {% if not p.domain %}
+                    <a href="{% url simesh_domainadd p.id %}"
+                       title="Select a new domain for project {{ p.name }}">
+                        <i class="icon-plus-sign"></i>
+                    </a>
+                {% else %}
+                    <a href="{% url simesh_domainview p.domain.id %}"
+                       title="Show domain details">
+                            <span style="margin: 5px;" class="label label-info">
+                                <span class="badge badge-important">D{{ p.domain.id }} </span>
+
+{#                                   <span class="badge badge-important">P{{ p.id }}</span>#}
+{#                                   <span class="badge badge-warning">D{{ p.domain.id }} </span>#}
+{#                                <i class="icon-globe icon-white"></i>#}
+                                {{ p.domain.name }}
+                             </span>
+                    </a>
+                {% endif %}
+            </td>
+            <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 20px; margin: 0; border:1px;">
+                            <a href="{% url coastalmodels_modelinputadd p.id %}"
+                               title="Create a new model input for project {{ p.name }}">
+                                {#                                        <button class="btn btn-primary btn-small"#}
+                                {#                                                title="create a new model input for project {{ p.name }}">#}
+                                <i class="icon-plus-sign"></i>
+                                {#                                        </button>#}
+                            </a>
+                        </td>
+                        <td>
+                            <table class="table table-hover" style="margin-bottom: 0;">
+                                <tbody>
+                                {% for m in p.modelinput_related.all %}
+                                    <tr>
+                                        <td>
+                                            {% if request.user == m.user or m.group in request.user.groups.all %}
+                                                {#                                            {% if m.delft3d_config %}#}
+                                                <a href="{% url coastalmodels_modelinputview m.id %}"
+                                                   title="Model Input {{ m.name }}{% if m.description %}: {{ m.description }}{% endif %}">
+                                                   <span style="margin: 10px;" class="label label-info">
+                                                        <span class="badge badge-important">M{{ m.id }} </span>
+                                                        {{ m.name }}
+                                                  </span>
+                                                </a>
+                                                {##}
+                                                {#                                            {% else %}#}
+                                                {#                                                <a href="{{ m.model.config_editor }}" title="Add a model configuration">#}
+                                                {#                                                    <span style="margin: 10px;" class="label label-info">#}
+                                                {#                                                    <span class="badge badge-important">M{{ m.id }} </span>#}
+                                                {#                                                        <i class="icon-globe icon-white"></i> {{ m.name }}#}
+                                                {#                                                    </span>#}
+                                                {#                                                </a>#}
+                                                {##}
+                                                {#                                            {% endif %}#}
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+                {#                        {% for m in p.modelinput_related.all %}#}
+                {#                            {% if request.user == m.user or m.group in request.user.groups.all %}#}
+                {#                                <a href="{% url coastalmodels_modelinputview m.id %}"#}
+                {#                                   title="Show model input details">{{ m.name }}#}
+                {#                                </a><br/>#}
+                {#                            {% endif %}#}
+                {#                        {% empty %}#}
+                {#                            <a href="{% url coastalmodels_modelinputadd %}" title="Create a new model input">#}
+                {#                                <img src="{{ STATIC_URL }}workflow/img/add.png"#}
+                {#                                     alt="create a new model"/>#}
+                {#                            </a>#}
+                {#                        {% endfor %}#}
+            </td>
+            {#                    <td>{{ p.mesh }}</td>#}
+            <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 20px; margin: 0; border:1px;">
+                            {% if p.modelinput_related.all %}
+                                <a href="{% url simfactory_jobadd p.id %}"
+                                   title="Create a new job for project {{ p.name }}">
+                                    {#                                            <button class="btn btn-primary btn-small" title="create a new model input">#}
+                                    <i class="icon-plus-sign"></i>
+                                    {#                                            </button>#}
+                                </a>
+                            {% else %}
+                                <a href="{% url coastalmodels_modelinputadd p.id %}"
+                                   title="Please create a new model input for project {{ p.name }} first">
+                                    {#                                            <button class="btn btn-primary btn-small"#}
+                                    {#                                                    title="please create a model input for project {{ p.name }} first">#}
+                                    <i class="icon-plus-sign"></i>
+                                    {#                                            </button>#}
+                                </a>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <table class="table table-hover" style="margin-bottom: 0;">
+                                <tbody>
+                                {% for j in p.jobs.all %}
+                                    <tr>
+                                        <td>
+
+                                            {% if request.user == j.user or j.group in request.user.groups.all %}
+                                                <a href="{% url simfactory_jobview j.id %}"
+                                                   title="Job {{ j.name }} for model input {{ j.model_input.name }}">
+                                                    {% if j.jobstate in 'U' %}
+                                                        <span style="margin: 5px;" class="label label-important">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-question-sign icon-white"></i> Unknown
+                                                    </span>
+                                                    {% elif j.jobstate in 'R' %}
+                                                        <span style="margin: 5px;" class="label label-success">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-ok icon-white"></i> Running
+                                                    </span>
+                                                    {% elif j.jobstate in 'C' %}
+                                                        <span style="margin: 5px;" class="label label-success">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-ok icon-white"></i> Job Finished
+                                                    </span>
+                                                    {% elif j.jobstate in 'D' %}
+                                                        <span style="margin: 5px;" class="label label-success">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-ok icon-white"></i> Data Ready
+                                                    </span>
+                                                    {% elif j.jobstate in 'Q' %}
+                                                        <span style="margin: 5px;" class="label label-warning">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-refresh icon-white"></i> Queued
+                                                    </span>
+                                                    {% elif j.jobstate in 'A' %}
+                                                        <span style="margin: 5px;" class="label label-success">
+                                                        <span class="badge badge-important">M{{ j.model_input.id }}</span>
+                                                        <i class="icon-upload icon-white"></i> Upload Files
+                                                    </span>
+                                                    {% endif %}
+                                                </a>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                {#                        <a href="{% url simfactory_joblist %}" title="View job list">#}
+                {#                            <img src="{{ STATIC_URL }}simfactory/img/table.png"#}
+                {#                                 alt="view job list"/>({{ p.jobs.all|length }} jobs)#}
+                {#                        </a>#}
+                {#                        {% for j in p.jobs.all %}#}
+                {#                            {% if request.user == j.user or j.group in request.user.groups.all %}#}
+                {#                                <a href="{% url simfactory_jobview j.id %}" title="Show job details">{{ j }}#}
+                {#                                </a><br/>#}
+                {#                            {% endif %}#}
+                {#                        {% empty %}#}
+                {#                            <a href="{% url simfactory_jobadd %}" title="Create a new job">#}
+                {#                                <img src="{{ STATIC_URL }}workflow/img/add.png"#}
+                {#                                     alt="create a new job"/>#}
+                {#                            </a>#}
+                {#                        {% endfor %}#}
+            </td>
+            {#                            <td class="td_br_right left">{{ p.obs_data }}</td>#}
+            {#                            <td class="td_br_right left">{{ p.sim_data }}</td>#}
+            {#                    <td>{{ p.report }}</td>#}
+            {#                            <td class="td_br_right left">{{ p.cwd }}</td>#}
+            <td>
+                <a href="{% url workflow_projectview p.id %}" title="View the details of this project">
+                    <img src="{{ STATIC_URL }}workflow/img/application_form_magnify.png"
+                         alt="view the details of this project"/>
+                </a>
+                {% ifequal p.user request.user %}
+                    {#                            <a href="{% url workflow_projectedit p.id %}" title="Edit a project">#}
+                    {#                                <img src="{{ STATIC_URL }}workflow/img/application_edit.png" alt="edit a project"/>#}
+                    {#                            </a>#}
+                    <a href="{% url workflow_projectdelete p.id %}" title="Delete this project"
+                       onclick="return confirm('Are you sure you want to delete?')">
+                        <img src="{{ STATIC_URL }}workflow/img/application_delete.png"
+                             alt="delete this project"/>
+                    </a>
+                {% endifequal %}
+            </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+        </table>
+    {% else %}
+        <p class="page_description">
+            You don't have a project yet. Please click
+            <a href="{% url workflow_projectadd %}" title="Create a new project">
+                <img src="{{ STATIC_URL }}workflow/img/application_form_add.png" alt="create a new project"/>
+            </a> to create a new project.
+        </p>
+    {% endif %}
+{% endblock %}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree">
+        <li>
+            <span class="file"><a href="{% url workflow_projectadd %}">New project</a></span>
+        </li>
+
+        <li class="open"><span class="folder">My projects</span>
+            <ul>
+                {% for p in object_list %}
+
+                    <li class="closed"><span class="folder">{{ p.name }}</span>
+                        <ul>
+                            {% if p.domain %}
+                                <li class="closed"><span class="folder">Domains</span>
+                                    <ul>
+                                        <li>
+                                            <span class="file"><a
+                                                    href="{% url simesh_domainview p.domain.id %}">{{ p.domain.name }}</a></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            {% endif %}
+                            {% if p.modelinput_related.all %}
+                                <li class="closed"><span class="folder">Model Inputs</span>
+                                <ul>
+                                    {% for m in p.modelinput_related.all %}
+                                        <li class="closed">
+                                            <span class="file"><a
+                                                    href="{% url coastalmodels_modelinputview m.id %}">{{ m.name }}</a></span>
+                                            {% if m.jobs.all %}
+                                                <ul>
+                                                <li class="closed"><span class="folder">Jobs</span>
+                                                <ul>
+                                            {% endif %}
+
+                                            {% for j in m.jobs.all %}
+                                                <li>
+                                                        <span class="file">
+                                                            <a href="{% url simfactory_jobview j.id %}">{{ j.name }}</a>
+                                                        </span>
+                                                </li>
+                                            {% endfor %}
+
+                                            {% if m.jobs.all %}
+                                                </ul>
+                                                </li>
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+
+                                </ul>
+                            {% endif %}
+                            </li>
+                        </ul>
+
+                    </li>
+                {% endfor %}
+
+                <li>
+                    <span class="file"><a href="{% url workflow_projectlist %}">List projects</a></span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block hint_title %}
+    Project List
+{% endblock %}
+
+{% block hint_content %}
+    This page lists all your model inputs and all your jobs under your projects and the projects shared by others.
+    You can create (<img src='{{ STATIC_URL }}workflow/img/application_form_add.png' alt='create a project'/>),
+    delete (<img src='{{ STATIC_URL }}workflow/img/application_delete.png' alt='delete a project'/>),
+    and view (<img src='{{ STATIC_URL }}workflow/img/application_form_magnify.png' alt='view a project'/>)
+    your projects. You can create a new domain, new model inputs and jobs by clicking the cooresponding
+    <i class='icon-plus-sign'></i>.
+    You and others in the same group can share projects, domain, model inputs, and jobs.
+{% endblock %}

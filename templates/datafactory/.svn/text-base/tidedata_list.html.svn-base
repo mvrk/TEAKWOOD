@@ -1,0 +1,44 @@
+{% extends "datafactory/base.html" %}
+{% block page_title %}
+    Buoy Data List
+{% endblock %}
+{% block page_content %}
+    {% if object_list %}
+        <table width="100%" id="datatable">
+            <thead>   <!-- header row -->
+            <tr>
+                <th>ID</th>
+                <th>Station</th>
+                <th>Time(UTC)</th>
+                <th>MSL(m)</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>   <!-- data  -->
+            {% for b in object_list %}
+                <tr>
+                    <td>{{ b.id }}</td>
+                    <td>{{ b.sid }}</td>
+                    <td>{{ b.time|date:"Y-m-d H:i:s" }}</td>
+                    <td>{{ b.pred }}</td>
+                    <td>{{ b.type }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="page_description">You don't have an data request yet. Please click
+            <a href="{% url datafactory_datarequestadd %}" title="Sent a new data request">
+                <img src="{{ STATIC_URL }}datafactory/img/transmit_add.png" alt="Sent a new data request"/>
+            </a>to send a new data request.
+        </p>
+    {% endif %}
+
+{% endblock %}
+
+{% block hint_title %}
+    Tide data list
+{% endblock %}
+{% block hint_content %}
+    Tide data list
+{% endblock %}

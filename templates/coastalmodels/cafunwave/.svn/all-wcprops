@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/projects/datafactory/!svn/ver/362/Simulocean/templates/coastalmodels/cafunwave
+END
+cafunwaveconfig_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/projects/datafactory/!svn/ver/362/Simulocean/templates/coastalmodels/cafunwave/cafunwaveconfig_add.html
+END
+cafunwaveconfig_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/projects/datafactory/!svn/ver/362/Simulocean/templates/coastalmodels/cafunwave/cafunwaveconfig_list.html
+END
+cafunwaveconfig_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/projects/datafactory/!svn/ver/353/Simulocean/templates/coastalmodels/cafunwave/cafunwaveconfig_detail.html
+END
+cafunwaveconfig_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/projects/datafactory/!svn/ver/312/Simulocean/templates/coastalmodels/cafunwave/cafunwaveconfig_edit.html
+END

@@ -1,0 +1,126 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    My Delft3D Config
+{% endblock %}
+
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#    <a href="{% url coastalmodels_modelinputlist %}">Model Inputs</a>&gt;#}
+{#{% endblock %}#}
+{##}
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>Group</th>
+                <th>Coastal Model</th>
+                <th>Nested</th>
+                <th>Prior Model Input</th>
+                <th>Model Input</th>
+                <th>Parameter File</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for m in object_list %}
+                <tr>
+                    <td>
+                        <a href="{% url coastalmodels_delft3dconfigview m.id %}"
+                           title="View the Delft3D parameters {{ m.id }}">
+                            {{ m.id }}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_delft3dconfigview m.id %}"
+                           title="View the Delft3D parameters {{ m.id }}">
+                            {{ m.name }}
+                        </a>
+                    </td>
+                    <td>{{ m.user }}</td>
+                    <td>{{ m.group }}</td>
+                    <td>
+                        <a href="{% url coastalmodels_coastalmodelview m.model_input.model.id %}"
+                           title="Coastal model {{ m.model_input.model.name }}">
+                            {{ m.model_input.model }}
+                        </a>
+                    </td>
+                    <td>{{ m.nested_model }}</td>
+                    <td>
+                        {% if m.nested_model and m.model_input.prior_model  %}
+                            <a href="{% url coastalmodels_modelinputview  m.model_input.prior_model.id %}"
+                               title="Prior model input {{ m.model_input.prior_model.id }}">
+                                {{ m.model_input.prior_model.name }}
+                            </a>
+                        {% else %}
+                            None
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_modelinputview m.model_input.id %}"
+                           title="Associated model input {{ m.model.id }}">
+                            {{ m.model_input }}
+                        </a>
+                    </td>
+                    {#                    <td>#}
+                    {#                        <a href="{% url coastalmodels_delft3dconfigexport m.id %}"#}
+                    {#                           title="Download the Delft3D parameter file">#}
+                    {#                            <img src="{{ STATIC_URL }}coastalmodels/img/page_white_put.png"#}
+                    {#                                 alt="download the Delft3D parameter file"/>#}
+                    {#                        </a>#}
+                    {#                    </td>#}
+                    <td>
+                        {% if m.parameters %}
+                            <a href="{% url coastalmodels_delft3dparametersview m.parameters.id %}"
+                               title="Delft3D parameter list">
+                                {{ m.parameters }}
+                            </a>
+                        {% else %}
+                            <a href="{% url coastalmodels_delft3dparametersadd m.id %}"
+                               title="Create a new Delft3D parameter file">
+                                <i class="icon-plus-sign"></i>
+                            </a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_delft3dconfigview m.id %}" title="View the Delft3D config">
+                            <img src="{{ STATIC_URL }}coastalmodels/img/page_white_magnify.png"
+                                 alt="view the Delft3D config"/>
+                        </a>
+                        {% ifequal m.user request.user %}
+                            <a href="{% url coastalmodels_delft3dconfigedit m.id %}"
+                               title="Edit the Delft3D config">
+                                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_edit.png"
+                                     alt="edit the Delft3D config"/>
+                            </a>
+                            <a href="{% url coastalmodels_delft3dconfigdelete m.id %}"
+                               title="Delete the Delft3D config"
+                               onclick="return confirm('Are you sure you want to delete?')">
+                                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_delete.png"
+                                     alt="delete the Delft3D config"/>
+                            </a>
+                        {% endifequal %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p> You don't have a Delft3D config yet. Please click
+            <a href="{% url coastalmodels_delft3dconfigadd %}" title="Create a new Delft3D config">
+                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_add.png" alt="create a new Delft3D config"/>
+            </a> create a new Delft3D config</p>
+    {% endif %}
+{% endblock %}
+
+{% block hint_title %}
+    Delft3D modification
+{% endblock %}
+{% block hint_content %}
+    All Delft3D inputs under your account will be hosted here, you can create Delft3D input here by click
+    <img src='{{ STATIC_URL }}workflow/img/application_form_add.png' alt='create a project'/> butthon as well.
+{% endblock %}

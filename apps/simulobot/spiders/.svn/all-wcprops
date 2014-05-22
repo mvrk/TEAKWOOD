@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/projects/datafactory/!svn/ver/493/Simulocean/apps/simulobot/spiders
+END
+USGSSpider.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/419/Simulocean/apps/simulobot/spiders/USGSSpider.py
+END
+url_generator.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/url_generator.py
+END
+CurrentSpider.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/projects/datafactory/!svn/ver/493/Simulocean/apps/simulobot/spiders/CurrentSpider.py
+END
+noaa_xml_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/noaa_xml_parser.py
+END
+TideSpider.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/493/Simulocean/apps/simulobot/spiders/TideSpider.py
+END
+curl_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/curl_data.py
+END
+noaa_data_source.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/noaa_data_source.txt
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/__init__.py
+END
+dsd_parser.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/dsd_parser.py
+END
+spider.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/projects/datafactory/!svn/ver/371/Simulocean/apps/simulobot/spiders/spider.py
+END
+str2datetime.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/projects/datafactory/!svn/ver/154/Simulocean/apps/simulobot/spiders/str2datetime.py
+END

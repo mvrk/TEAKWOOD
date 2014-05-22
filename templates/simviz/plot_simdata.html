@@ -1,0 +1,120 @@
+{% extends "simviz/plot_obsdata.html" %}
+{% block local_js %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}highstock/js/highstock.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}highstock/js/modules/exporting.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.getJSON('/job/exportjson/{{ object.job.id }}/{{ object.field_name }}/{{ object.sid }}/', function (data) {
+                // Create the chart
+                window.chart = new Highcharts.StockChart({
+                    chart:{
+                        renderTo:'plot_container'
+                    },
+                    rangeSelector:{
+                        buttons:[
+                            {
+                                type:'day',
+                                count:1,
+                                text:'1d'
+                            },
+                            {
+                                type:'week',
+                                count:1,
+                                text:'1w'
+                            },
+                            {
+                                type:'month',
+                                count:1,
+                                text:'1m'
+                            },
+                            {
+                                type:'month',
+                                count:6,
+                                text:'6m'
+                            },
+                            {
+                                type:'year',
+                                count:1,
+                                text:'1y'
+                            },
+                            {
+                                type:'all',
+                                text:'All'
+                            }
+                        ],
+                        inputEnabled:false,
+                        selected:1
+                    },
+
+                    title:{
+                        text:'{{ object.field_name|upper }}'
+                    },
+
+                    xAxis:{
+                        type:'datetime',
+                        maxZoom:14 * 24 * 360000
+                    },
+                    series:[
+                        {
+                            name:'{{ object.field_name|upper }}',
+                            data:data,
+                            tooltip:{
+                                yDecimals:2
+                            }
+                        }
+                    ]
+                });
+            });
+
+        });
+    </script>
+{% endblock %}
+
+{% block page_title %}
+    <img class="infobox" src="{{ STATIC_URL }}simviz/img/chart_bar.png" xmlns="http://www.w3.org/1999/html"
+         xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"/>
+    Simulation Data Plot
+{% endblock %}
+
+{% block page_content %}
+    {% if object %}
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <form class="actionform" action="{% url simviz_plotsimdata %}" method="post">
+                        {% csrf_token %}
+                        {{ plotsimdata_form.job }}
+                        {{ plotsimdata_form.field_name }}
+                        {{ plotsimdata_form.sid }}
+                        <input class="actionbut" type="submit" value="Plot">
+                    </form>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="plot_container"></div>
+                </td>
+            </tr>
+        </table>
+    {% else %}
+        <p> You don't have a job finished yet for plotting. Please click
+            <a href="{% url simfactory_jobadd %}" title="Submit a new job">
+                <img src="{{ STATIC_URL }}simfactory/img/monitor_add.png" alt="Submit a new job"/>
+            </a>to submit a new job or wait for the current job to finish.
+        </p>
+    {% endif %}
+{% endblock %}
+
+{% block page_hints %}
+<h4>Plot simdata</h4>
+<hr/>
+{% endblock %}
+
+{% block hint_title %}
+    Plot Simulation Data
+{% endblock %}
+{% block hint_content %}
+    This Page provide you a way of plot simulocean data.
+{% endblock %}

@@ -1,0 +1,192 @@
+{% extends "template_index.html" %}
+
+{% block local_css %}
+    <style type="text/css">
+        #isolated td {
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+
+{% block components %}
+    <fieldset>
+        <legend><h3>Services</h3></legend>
+        Collaborating staff members from <a href="http://www.loni.org" target="_blank"
+                                            title="Louisiana Optical Network Initiative">
+        LONI</a>
+        and <a href="http://www.hpc.lsu.edu/" target="_blank"
+               title="High Performance Computing at Louisiana State University">
+        LSU HPC</a>, the Simulocean team provides services on five levels. <br/><br/>
+        <table id="isolated" class="table table-hover table-striped">
+            <thead>
+            <tr>
+                <th>Level</th>
+                <th>Computing</th>
+                <th>Short Term Storage (~week)</th>
+                <th>Model Deployment</th>
+                <th>Long Term Storage (~month)</th>
+                <th>Visualization Support</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span class="badge badge-important">1</span>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="badge badge-success">2</span>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="badge badge-warning">3</span>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="badge badge-info">4</span>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="badge">5</span>
+                </td>
+                <td>
+                    <i class="icon-ok"></i>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Partners &amp; Collaborators</h3></legend>
+        <table class="table table-hover table-striped ">
+
+            <thead>
+            <tr>
+                <th>Institute</th>
+                <th>Group</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <a href="http://www.lsu.edu" target="_blank"
+                       title="Louisiana State University">
+                        <img style="height:35px" src="{{ STATIC_URL }}simulocean/img/logo_lsu.png" alt="LSU"/></a>
+                </td>
+                <td>Coastal Hazards Research Collaboratory (CHARCOL) led by <a
+                        href="http://www.cee.lsu.edu/people/Bios/Jim_Chen.aspx" target="_blank">Dr. Qin Jim Chen</a>
+                    at <a href="http://www.lsu.edu" target="_blank"
+                          title="Louisiana State University">Louisiana State Univeristy</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.uno.edu/" target="_blank">
+                        <img src="{{ STATIC_URL }}simulocean/img/logo_uno.png" alt="The University of New Orleans"/>
+                    </a>
+                </td>
+                <td>Environmental Modeling group led by Dr. Alex McCorquodale at <a href="http://www.uno.edu/"
+                                                                                    target="_blank">the University of
+                    New Orleans</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://thewaterinstitute.org/" target="_blank">
+                        <img src="{{ STATIC_URL }}simulocean/img/logo_twig.png"
+                             alt="The Water Institute of the Gulf"/>
+                    </a>
+                </td>
+                <td>Natural Systems: Modeling and Monitoring group led by <a
+                        href="http://thewaterinstitute.org/who-we-are/staff/Ehab-Meselhe" target="_blank">
+                    Dr. Ehab Meselhe</a> at <a href="http://thewaterinstitute.org/" target="_blank">the Water Institute
+                    of the Gulf</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.usm.edu/" target="_blank">
+                        <img src="{{ STATIC_URL }}simulocean/img/logo_usm.png"
+                             alt="The University of Southern Mississippi"/>
+                    </a>
+                </td>
+                <td>Dynamic Digital Elevation Model team led by <a
+                        href="http://www.usm.edu/marine/faculty/dr-jerry-wiggert" target="_blank">
+                    Dr. Jerry Wiggert</a> at <a href="http://www.usm.edu/" target="_blank">the University of Southern
+                    Mississippi</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+
+{% endblock %}

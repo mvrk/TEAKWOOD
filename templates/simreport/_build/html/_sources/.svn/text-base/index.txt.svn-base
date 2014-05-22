@@ -1,0 +1,33 @@
+.. simulocean documentation master file, created by
+   sphinx-quickstart on Fri Mar 15 13:08:04 2013.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+.. image:: ../simreport/_static/Simulocean_logo.jpg
+
+===========================================
+Automatic Simulocean Report
+===========================================
+
+
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+
+   introduction.rst
+   background.rst
+   model.rst
+   job.rst
+   output.rst
+   data.rst
+   visualization.rst
+   discussion.rst
+   sample.rst
+
+© Copyright 2013, The Simulocean deployment and visualization framework for coastal modeling is © 2012 the Coastal Hazards Research Collaboratory and distributed under the GNU Lesser General Public License (LGPL) v 3.0. This website makes use of the wonderful icon sets by Studio MX and FAMFAMFAM. The icons used are distributed following the original license respectively. The computational resources are provided by the Coastal Hazards Research Collaboratory, the Center for Computational and Technology, and the Louisiana Optical Network Initiative. Created using Sphinx 1.1.3.
+
+

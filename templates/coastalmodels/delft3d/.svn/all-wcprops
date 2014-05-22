@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/projects/datafactory/!svn/ver/517/Simulocean/templates/coastalmodels/delft3d
+END
+delft3dconfig_export.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/projects/datafactory/!svn/ver/204/Simulocean/templates/coastalmodels/delft3d/delft3dconfig_export.html
+END
+delft3d_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/366/Simulocean/templates/coastalmodels/delft3d/delft3d_add.html
+END
+delft3dconfig_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/projects/datafactory/!svn/ver/353/Simulocean/templates/coastalmodels/delft3d/delft3dconfig_detail.html
+END
+config_file_template.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/projects/datafactory/!svn/ver/306/Simulocean/templates/coastalmodels/delft3d/config_file_template.html
+END
+delft3dconfig_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/projects/datafactory/!svn/ver/397/Simulocean/templates/coastalmodels/delft3d/delft3dconfig_edit.html
+END
+delft3dparameters_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/projects/datafactory/!svn/ver/353/Simulocean/templates/coastalmodels/delft3d/delft3dparameters_add.html
+END
+delft3dconfig_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/projects/datafactory/!svn/ver/517/Simulocean/templates/coastalmodels/delft3d/delft3dconfig_add.html
+END
+delft3dparameters_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/projects/datafactory/!svn/ver/336/Simulocean/templates/coastalmodels/delft3d/delft3dparameters_list.html
+END
+delft3dconfig_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/projects/datafactory/!svn/ver/514/Simulocean/templates/coastalmodels/delft3d/delft3dconfig_list.html
+END
+delft3dparameters_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/projects/datafactory/!svn/ver/352/Simulocean/templates/coastalmodels/delft3d/delft3dparameters_detail.html
+END

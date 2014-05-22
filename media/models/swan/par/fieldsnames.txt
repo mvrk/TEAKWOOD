@@ -1,0 +1,31 @@
+ 'ike' '01'
+ nonstat twod
+ sphe ccm
+ jonswap 0.067
+ komen agrow
+ reg -92. 26. 0. 6. 6. 10 10 circle 36 0.02135 0.6 35
+ bottom reg -92. 26. 0. 10 10 0.6 0.6 exception -999.
+ bottom 1. 'test.bot'
+ wind reg -98. 7. 0. 38 39 1. 1. exception -999. nonstat 20110101.000000 6 hr 20111231.180000
+ wind 1. 'ncep2011.wd'
+ accur nonstat 15
+ block 9
+ 'buoys' file 'buoy.loc'
+ 'buoys' head 'buoy.tab' time xp yp dep wind hs dir rtp per tm01 tm02 pdir out 20110101.000000 1 hr
+ nonst 20110101.000000 1 hr 20111231.180000
+
+    proj = models.charfield(max_length=60, null=false, blank=false, default="SWAN Project")
+    mode = models.charfield(max_length=60, null=false, blank=false, default="nonstat")
+    coord = models.charfield(max_length=60, null=false, blank=false, default="sphe")
+    friction = models.charfield(max_length=60, null=false, blank=false, default="jonswap")
+    gen3 = models.charfield(max_length=60, null=false, blank=false, default="komen")
+    cgrid = models.charfield(max_length=60, null=false, blank=false, default="reg")
+    inpgrid = models.charfield(max_length=60, null=false, blank=false, default="bottom")
+    read = models.charfield(max_length=60, null=false, blank=false, default="bottom")
+    inpgrid = models.charfield(max_length=60, null=false, blank=false, default="wind")
+    read = models.charfield(max_length=60, null=false, blank=false, default="wind")
+    numeric = models.charfield(max_length=60, null=false, blank=false, default="accur")
+    output = models.charfield(max_length=60, null=false, blank=false, default="block")
+    points = models.charfield(max_length=60, null=false, blank=false, default="'buoys'")
+    table = models.charfield(max_length=60, null=false, blank=false, default="'buoys'")
+    compute = models.charfield(max_length=60, null=false, blank=false, default="nonst")

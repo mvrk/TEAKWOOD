@@ -1,0 +1,115 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Simulocean - Datafactory
+{% endblock %}
+
+{% block shortcuts_title %}
+    Datafactory Panel
+{% endblock %}
+
+{% block panelnavibar %}
+    <a class="brand" href="{% url datafactory_datarequestlist %}">
+        <img class="infobox" src="{{ STATIC_URL }}datafactory/img/transmit.png"/>Data Storage</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Observational Data<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url datafactory_datarequestadd %}"
+                       title="Create a new datarequest">
+                        <img src="{{ STATIC_URL }}datafactory/img/transmit_add.png"
+                             alt="create a new datarequest"/> Create a new data request
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url datafactory_datarequestlist %}"
+                       title="List all my datarequests">
+                        <img src="{{ STATIC_URL }}datafactory/img/transmit.png"
+                             alt="list all my datarequests"/> List all my data requests
+                    </a>
+                </li>
+                <li role="presentation" class="divider"></li>
+
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url datafactory_stationlist %}"
+                       title="List supported NOAA buoy stations">
+                        <img src="{{ STATIC_URL }}datafactory/img/server.png"
+                             alt="list supported NOAA buoy stations"/> Active stations
+                    </a>
+                </li>
+
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url datafactory_datarequestmapview %}"
+                       title="map view for data request">
+                        <img src="{{ STATIC_URL }}datafactory/img/server_map.png"
+                             alt="map view for data request"/> Map view for active stations
+                    </a>
+                </li>
+
+                {#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>#}
+
+                {#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>#}
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Simulation Data<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url datafactory_opendap %}"
+                       title="OpenDaP server">
+                        <img src="{{ STATIC_URL }}datafactory/img/server.png"
+                             alt="OpenDaP server"/> OpenDaP server
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{#{% block title %}#}
+{#    Simulocean - Data Factory#}
+{#{% endblock %}#}
+{##}
+{#{% block shortcuts_title %}#}
+{#    Data Panel#}
+{#{% endblock %}#}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#{% endblock %}#}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree" xmlns="http://www.w3.org/1999/html">
+        <li class="open"><span class="folder">Observational Data</span>
+            <ul>
+                <li><span class="file"><a href="{% url datafactory_datarequestadd %}">New data
+                    request</a></span>
+                </li>
+                <li><span class="file"><a href="{% url datafactory_datarequestlist %}">List data
+                    request</a></span>
+                </li>
+
+
+                <li><span class="file"><a href="{% url datafactory_stationlist %}">Active station list</a></span></li>
+                <li><span class="file"><a href="{% url datafactory_datarequestmapview %}">Active station map</a></span></li>
+            </ul>
+        </li>
+        <li class="open"><span class="folder">Simulation Data</span>
+            <ul>
+                <li>
+                    <span class="file"><a href="{% url datafactory_opendap %}">OPeNDAP Server</a></span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block hint_title %}
+    base
+{% endblock %}
+{% block hint_content %}
+    All job outputs under your account will be hosted here.
+{% endblock %}

@@ -1,0 +1,2210 @@
+[06/May/2014 02:41:16] ERROR [django.request:226] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:41:16] ERROR [django.request:226] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:41:16] ERROR [django.request:226] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:41:16] ERROR [django.request:226] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:45:14] ERROR [django.request:226] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:45:14] ERROR [django.request:226] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 101, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:45:14] ERROR [django.request:226] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:45:14] ERROR [django.request:226] Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 90, in get_response
+    response = middleware_method(request)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/middleware/common.py", line 71, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 596, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 337, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 365, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 360, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/settings/urls.py", line 17, in <module>
+    url(r'^profiles/', include('profiles.urls')),
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/conf/urls/__init__.py", line 26, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 40, in import_module
+    __import__(name)
+  File "build/bdist.linux-x86_64/egg/profiles/urls.py", line 25, in <module>
+ImportError: No module named defaults
+[06/May/2014 02:48:27] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:48:27] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:48:27] WARNING [django.request:142] Not Found: /favicon.ico
+[06/May/2014 02:48:27] WARNING [django.request:142] Not Found: /favicon.ico
+[06/May/2014 02:50:18] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:50:18] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:50:28] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:50:28] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:51:58] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:51:58] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:35] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:35] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:44] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:44] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:47] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:52:47] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:57:02] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 02:57:02] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 411, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 476, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 363, in _reverse_with_prefix
+    possibilities = self.reverse_dict.getlist(lookup_view)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 253, in _populate
+    for name in pattern.reverse_dict:
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 276, in reverse_dict
+    self._populate()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 265, in _populate
+    lookups.appendlist(pattern.callback, (bits, p_pattern, pattern.default_args))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 216, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/functional.py", line 27, in wrapper
+    result = func(*args)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/urlresolvers.py", line 92, in get_callable
+    lookup_view = getattr(import_module(mod_name), func_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/SCGATE/apps/simesh/views.py", line 4, in <module>
+    import netCDF4 as nc
+ImportError: No module named netCDF4
+[06/May/2014 03:02:55] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[06/May/2014 03:02:55] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[06/May/2014 03:17:53] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[06/May/2014 03:17:53] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[06/May/2014 03:32:20] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[06/May/2014 03:32:20] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:20:19] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:20:19] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:21:03] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:21:03] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:22:39] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:22:39] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:23:04] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:23:04] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:35:07] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:35:07] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:35:12] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:35:12] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:42:49] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:42:49] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:42:50] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:42:50] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:43:24] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:43:24] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:44:30] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:44:30] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:51:20] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 17:51:20] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 18:05:39] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:05:39] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:05:39] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:05:39] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:27] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:27] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:27] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:27] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:29] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:06:29] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:21] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:21] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:21] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:21] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:31] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 18:07:31] WARNING [django.request:142] Not Found: /static/simulocean/img/logo.png
+[08/May/2014 21:31:18] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:18] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:19] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:19] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:37] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:37] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:38] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:31:38] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:41:33] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:41:33] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:44:34] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:44:34] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:44:35] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:44:35] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:57:11] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 21:57:11] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:07:36] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:07:36] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:55:37] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:55:37] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:55:46] WARNING [django.request:142] Not Found: /favicon.ico
+[08/May/2014 22:55:46] WARNING [django.request:142] Not Found: /favicon.ico
+[08/May/2014 22:57:13] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 22:57:13] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:23:33] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:23:33] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:24:12] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:24:12] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:25:40] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[08/May/2014 23:25:40] WARNING [django.request:142] Not Found: /static/doc/_build/html/index.html
+[09/May/2014 01:05:14] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:14] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:17] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:17] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:19] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:19] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:20] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:05:20] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:06:52] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:06:52] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:07:05] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:07:05] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:08:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 01:08:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/May/2014 02:30:08] ERROR [django.request:215] Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'projectlist' with arguments '()' and keyword arguments '{}' not found.
+[09/May/2014 02:30:08] ERROR [django.request:215] Internal Server Error: /about/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'projectlist' with arguments '()' and keyword arguments '{}' not found.
+[09/May/2014 03:02:23] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/test1/M2/MODELINPUT
+[09/May/2014 03:30:12] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/May/2014 03:30:12] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/May/2014 03:51:10] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/users/U5/P2
+[09/May/2014 03:51:36] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/users/U5/P2/M3/MODELINPUT
+[09/May/2014 03:56:34] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/users/U5/P2/M4/MODELINPUT
+[09/May/2014 13:36:21] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/May/2014 13:36:21] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/May/2014 13:36:39] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/May/2014 13:36:39] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[18/May/2014 23:14:35] ERROR [django.request:215] Internal Server Error: /project/list/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 1159, in spaceless
+    nodelist = parser.parse(('endspaceless',))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 491, in autoescape
+    nodelist = parser.parse(('endautoescape',))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endautoescape'
+[18/May/2014 23:14:35] ERROR [django.request:215] Internal Server Error: /project/list/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 1159, in spaceless
+    nodelist = parser.parse(('endspaceless',))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/defaulttags.py", line 491, in autoescape
+    nodelist = parser.parse(('endautoescape',))
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'endblock', expected 'endautoescape'
+[18/May/2014 23:14:36] WARNING [django.request:142] Not Found: /favicon.ico
+[18/May/2014 23:14:36] WARNING [django.request:142] Not Found: /favicon.ico
+[20/May/2014 12:44:47] WARNING [django.request:142] Not Found: /simfactory/job/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:44:47] WARNING [django.request:142] Not Found: /simfactory/job/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:44:52] WARNING [django.request:142] Not Found: /simfactory/job/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:44:52] WARNING [django.request:142] Not Found: /simfactory/job/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:27] WARNING [django.request:142] Not Found: /project/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:27] WARNING [django.request:142] Not Found: /project/list/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:33] WARNING [django.request:142] Not Found: /logout/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:33] WARNING [django.request:142] Not Found: /logout/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:40] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:40] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:44] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:44] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:46] WARNING [django.request:142] Not Found: /profiles/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:46] WARNING [django.request:142] Not Found: /profiles/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:47] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:47] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:50] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:50] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:52] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:52] WARNING [django.request:142] Not Found: /login/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:53] WARNING [django.request:142] Not Found: /profiles/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:53] WARNING [django.request:142] Not Found: /profiles/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:55] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:45:55] WARNING [django.request:142] Not Found: /register/closed/simulocean/css/bootstrap-combined.min.css
+[20/May/2014 12:59:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 12:59:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 12:59:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 12:59:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:02:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:02:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:02:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:02:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:02:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:02:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:02:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:02:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:03:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:03:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:03:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:03:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:04:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:04:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:04:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:04:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:05:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:05:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:05:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:05:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:06:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:06:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:07:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:07:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:07:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:08:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:08:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:08:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:08:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:08:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:08:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:10:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:11:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:11:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:11:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:11:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:12:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:12:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:13:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:14:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:14:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:14:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:14:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:14:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:16:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:16:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:16:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:16:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:16:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:16:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:17:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:21:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:21:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:23:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:23:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:25:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:25:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:25:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:25:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:25:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:25:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:26:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:26:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:26:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:26:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:27:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:27:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:29:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:29:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:29:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:29:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:30:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:30:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:30:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:30:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:30:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:30:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:31:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:31:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:38:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:39:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:39:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:39:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:39:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:41:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:41:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:41:52] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[20/May/2014 13:41:52] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[20/May/2014 13:41:53] WARNING [django.request:142] Not Found: /favicon.ico
+[20/May/2014 13:41:53] WARNING [django.request:142] Not Found: /favicon.ico
+[20/May/2014 13:41:58] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[20/May/2014 13:41:58] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[20/May/2014 13:42:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:42:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:44:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:44:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:44:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:44:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:45:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:45:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:46:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:46:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:47:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:47:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:48:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:48:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:48:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:48:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:48:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:48:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:49:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:49:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:49:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:49:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:53:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:53:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:53:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:53:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:54:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:54:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:54:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:54:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:02] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 13:55:02] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 13:55:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:06] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 13:55:06] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 13:55:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:55:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:55:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:55:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:55:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:56:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:56:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:56:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:56:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:57:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:57:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:57:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:57:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:57:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:57:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:57:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:57:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:58:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:58:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:59:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:59:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 13:59:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 13:59:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:03:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:03:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:03:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:03:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:05:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:05:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:05:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:05:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:05:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:06:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:07:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:07:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:07:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:07:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:08:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:08:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:09:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:09:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:09:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:09:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:10:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:10:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:11:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:11:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:11:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:11:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:11:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:11:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:11:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:11:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:12:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:12:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:12:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:12:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:12:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:12:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:13:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:13:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:13:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:13:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:13:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:13:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:13:58] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 14:13:58] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[20/May/2014 14:14:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:14:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:14:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:15:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:15:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:15:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:15:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:48:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:48:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:48:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:48:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:48:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:48:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 14:48:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 14:48:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:21:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:21:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:21:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:21:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:21:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:21:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:21:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:21:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:21:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:21:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:22:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 15:22:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 15:22:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:17:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:17:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:17:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:17:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:18:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:19:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:19:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:27:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:27:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:27:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:27:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:27:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:27:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:28:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:28:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:28:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:28:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[20/May/2014 16:28:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[20/May/2014 16:28:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 17:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 17:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 17:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 17:40:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 17:40:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 17:40:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 19:09:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 19:09:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 19:09:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:09:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:10:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:10:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png

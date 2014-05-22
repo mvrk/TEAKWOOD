@@ -1,0 +1,91 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Scgate - Authentication
+{% endblock %}
+
+{% block shortcuts_title %}
+    Scgate About
+{% endblock %}
+
+{% block panelnavibar %}
+    <a class="brand" href="{% url simfactory_joblist %}">
+        <img class="infobox" src="{{ STATIC_URL }}simulocean/img/user.png"/>Authentication</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Users<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                {% if user.is_authenticated %}
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="{% url auth_logout %}"
+                           title="List all my jobs">
+                            <img src="{{ STATIC_URL }}simulocean/img/user.png"
+                                 alt="logout"/> Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="{% url auth_login %}"
+                           title="List all my jobs">
+                            <img src="{{ STATIC_URL }}simulocean/img/user.png"
+                                 alt="login"/> Login
+                        </a>
+                    </li>
+{#                    <li role="presentation">#}
+{#                        <a role="menuitem" tabindex="-1" href="{% url google-login %}"#}
+{#                           title="List all my jobs">#}
+{#                            <img src="{{ STATIC_URL }}simulocean/img/user_suit.png"#}
+{#                                 alt="Google login"/> Google Login#}
+{#                        </a>#}
+{#                    </li>#}
+                {% endif %}
+                <li role="presentation">
+                    {% if user.is_authenticated %}
+                        <a role="menuitem" tabindex="-1" href="{% url profiles_edit_profile %}" title="edit my profile">
+                            <img src="{{ STATIC_URL }}simulocean/img/user_edit.png"
+                                 alt="Edit my profile"/> Edit my profile
+                        </a>
+                        <a role="menuitem" tabindex="-1" href="{% url auth_password_change %}" title="change my password">
+                             Change my password
+                        </a>
+                        <a role="menuitem" tabindex="-1" href="{% url auth_password_reset %}" title="reset my password">
+                             Reset my password
+                        </a>
+                    {% endif %}
+                    <a role="menuitem" tabindex="-1" href="{% url profiles_profile_list %}" title="users with public profiles">
+                        <img src="{{ STATIC_URL }}simulocean/img/report_user.png"
+                             alt="users with public profiles"/> Users with public profiles
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Registration<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url registration_register %}" title="register an account">
+                        <img src="{{ STATIC_URL }}simulocean/img/user_add.png"
+                             alt="create a new job"/> Create a new account
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+{% endblock %}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree">
+        <li>
+            <span class="file"><a href="{% url simulocean_tutorials %}">Tutorials</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url simulocean_doc %}">Documents</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url simulocean_contact %}">Contact</a></span>
+        </li>
+    </ul>
+{% endblock %}

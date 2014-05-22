@@ -1,0 +1,18 @@
+{% extends "registration/base.html" %}
+
+{% block page_title %}
+    Simulocean Registration
+{% endblock %}
+
+{% block page_description %}
+    Thanks for your interest. The user registration is closed. Please contact
+    <a href="mailto:qchen@lsu.edu">Q. Jim Chen (qchen@lsu.edu)</a> and
+    <a href="mailto:jtao@cct.lsu.edu">Jian Tao (jtao@cct.lsu.edu)</a> if you need
+    an account on Simulocean.
+{% endblock %}
+
+{% block page_content %}
+
+
+{% endblock %}
+

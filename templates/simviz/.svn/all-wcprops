@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/projects/datafactory/!svn/ver/383/Simulocean/templates/simviz
+END
+plot_simdata.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/336/Simulocean/templates/simviz/plot_simdata.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/projects/datafactory/!svn/ver/383/Simulocean/templates/simviz/base.html
+END
+plot_obsdata.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/383/Simulocean/templates/simviz/plot_obsdata.html
+END

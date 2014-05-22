@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/projects/datafactory/!svn/ver/549/Simulocean
+END
+manage.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/projects/datafactory/!svn/ver/2/Simulocean/manage.py
+END
+requirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/projects/datafactory/!svn/ver/548/Simulocean/requirements.txt
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/projects/datafactory/!svn/ver/2/Simulocean/.project
+END
+.pydevproject
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/projects/datafactory/!svn/ver/2/Simulocean/.pydevproject
+END
+install.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/projects/datafactory/!svn/ver/518/Simulocean/install.py
+END

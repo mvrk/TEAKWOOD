@@ -1,0 +1,13 @@
+{% extends "template.html" %}
+{% block title %}
+    Simulocean - Report
+{% endblock %}
+
+{% block panel %}
+    <ul class="infobox">
+        <li>
+            <h1><img class="infobox" src="{{ STATIC_URL }}coastalmodels/img/report.png" />Project Reports</h1>
+        </li>
+    </ul>
+{% endblock %}
+

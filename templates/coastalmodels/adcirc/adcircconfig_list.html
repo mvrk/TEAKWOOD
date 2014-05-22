@@ -1,0 +1,127 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+   My ADCIRC config
+{% endblock %}
+
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#    <a href="{% url coastalmodels_modelinputlist %}">Model Inputs</a>&gt;#}
+{#{% endblock %}#}
+{##}
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>Group</th>
+                <th>Coastal Model</th>
+                <th>Model config</th>
+                <th>Parameter File</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for m in object_list %}
+                <tr>
+                    <td>
+                        <a href="{% url coastalmodels_adcircconfigview m.id %}"
+                           title="View the ADCIRC config {{ m.id }}">
+                            {{ m.id }}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_adcircconfigview m.id %}"
+                           title="View the ADCIRC config {{ m.id }}">
+                            {{ m.name }}
+                        </a>
+                    </td>
+                    <td>{{ m.user }}</td>
+                    <td>{{ m.group }}</td>
+                    <td>
+                        <a href="{% url coastalmodels_coastalmodelview m.model_input.model.id %}"
+                           title="Coastal model {{ m.model_input.model.name }}">
+                            {{ m.model_input.model }}
+                        </a>
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_modelinputview m.model_input.id %}"
+                           title="Associated model input {{ m.model_input.model.id }}">
+                            {{ m.model_input }}
+                        </a>
+                    </td>
+                    <td>
+
+{#TODO add parameter file editor later#}
+
+{#                        {% if m.parameters %}#}
+{#                            <a href="{% url coastalmodels_adcircparametersview m.parameters.id %}"#}
+{#                               title="ADCIRC parameter list">#}
+{#                                {{ m.parameters }}#}
+{#                            </a>#}
+{#                        {% else %}#}
+{#                            <a href="{% url coastalmodels_adcircparametersadd m.id %}"#}
+{#                               title="Create a new ADCIRC parameter file">#}
+{#                                <button class="btn btn-primary btn-small">#}
+{#                                    <i class="icon-plus icon-white"></i>#}
+{#                                </button>#}
+{#                            </a>#}
+{#                        {% endif %}#}
+{##}
+{#                        <a href="{% url coastalmodels_adcircparameterslist %}"#}
+{#                           title="ADCIRC parameters list">#}
+{#                            {{ m.parameters }}#}
+{#                        </a>#}
+
+                    </td>
+                    {#                    <td>#}
+                    {#                        <a href="{% url coastalmodels_adcircinputexport m.id %}"#}
+                    {#                           title="Download the ADCIRC parameter file">#}
+                    {#                            <img src="{{ STATIC_URL }}coastalmodels/img/page_white_put.png"#}
+                    {#                                 alt="download the ADCIRC parameter file"/>#}
+                    {#                        </a>#}
+                    {#                    </td>#}
+
+                    <td>
+                        <a href="{% url coastalmodels_adcircconfigview m.id %}" title="View the ADCIRC parameters">
+                            <img src="{{ STATIC_URL }}coastalmodels/img/page_white_magnify.png"
+                                 alt="view the ADCIRC parameters"/>
+                        </a>
+                        {% ifequal m.user request.user %}
+                            <a href="{% url coastalmodels_adcircconfigedit m.id %}"
+                               title="Edit the ADCIRC config">
+                                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_edit.png"
+                                     alt="edit the ADCIRC config"/>
+                            </a>
+                            <a href="{% url coastalmodels_adcircconfigdelete m.id %}"
+                               title="Delete the ADCIRC config"
+                               onclick="return confirm('Are you sure you want to delete?')">
+                                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_delete.png"
+                                     alt="delete the ADCIRC config"/>
+                            </a>
+                        {% endifequal %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p> You don't have a ADCIRC config file yet. Please click
+            <a href="{% url coastalmodels_adcircconfigadd %}" title="Create a new ADCIRC config">
+                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_add.png"
+                     alt="create a new ADCIRC config"/>
+            </a>create a new ADCIRC config</p>
+
+    {% endif %}
+{% endblock %}
+
+{% block hint_title %}
+    ADCIRC model list
+{% endblock %}
+{% block hint_content %}
+    This table will list all your ADCIRC models, and you can create new ADCIRC models from here by click
+    <img src='{{ STATIC_URL }}workflow/img/application_form_add.png' alt='create a project'/> button.
+{% endblock %}

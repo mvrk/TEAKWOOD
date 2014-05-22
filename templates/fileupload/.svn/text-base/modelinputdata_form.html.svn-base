@@ -1,0 +1,235 @@
+{% extends "fileupload/base.html" %}
+{% block page_title %}
+    Input Files for {{ object.name }}
+{% endblock %}
+{% load upload_tags %}
+
+{#{% block modelinput_dropdown_menu %}#}
+{#    <li class="dropdown" xmlns="http://www.w3.org/1999/html">#}
+{#        <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">{{ object.name }}<b#}
+{#                class="caret"></b></a>#}
+{#        <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">#}
+{#            <li role="presentation">#}
+{#                <a id="uploaded_files" role="menuitem" tabindex="-1" href="#"#}
+{#                   title="uploaded input files">#}
+{#                    <img src="{{ STATIC_URL }}coastalmodels/img/page_white_text.png"#}
+{#                         alt="uploaded input files"/> Uploaded input files#}
+{#                </a>#}
+{#            </li>#}
+{#            <li role="presentation">#}
+{#                <a id="modelinput_detail" role="menuitem" tabindex="-1" href="#"#}
+{#                   title="model input details">#}
+{#                    <img src="{{ STATIC_URL }}coastalmodels/img/world.png"#}
+{#                         alt="model input details"/> Model input details#}
+{#                </a>#}
+{#            </li>#}
+{##}
+{#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>#}
+{#                <li role="presentation" class="divider"></li>#}
+{#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>#}
+{#        </ul>#}
+{#    </li>#}
+{#{% endblock %}#}
+
+{##}
+{#{% block page_description %}#}
+{#    If you don't use Simulocean to create a new parameter file, the parameter file shall be uploaded together with the#}
+{#    model input data here.#}
+{#{% endblock %}#}
+
+{% block local_css %}
+    {#    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/bootstrap-responsive.min.css">#}
+    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/jquery.fileupload-ui.css">
+
+    <style type="text/css">
+            /*bootstrap modification*/
+        .table th, .table td {
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block local_js %}
+    <script>
+        $(document).ready(function () {
+            $('#datatable_modelinput').dataTable({
+                "bJQueryUI": true,
+                "sPaginationType": "full_numbers",
+                "iDisplayLength": 25,
+                "aLengthMenu": [
+                    [25, 50, -1],
+                    [25, 50, "All"]
+                ],
+                "aaSorting": []
+            });
+            $("#datatable_modelinput").bind('tabsselect', function (event, ui) {
+                if (ui.index === 1) {
+                    tables.statistics("metrics", "metric");
+                }
+            });
+        });
+    </script>
+
+    {#    <script>#}
+    {#        $(document).ready( function () {#}
+    {#            $(".collapse").collapse()({#}
+    {#                hide: true#}
+    {#            });#}
+    {#        } );#}
+    {#        $(function () {#}
+    {#            $("#accordion").accordion({#}
+    {#                collapsible: true#}
+    {#            });#}
+    {#        });#}
+    {#    </script>#}
+
+    <script src="{{ STATIC_URL }}fileupload/js/jquery.ui.widget.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/tmpl.min.js"></script>
+    {#    <script src="{{ STATIC_URL }}fileupload/js/load-image.min.js"></script>#}
+    {#    <script src="{{ STATIC_URL }}fileupload/js/canvas-to-blob.min.js"></script>#}
+    {#    <script src="{{ STATIC_URL }}fileupload/js/bootstrap.min.js"></script>#}
+    {#        <script src="{{ STATIC_URL }}fileupload/js/bootstrap-image-gallery.min.js"></script>#}
+    <script src="{{ STATIC_URL }}fileupload/js/jquery.iframe-transport.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/jquery.fileupload.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/jquery.fileupload-fp.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/jquery.fileupload-ui.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/locale.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/main.js"></script>
+    <script src="{{ STATIC_URL }}fileupload/js/csrf.js"></script>
+{% endblock %}
+{% block page_content %}
+    <form id="fileupload" method="post" action="." enctype="multipart/form-data">{% csrf_token %}
+        <div>
+            <div class="row-fluid fileupload-buttonbar">
+                <div class="span1"></div>
+                <div class="span5">
+                <span type="button" style="margin-top: 5px; margin-right: 20px;"
+                      class="btn btn-success fileinput-button">
+                    <i class="icon-plus icon-white"></i>
+                    Add...
+                    <input type="file" name="file" multiple>
+                </span>
+                    <button type="submit" style="margin-left: -1px; margin-right: 20px;"
+                            class="btn btn-primary start">
+                        <i class="icon-upload icon-white"></i>
+                        Upload
+                    </button>
+                    <button type="reset" style="margin-left: -1px; margin-right: 20px;"
+                            class="btn btn-warning cancel">
+                        <i class="icon-ban-circle icon-white"></i>
+                        Cancel
+                    </button>
+                    <button type="button" style="margin-left: -1px; margin-right: 10px;"
+                            class="btn btn-danger delete">
+                        <i class="icon-trash icon-white"></i>
+                        Delete
+                    </button>
+                    <input type="checkbox" class="toggle">
+                </div>
+                <div class="span6 fileupload-progress fade">
+                    <div class="progress progress-success progres-striped active">
+                        <div class="bar" style="width:0%"></div>
+                    </div>
+                    <div class="progress-extended">&nbsp;</div>
+                </div>
+            </div>
+            <div class="fileupload-loading"></div>
+            <table class="table table-hover">
+                <tbody class="files"></tbody>
+            </table>
+        </div>
+    </form>
+
+    <div class="fileupload-content">
+        <table class="files"></table>
+        <div class="fileupload-progressbar"></div>
+    </div>
+    {% fileupload %}
+
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>   <!-- header row -->
+            <tr>
+                <th>ID</th>
+                <th>File</th>
+                <th>Size</th>
+                <th>Action</th>
+                {#                <th>Action</th>#}
+            </tr>
+            </thead>
+            <tbody>
+            {% for s in object_list %}
+                <tr>
+                    <td>{{ s.id }}</td>
+                    <td><a href="{{ MEDIA_URL }}{{ model_input.input_dir }}/{{ s.name }}" target="_blank"
+                           title="View the file {{ s.name }}"> {{ s.name }}
+                    </a>
+                    </td>
+                    <td>{{ s.file.size|filesizeformat }}</td>
+                    <td>
+                        {% ifequal s.user request.user %}
+                            <a href="{% url models_modelinputdatadelete object.id s.id %}"
+                               title="Delete a file"
+                               onclick="return confirm('Are you sure you want to delete ?')">
+                                <img src="{{ STATIC_URL }}fileupload/img/database_delete.png"
+                                     alt="delete a file"/>
+                            </a>
+                        {% endifequal %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% ifequal model_input.user request.user %}
+            <a style="float: right; padding-bottom: 10px"
+               href="{% url models_modelinputdatadelete object.id %}"
+               title="Delete all files"
+               onclick="return confirm('Are you sure you want to delete all files ?')">
+                <img src="{{ STATIC_URL }}fileupload/img/database_delete.png"
+                     alt="delete all files"/> Delete All</a>
+        {% endifequal %}
+
+        {#        <hr/>#}
+        {#        #}
+        {#        {% load getvalue_tags %}#}
+        {#        <table id="datatable_modelinput" width="100%">#}
+        {#            <thead>#}
+        {#            <tr>#}
+        {#                <th>Property</th>#}
+        {#                <th>Value</th>#}
+        {#            </tr>#}
+        {#            </thead>#}
+        {#            <tbody>#}
+        {#            {% for name,value in object.get_fields %}#}
+        {#                <tr>#}
+        {#                    <td>#}
+        {#                        {{ name }}#}
+        {#                    </td>#}
+        {#                    <td>{% get_value object forloop.counter|add:"-1" %}</td>#}
+        {#                </tr>#}
+        {#            {% endfor %}#}
+        {#            </tbody>#}
+        {#        </table>#}
+    {% else %}
+        <hr/>
+        <p class="page_description">You haven't uploaded any input files for model
+            <strong>{{ object.name }}</strong> yet. You can click
+            <button class="btn btn-success btn-mini">
+                <i class="icon-plus icon-white"></i><span>Add files...</span>
+            </button>
+            to upload input files or simply <strong>drag and drop</strong> your files on this page.
+        </p>
+    {% endif %}
+{% endblock %}
+
+{% block hint_title %}
+    Model Input Files
+{% endblock %}
+{% block hint_content %}
+    All the model input files could be added or removed here. Drag and drop are also supported.
+{% endblock %}
+

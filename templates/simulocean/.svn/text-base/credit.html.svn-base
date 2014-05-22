@@ -1,0 +1,8 @@
+{% extends "template_index.html" %}
+{% block components %}
+    <div class="well-large" style="text-align: center;">
+    <h4>SVN source code committing history:</h4>
+    <iframe style="width: 100%; height: 600px" src="http://www.youtube.com/embed/mHRnyH-_odU" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+{% endblock %}

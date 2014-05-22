@@ -1,0 +1,20 @@
+{% extends "simfactory/base.html" %}
+{% block page_title %}
+    Create a New Job
+{% endblock %}
+{% block page_content %}
+    {% include "table/object_form.html" %}
+{% endblock %}
+{% block hint_title %}
+    New Job
+{% endblock %}
+{% block hint_content %}
+    To create a new job or a context to get you model successfully executed on a selected computing system,
+    you will need to tell us the following:
+    1) a model input that you created for the desired model;
+    2) a computing system that support the desired model;
+    3) the number of CPU cores you need for this job;
+    4) the wall clock time.
+    You can choose to submit a job at the time of creation or later on. A short description for a job is highly
+    recommended.
+{% endblock %}

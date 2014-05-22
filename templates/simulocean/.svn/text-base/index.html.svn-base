@@ -1,0 +1,100 @@
+{% extends "template_index.html" %}
+{% block local_js %}
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.carousel').carousel('cycle');
+});
+</script>
+{% endblock %}
+{% block jumbotron %}
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            {#            <div class="item active">#}
+            {#                <img src="{{ STATIC_URL }}simulocean/img/slide/Simulocean.png" alt="">#}
+            {#                <div class="carousel-caption">#}
+            {#                </div>#}
+            {#            </div>#}
+            <div class="item active">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/unoresults.png">
+
+                <div class="carousel-caption">
+                    <p>Myrtle Grove Modeling (Joao Pereira @ The Water Institute of the Gulf)</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/lsuresults.png">
+
+                <div class="carousel-caption">
+                    <p>Hurricane and Storm Surge Modeling (Kelin Hu @ Louisian State University)</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/gom_beauty.png">
+
+                <div class="carousel-caption">
+                    <p>Beauty of the North Gulf of Mexico</p>
+                </div>
+            </div>
+            {#            <div class="item">#}
+            {#                <img src="{{ STATIC_URL }}simulocean/img/slide/charcoal_members.png" alt="">#}
+            {#                <div class="carousel-caption">#}
+            {#                    <p>NG-CHC LSU members.#}
+            {#                     </p>#}
+            {#                </div>#}
+            {#            </div>#}
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <div class="jumbotron">
+        <p class="lead">A web-based scientific application deployment and visualization
+            framework for coastal modeling and beyond.</p>
+        <a class="btn btn-large btn-success" href="{% url simulocean_tutorials %}">Quickstart
+            Tutorials</a>
+
+        {#        <h1>Simulocean, where Simulations start !</h1>#}
+        <hr>
+    </div>
+{% endblock %}
+
+
+{% block components %}
+    <div class="row-fluid">
+        <div class="span3">
+            <h2>Models</h2>
+
+            <p>Support open source coastal modelling tools, including Delft3D, ADCIRC, SWAN, etc.</p>
+
+            {#            <p><a class="btn" href="#">View supported models &raquo;</a></p>#}
+        </div>
+        <div class="span3">
+            <h2>Deployment</h2>
+
+            <p>Deploy on dedicated servers or supercomputers with minimum footprints on
+                the systems.</p>
+
+            {#            <p><a class="btn" href="#">View deployment workflow &raquo;</a></p>#}
+        </div>
+        <div class="span3">
+            <h2>Analysis</h2>
+
+            <p>Enable model validation and verification by comparing against
+                observational data.</p>
+
+            {#            <p><a class="btn" href="#">View data analysis toolkit &raquo;</a></p>#}
+        </div>
+        <div class="span3">
+            <h2>Visualization</h2>
+
+            <p>Visualize model output with GIS-based tools and produce high-quality figures
+                for publications.</p>
+
+            {#            <p><a class="btn" href="#">View visualization tools &raquo;</a></p>#}
+        </div>
+    </div>
+{% endblock %}

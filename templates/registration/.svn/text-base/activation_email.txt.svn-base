@@ -1,0 +1,12 @@
+Hello,
+
+Welcome to Simulocean, your account has been successfully created. 
+In order to log in, you will first be asked to verify this email 
+address, by clicking on the following link:
+
+http://{{site}}/activate/{{activation_key}}
+
+The activation key will expire in {{expiration_days}} days.
+
+Sincerely,
+The Simulocean Team 

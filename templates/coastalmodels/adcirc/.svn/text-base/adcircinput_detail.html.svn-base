@@ -1,0 +1,36 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    <img class="infobox" src="{{ STATIC_URL }}simulocean/img/plugin_magnify.png"/>
+    SWAN-Input Detail
+    <a href="{% url coastalmodels_swaninputexport object.id %}" title="Download the model intput file">
+        <img style="padding-right: 20px; float:right;" src="{{ STATIC_URL }}simulocean/img/page_white_put.png"
+             alt="create a new project"/>
+    </a>
+{% endblock %}
+
+{% block page_content %}
+    <table width="100%" cellspacing="0" cellpadding="0" class="list">
+        <tr class="listHead">
+            <td class="left">Parameter</td>
+            <td class="right">Value</td>
+        </tr>
+        {% for name,value in object.get_fields %}
+            <tr class="{% cycle 'white_row' 'blue_row' %}">
+                <td class="td_left_border td_br_right">
+                    {{ name }}
+                </td>
+                <td class="td_br_right">
+                    {{ value }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+
+{% block hint_title %}
+    Input Detail
+{% endblock %}
+{% block hint_content %}
+   Detailed job outputs under your account will be hosted here.
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "simfactory/base.html" %}
+
+{% block page_title %}
+    Machine Detail
+{% endblock %}
+
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;<a href="{% url simfactory_joblist %}">Jobs</a>&gt;#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    {% include "table/object_table.html" %}
+{% endblock %}
+{% block page_hints %}
+<h4>machine details</h4>
+<hr/>
+{% endblock %}

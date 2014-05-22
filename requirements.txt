@@ -1,0 +1,16 @@
+Django==1.4.5
+numpy==1.6.2
+MySQL-python==1.2.4
+PIL==1.1.7
+Scrapy==0.16.5
+argparse==1.2.1
+billiard==2.7.3.28
+django-celery==3.0.17
+django-profiles==0.2
+django-registration==0.8
+pyparsing==1.5.7
+python-dateutil==2.1
+pytz==2013b
+simplejson==3.3.0
+Geraldo==0.4.17
+netCDF4==1.0.3

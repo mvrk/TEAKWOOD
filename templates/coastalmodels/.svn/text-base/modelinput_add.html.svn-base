@@ -1,0 +1,18 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    New Model Input
+{% endblock %}
+{% block page_content %}
+    {% include "table/object_form.html" %}
+{% endblock %}
+{% block hint_title %}
+    New Model Input
+{% endblock %}
+{% block hint_content %}
+    A model input contains all the required informatoin for running the selected model. In Simulocean, a model
+    input links a project and a particular model via model specific configuration.
+    A short summary of a model input shall be added to
+    the model input description, which will serve as the summary of the model input when a project report is
+    generated. A description shall be useful as a side note, especially when there are many model inputs.
+{% endblock %}

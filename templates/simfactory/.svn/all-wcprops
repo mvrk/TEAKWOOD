@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/projects/datafactory/!svn/ver/508/Simulocean/templates/simfactory
+END
+job_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/508/Simulocean/templates/simfactory/job_detail.html
+END
+pbs_jobscript_template.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/392/Simulocean/templates/simfactory/pbs_jobscript_template.html
+END
+job_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/279/Simulocean/templates/simfactory/job_edit.html
+END
+machine_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/projects/datafactory/!svn/ver/279/Simulocean/templates/simfactory/machine_list.html
+END
+job_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/projects/datafactory/!svn/ver/410/Simulocean/templates/simfactory/job_add.html
+END
+job_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/506/Simulocean/templates/simfactory/job_list.html
+END
+machine_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/projects/datafactory/!svn/ver/352/Simulocean/templates/simfactory/machine_detail.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/projects/datafactory/!svn/ver/239/Simulocean/templates/simfactory/base.html
+END

@@ -1,0 +1,43 @@
+{% extends "profiles/base.html" %}
+
+{% block page_title %}
+    My Profile
+{% endblock %}
+
+{% block local_css  %}
+    <style type="text/css">
+            /*bootstrap modification*/
+        .table th, .table td {
+            border-top: 1px solid #e5e5e5;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+    </style>
+{% endblock %}
+{% load getvalue_tags %}
+{% block page_content %}
+    <table class="table table-hover table-striped" style="width:500px">
+        <tbody>
+        {% for name, value in profile.get_fields %}
+            <tr>
+                <td>{{ name }}</td>
+                    <td>{% get_value profile forloop.counter|add:"-1" %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block page_hints %}
+    <h4>Profile Detail</h4>
+    <hr/>
+
+{% endblock %}
+
+{% block hint_title %}
+   My Profile
+{% endblock %}
+{% block hint_content %}
+   This page shows your profile. The profile will be used for creating customized project report and potentially
+    facilitate modeling and job submission by storing your Scgate preferences.
+{% endblock %}

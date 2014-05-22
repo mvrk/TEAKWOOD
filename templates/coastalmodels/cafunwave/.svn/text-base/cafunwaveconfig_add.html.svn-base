@@ -1,0 +1,15 @@
+{#replace input with config#}
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    New CaFunwave Config
+{% endblock %}
+{% block page_content %}
+    {% include "table/object_form.html" %}
+{% endblock %}
+{% block hint_title %}
+    Input Filling
+{% endblock %}
+{% block hint_content %}
+    Fill in the inputs to create a job input, and click <img src='{{ STATIC_URL }}workflow/img/save_button.png' /> button to continue.
+{% endblock %}

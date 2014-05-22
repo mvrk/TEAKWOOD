@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3. Models &mdash; Scgate Navigation Page</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Scgate Navigation Page" href="index.html" />
+    <link rel="next" title="4. Submit a job step by step" href="demo.html" />
+    <link rel="prev" title="2. Preview" href="preview.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="demo.html" title="4. Submit a job step by step"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="preview.html" title="2. Preview"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Scgate Navigation Page</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="models">
+<h1>3. Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
+<div class="topic">
+<p class="topic-title first">Models</p>
+<p>Currently Scgate support five models: CaFunWAVE, Delft3D, SWAN, ADCIRC and FVCOM.</p>
+</div>
+<div class="section" id="delft3d">
+<h2>3.1. Delft3D<a class="headerlink" href="#delft3d" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/models_delft3d.png" src="_images/models_delft3d.png" />
+<p>Delft3D, developed by Deltares(formerly Delft Hydraulics), is a flexible integrated modelling suite, which simulates
+two-dimensional (in either the horizontal or a vertical plane) and three-dimensional flow, sediment transport and
+morphology, waves, water quality and ecology and is capable of handling the interactions between these processes.
+After Delft3D-FLOW was open-sourced in 2011, more and more researchers started using Delft3D.</p>
+</div>
+<div class="section" id="cafunwave">
+<h2>3.2. CaFunWAVE<a class="headerlink" href="#cafunwave" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/models_cafunwave.jpg" src="_images/models_cafunwave.jpg" />
+<p>CaFunwave is a port of the Funwave-TVD code developed by Dr. Fengyan Shi and his colleagues at the University of
+Delaware to the Cactus framework. By porting Funwave-TVD to the Cactus framework, we open the door to the possibility
+of using new tools, such as Adaptive Mesh Refinement (AMR), different time stepping schemes, and the Chemora GPU
+acceleration framework. A secondary advantage of the Cactus port is the ability to cross-check the codes against
+each other to improve correctness and accuracy. CaFunwave is capable of simulating storm surges, tsunamis,
+coastal nonlinear waves, wave-vegetation interaction, and breaking-generated near shore circulation.</p>
+</div>
+<div class="section" id="swan">
+<h2>3.3. SWAN<a class="headerlink" href="#swan" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/models_swan.png" src="_images/models_swan.png" />
+<p>SWAN is a third-generation wave model that computes random, short-crested wind-generated waves in coastal regions and
+inland waters. SWAN accounts for the following physics: Wave propagation in time and space, shoaling, refraction due to
+current and depth, frequency shifting due to currents and non-stationary depth, Wave generation by wind,
+Three- and four-wave interactions, Whitecapping, bottom friction and depth-induced breaking, Dissipation due to vegetation,
+Wave-induced set-up, Propagation from laboratory up to global scales, Transmission through and reflection
+(specular and diffuse) against obstacles, and Diffraction.</p>
+</div>
+<div class="section" id="adcirc">
+<h2>3.4. ADCIRC<a class="headerlink" href="#adcirc" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/models_adcirc.png" src="_images/models_adcirc.png" />
+<p>ADCIRC is a system of computer programs for solving time dependent, free surface circulation and transport problems in
+two and three dimensions. These programs utilize the finite element method in space allowing the use of highly flexible,
+unstructured grids. Typical ADCIRC applications have included: (i) modeling tides and wind driven circulation,
+(ii) analysis of hurricane storm surge and flooding, (iii) dredging feasibility and material disposal studies,
+(iv) larval transport studies, (v) near shore marine operations.</p>
+</div>
+<div class="section" id="fvcom">
+<h2>3.5. FVCOM<a class="headerlink" href="#fvcom" title="Permalink to this headline">¶</a></h2>
+<p>FVCOM is a prognostic, unstructured-grid, finite-volume, free-surface, 3-D primitive equation coastal ocean circulation
+model developed by UMASSD-WHOI joint efforts. The model consists of momentum, continuity, temperature, salinity and
+density equations and is closed physically and mathematically using turbulence closure sub-models. The horizontal grid is
+comprised of unstructured triangular cells and the irregular bottom is presented using generalized terrain-following coordinates.</p>
+<div class="topic">
+<p class="topic-title first">Servers</p>
+<p>Currently Scgate provides conditional computing resources to our customers. more information about customer
+levels please navigate to <a class="reference external" href="http://localhost:8000/about/services/">here</a>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. Models</a><ul>
+<li><a class="reference internal" href="#delft3d">3.1. Delft3D</a></li>
+<li><a class="reference internal" href="#cafunwave">3.2. CaFunWAVE</a></li>
+<li><a class="reference internal" href="#swan">3.3. SWAN</a></li>
+<li><a class="reference internal" href="#adcirc">3.4. ADCIRC</a></li>
+<li><a class="reference internal" href="#fvcom">3.5. FVCOM</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="preview.html"
+                        title="previous chapter">2. Preview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="demo.html"
+                        title="next chapter">4. Submit a job step by step</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/models.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="demo.html" title="4. Submit a job step by step"
+             >next</a></li>
+        <li class="right" >
+          <a href="preview.html" title="2. Preview"
+             >previous</a> |</li>
+        <li><a href="index.html">Scgate Navigation Page</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, © Copyright 2014, The Scgate deployment and visualization framework for coastal modeling is © 2014 the Coastal Hazards Research Collaboratory and distributed under the GNU Lesser General Public License (LGPL) v 3.0. This website makes use of the wonderful icon sets by Studio MX and FAMFAMFAM. The icons used are distributed following the original license respectively. The computational resources are provided by the Coastal Hazards Research Collaboratory, the Center for Computational and Technology, and the Louisiana Optical Network Initiative..
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

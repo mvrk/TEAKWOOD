@@ -1,0 +1,10 @@
+{% autoescape off %}
+[FileInformation]
+   FileCreatedBy    = Simulocean
+   FileCreationDate = {% now "D M d Y h:i:s A T" %}
+   FileVersion      = {{ config.id }}
+[Component]
+   Name             = flow2d3d
+   MdfFile          = {{ config.mdf_file }}
+   DDBFile          = {{ config.ddb_file }}
+{% endautoescape %}

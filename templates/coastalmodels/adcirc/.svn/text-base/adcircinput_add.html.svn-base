@@ -1,0 +1,15 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    <img class="infobox" src="{{ STATIC_URL }}simulocean/img/plugin_add.png"/>
+    New ADCIRC-Input
+{% endblock %}
+{% block page_content %}
+    {% include "table/object_form.html" %}
+{% endblock %}
+{% block hint_title %}
+    ad6
+{% endblock %}
+{% block hint_content %}
+    All job outputs under your account will be hosted here.
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "template_index.html" %}
+{% block components %}
+    <fieldset>
+        <legend><h3>Scgate Forum</h3></legend>
+
+        Please feel free to send your questions, suggestions, comments, and feature requests to the Scgate list
+        <a href="mailto:guojiarui@gmail.com">guojiarui@gmail.com</a>.
+        <iframe id="forum_embed"
+                src="javascript:void(0)"
+                scrolling="no"
+                frameborder="0"
+                width="100%"
+                height="450">
+        </iframe>
+        <script type="text/javascript">
+            document.getElementById('forum_embed').src =
+                    'https://groups.google.com/forum/embed/?place=forum/Scgate'
+                            + '&showsearch=true&showpopout=true&showtabs=false';
+        </script>
+    </fieldset>
+{% endblock %}

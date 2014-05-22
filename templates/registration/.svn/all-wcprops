@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/projects/datafactory/!svn/ver/513/Simulocean/templates/registration
+END
+password_change_done.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_change_done.html
+END
+password_reset_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_reset_confirm.html
+END
+activation_email.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/projects/datafactory/!svn/ver/2/Simulocean/templates/registration/activation_email.txt
+END
+password_reset_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_reset_form.html
+END
+activation_complete.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/activation_complete.html
+END
+password_change_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_change_form.html
+END
+password_reset_complete.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_reset_complete.html
+END
+registration_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/registration_form.html
+END
+activate.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/activate.html
+END
+registration_complete.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/registration_complete.html
+END
+activation_email_subject.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/projects/datafactory/!svn/ver/2/Simulocean/templates/registration/activation_email_subject.txt
+END
+registration_closed.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/projects/datafactory/!svn/ver/513/Simulocean/templates/registration/registration_closed.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/login.html
+END
+password_reset_done.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_reset_done.html
+END
+logout.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/projects/datafactory/!svn/ver/218/Simulocean/templates/registration/logout.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/projects/datafactory/!svn/ver/424/Simulocean/templates/registration/base.html
+END
+password_reset_email.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/229/Simulocean/templates/registration/password_reset_email.html
+END

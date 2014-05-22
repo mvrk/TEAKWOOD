@@ -1,0 +1,326 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>9. Sample &mdash; Simulocean Navigation Page</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Simulocean Navigation Page" href="index.html" />
+    <link rel="prev" title="8. Discussion" href="discussion.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigatie</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="discussion.html" title="8. Discussion"
+             accesskey="P">vorige</a></li>
+        <li><a href="index.html">Simulocean Navigation Page</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sample">
+<h1>9. Sample<a class="headerlink" href="#sample" title="Permalink naar deze titel">¶</a></h1>
+<div class="section" id="sphinx-cheat-sheet">
+<span id="sphinx-helpers"></span><h2>9.1. Sphinx Cheat Sheet<a class="headerlink" href="#sphinx-cheat-sheet" title="Permalink naar deze titel">¶</a></h2>
+<p>Wherein I show by example how to do some things in Sphinx (you can see
+a literal version of this file below in <a class="reference internal" href="#sphinx-literal"><em>This file</em></a>)</p>
+<div class="section" id="making-a-list">
+<span id="id1"></span><h3>9.1.1. Making a list<a class="headerlink" href="#making-a-list" title="Permalink naar deze titel">¶</a></h3>
+<p>It is easy to make lists in rest</p>
+<div class="section" id="bullet-points">
+<h4>9.1.1.1. Bullet points<a class="headerlink" href="#bullet-points" title="Permalink naar deze titel">¶</a></h4>
+<p>This is a subsection making bullet points</p>
+<ul class="simple">
+<li>point A</li>
+<li>point B</li>
+<li>point C</li>
+</ul>
+</div>
+<div class="section" id="enumerated-points">
+<h4>9.1.1.2. Enumerated points<a class="headerlink" href="#enumerated-points" title="Permalink naar deze titel">¶</a></h4>
+<p>This is a subsection making numbered points</p>
+<ol class="arabic simple">
+<li>point A</li>
+<li>point B</li>
+<li>point C</li>
+</ol>
+</div>
+</div>
+<div class="section" id="making-a-table">
+<span id="id2"></span><h3>9.1.2. Making a table<a class="headerlink" href="#making-a-table" title="Permalink naar deze titel">¶</a></h3>
+<p>This shows you how to make a table &#8211; if you only want to make a list
+see <a class="reference internal" href="#making-a-list"><em>Making a list</em></a>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Age</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>John D Hunter</td>
+<td>40</td>
+</tr>
+<tr class="row-odd"><td>Cast of Thousands</td>
+<td>41</td>
+</tr>
+<tr class="row-even"><td>And Still More</td>
+<td>42</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="making-links">
+<span id="id3"></span><h3>9.1.3. Making links<a class="headerlink" href="#making-links" title="Permalink naar deze titel">¶</a></h3>
+<div class="section" id="cross-references-sections-and-documents">
+<h4>9.1.3.1. Cross-references sections and documents<a class="headerlink" href="#cross-references-sections-and-documents" title="Permalink naar deze titel">¶</a></h4>
+<p>Use reST labels to cross-reference sections and other documents. The
+mechanism for referencing another reST document or a subsection in any
+document, including within a document are identical. Place a
+<em>reference label</em> above the section heading, like this:</p>
+<div class="highlight-python"><pre>.. _sphinx_helpers:
+
+====================
+ Sphinx Cheat Sheet
+====================</pre>
+</div>
+<p>Note the blank line between the <em>reference label</em> and the section
+heading is important!</p>
+<p>Then refer to the <em>reference label</em> in another
+document like this:</p>
+<div class="highlight-python"><pre>:ref:`sphinx_helpers`</pre>
+</div>
+<p>The reference is replaced with the section title when Sphinx builds
+the document while maintaining the linking mechanism.  For example,
+the above reference will appear as <a class="reference internal" href="#sphinx-helpers"><em>Sphinx Cheat Sheet</em></a>.  As the
+documentation grows there are many references to keep track of.</p>
+<p>For documents, please use a <em>reference label</em> that matches the file
+name.  For sections, please try and make the <em>refence label</em> something
+meaningful and try to keep abbreviations limited.  Along these lines,
+we are using <em>underscores</em> for multiple-word <em>reference labels</em>
+instead of hyphens.</p>
+<p>Sphinx documentation on <a class="reference external" href="http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations">Cross-referencing arbitrary locations</a>
+has more details.</p>
+</div>
+<div class="section" id="external-links">
+<h4>9.1.3.2. External links<a class="headerlink" href="#external-links" title="Permalink naar deze titel">¶</a></h4>
+<p>For external links you are likely to use only once, simple include the
+like in the text.  This link to <a class="reference external" href="http://www.google.com">google</a> was
+made like this:</p>
+<div class="highlight-python"><pre>`google &lt;http://www.google.com&gt;`_</pre>
+</div>
+<p>For external links you will reference frequently, we have created a
+<tt class="docutils literal"><span class="pre">links_names.txt</span></tt> file.  These links can then be used throughout the
+documentation.  Links in the <tt class="docutils literal"><span class="pre">links_names.txt</span></tt> file are created
+using the <a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html#hyperlink-targets">reST reference</a>
+syntax:</p>
+<div class="highlight-python"><pre>.. _targetname: http://www.external_website.org</pre>
+</div>
+<p>To refer to the reference in a separate reST file, include the
+<tt class="docutils literal"><span class="pre">links_names.txt</span></tt> file and refer to the link through it&#8217;s target
+name.  For example, put this include at the bottom of your reST
+document:</p>
+<div class="highlight-python"><pre>.. include:: ../links_names.txt</pre>
+</div>
+<p>and refer to the hyperlink target:</p>
+<div class="highlight-python"><pre>blah blah blah targetname_ more blah</pre>
+</div>
+</div>
+<div class="section" id="links-to-classes-modules-and-functions">
+<h4>9.1.3.3. Links to classes, modules and functions<a class="headerlink" href="#links-to-classes-modules-and-functions" title="Permalink naar deze titel">¶</a></h4>
+<p>You can also reference classes, modules, functions, etc that are
+documented using the sphinx <a class="reference external" href="http://sphinx.pocoo.org/ext/autodoc.html">autodoc</a> facilites.  For example,
+see the module <tt class="xref py py-mod docutils literal"><span class="pre">matplotlib.backend_bases</span></tt> documentation, or the
+class <tt class="xref py py-class docutils literal"><span class="pre">LocationEvent</span></tt>, or the method
+<tt class="xref py py-meth docutils literal"><span class="pre">mpl_connect()</span></tt>.</p>
+</div>
+</div>
+<div class="section" id="ipython-sessions">
+<span id="ipython-highlighting"></span><h3>9.1.4. ipython sessions<a class="headerlink" href="#ipython-sessions" title="Permalink naar deze titel">¶</a></h3>
+<p>Michael Droettboom contributed a sphinx extension which does pygments
+syntax highlighting on ipython sessions</p>
+<div class="highlight-ipython"><pre>In [69]: lines = plot([1,2,3])
+
+In [70]: setp(lines)
+  alpha: float
+  animated: [True | False]
+  antialiased or aa: [True | False]
+  ...snip</pre>
+</div>
+<p>This support is included in this template, but will also be included
+in a future version of Pygments by default.</p>
+</div>
+<div class="section" id="formatting-text">
+<span id="id4"></span><h3>9.1.5. Formatting text<a class="headerlink" href="#formatting-text" title="Permalink naar deze titel">¶</a></h3>
+<p>You use inline markup to make text <em>italics</em>, <strong>bold</strong>, or <tt class="docutils literal"><span class="pre">monotype</span></tt>.</p>
+<p>You can represent code blocks fairly easily:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or literally include code:</p>
+</div>
+<div class="section" id="using-math">
+<span id="id5"></span><h3>9.1.6. Using math<a class="headerlink" href="#using-math" title="Permalink naar deze titel">¶</a></h3>
+<p>In sphinx you can include inline math <span class="math">\(x\leftarrow y\ x\forall
+y\ x-y\)</span> or display math</p>
+<div class="math">
+\[W^{3\beta}_{\delta_1 \rho_1 \sigma_2} = U^{3\beta}_{\delta_1 \rho_1} + \frac{1}{8 \pi 2} \int^{\alpha_2}_{\alpha_2} d \alpha^\prime_2 \left[\frac{ U^{2\beta}_{\delta_1 \rho_1} - \alpha^\prime_2U^{1\beta}_{\rho_1 \sigma_2} }{U^{0\beta}_{\rho_1 \sigma_2}}\right]\]</div>
+<p>This documentation framework includes a Sphinx extension,
+<tt class="file docutils literal"><span class="pre">sphinxext/mathmpl.py</span></tt>, that uses matplotlib to render math
+equations when generating HTML, and LaTeX itself when generating a
+PDF.  This can be useful on systems that have matplotlib, but not
+LaTeX, installed.  To use it, add <tt class="docutils literal"><span class="pre">mathpng</span></tt> to the list of
+extensions in <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<p>Current SVN versions of Sphinx now include built-in support for math.
+There are two flavors:</p>
+<blockquote>
+<div><ul class="simple">
+<li>pngmath: uses dvipng to render the equation</li>
+<li>jsmath: renders the math in the browser using Javascript</li>
+</ul>
+</div></blockquote>
+<p>To use these extensions instead, add <tt class="docutils literal"><span class="pre">sphinx.ext.pngmath</span></tt> or
+<tt class="docutils literal"><span class="pre">sphinx.ext.jsmath</span></tt> to the list of extensions in <tt class="file docutils literal"><span class="pre">conf.py</span></tt>.</p>
+<p>All three of these options for math are designed to behave in the same
+way.</p>
+</div>
+<div class="section" id="inserting-matplotlib-plots">
+<h3>9.1.7. Inserting matplotlib plots<a class="headerlink" href="#inserting-matplotlib-plots" title="Permalink naar deze titel">¶</a></h3>
+<p>Inserting automatically-generated plots is easy.  Simply put the script to
+generate the plot in any directory you want, and refer to it using the <tt class="docutils literal"><span class="pre">plot</span></tt>
+directive.  All paths are considered relative to the top-level of the
+documentation tree.  To include the source code for the plot in the document,
+pass the <tt class="docutils literal"><span class="pre">include-source</span></tt> parameter:</p>
+<div class="highlight-python"><pre>.. plot:: devel/guidelines/elegant.py
+   :include-source:</pre>
+</div>
+<p>In the HTML version of the document, the plot includes links to the
+original source code, a high-resolution PNG and a PDF.  In the PDF
+version of the document, the plot is included as a scalable PDF.</p>
+</div>
+<div class="section" id="emacs-helpers">
+<h3>9.1.8. Emacs helpers<a class="headerlink" href="#emacs-helpers" title="Permalink naar deze titel">¶</a></h3>
+<p>See <em class="xref std std-ref">rst_emacs</em></p>
+</div>
+<div class="section" id="inheritance-diagrams">
+<h3>9.1.9. Inheritance diagrams<a class="headerlink" href="#inheritance-diagrams" title="Permalink naar deze titel">¶</a></h3>
+<p>Inheritance diagrams can be inserted directly into the document by
+providing a list of class or module names to the
+<tt class="docutils literal"><span class="pre">inheritance-diagram</span></tt> directive.</p>
+<p>For example:</p>
+<div class="highlight-python"><pre>.. inheritance-diagram:: codecs</pre>
+</div>
+<p>produces:</p>
+</div>
+<div class="section" id="this-file">
+<span id="sphinx-literal"></span><h3>9.1.10. This file<a class="headerlink" href="#this-file" title="Permalink naar deze titel">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Inhoudsopgave</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">9. Sample</a><ul>
+<li><a class="reference internal" href="#sphinx-cheat-sheet">9.1. Sphinx Cheat Sheet</a><ul>
+<li><a class="reference internal" href="#making-a-list">9.1.1. Making a list</a><ul>
+<li><a class="reference internal" href="#bullet-points">9.1.1.1. Bullet points</a></li>
+<li><a class="reference internal" href="#enumerated-points">9.1.1.2. Enumerated points</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#making-a-table">9.1.2. Making a table</a></li>
+<li><a class="reference internal" href="#making-links">9.1.3. Making links</a><ul>
+<li><a class="reference internal" href="#cross-references-sections-and-documents">9.1.3.1. Cross-references sections and documents</a></li>
+<li><a class="reference internal" href="#external-links">9.1.3.2. External links</a></li>
+<li><a class="reference internal" href="#links-to-classes-modules-and-functions">9.1.3.3. Links to classes, modules and functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ipython-sessions">9.1.4. ipython sessions</a></li>
+<li><a class="reference internal" href="#formatting-text">9.1.5. Formatting text</a></li>
+<li><a class="reference internal" href="#using-math">9.1.6. Using math</a></li>
+<li><a class="reference internal" href="#inserting-matplotlib-plots">9.1.7. Inserting matplotlib plots</a></li>
+<li><a class="reference internal" href="#emacs-helpers">9.1.8. Emacs helpers</a></li>
+<li><a class="reference internal" href="#inheritance-diagrams">9.1.9. Inheritance diagrams</a></li>
+<li><a class="reference internal" href="#this-file">9.1.10. This file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorig onderwerp</h4>
+  <p class="topless"><a href="discussion.html"
+                        title="Vorig hoofdstuk">8. Discussion</a></p>
+  <h3>Deze pagina</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sample.txt"
+           rel="nofollow">Broncode weergeven</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Snel zoeken</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ga" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geef zoekterm of de naam van een module, klasse of functie.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigatie</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="discussion.html" title="8. Discussion"
+             >vorige</a></li>
+        <li><a href="index.html">Simulocean Navigation Page</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, © Copyright 2013, The Simulocean deployment and visualization framework for coastal modeling is © 2012 the Coastal Hazards Research Collaboratory and distributed under the GNU Lesser General Public License (LGPL) v 3.0. This website makes use of the wonderful icon sets by Studio MX and FAMFAMFAM. The icons used are distributed following the original license respectively. The computational resources are provided by the Coastal Hazards Research Collaboratory, the Center for Computational and Technology, and the Louisiana Optical Network Initiative..
+      Aangemaakt met <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

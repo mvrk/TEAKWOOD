@@ -1,0 +1,21 @@
+{% extends "simulocean/base.html" %}
+{% block title %}
+    Scgate - Document
+{% endblock %}
+{% block page_title %}
+    Scgate Document
+{% endblock %}
+{% block page_content %}
+    <iframe class="help" src="{{ STATIC_URL }}doc/_build/html/index.html"></iframe>
+{% endblock %}
+{% block hint_title %}
+    Scgate Document
+{% endblock %}
+{% block hint_content %}
+    The Scgate document is written in <a href='http://docutils.sourceforge.net/rst.html'>ReStructuredText</a>,
+    which could be compiled and rendered into different formats.
+    For example, the <a href='http://localhost:8090/static/doc/_build/html/_downloads/simulocean.pdf' title='Scgate document in pdf'
+       alt='Scgate document in pdf'>
+        PDF <img src='{{ STATIC_URL }}/simreport/img/page_white_acrobat.png'/>
+    </a> format.
+{% endblock %}

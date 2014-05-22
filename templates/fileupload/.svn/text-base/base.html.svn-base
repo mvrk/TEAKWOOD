@@ -1,0 +1,258 @@
+{% extends "template.html" %}
+
+{% block panelnavibar %}
+    <a class="brand" href="{% url coastalmodels_modelinputlist %}">
+        <img class="infobox" src="{{ STATIC_URL }}coastalmodels/img/world.png"/>Model</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                Model Inputs<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url coastalmodels_modelinputadd %}"
+                       title="Create a new model input">
+                        <img src="{{ STATIC_URL }}coastalmodels/img/world_add.png"
+                             alt="create a new modelinput"/> Create a new model input
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url coastalmodels_modelinputlist %}"
+                       title="list all my model inputs">
+                        <img src="{{ STATIC_URL }}coastalmodels/img/world.png"
+                             alt="list all my model inputs"/> List all my model inputs
+                    </a>
+                </li>
+
+                {#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>#}
+                {#                <li role="presentation" class="divider"></li>#}
+                {#                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>#}
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Coastal Models<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url coastalmodels_coastalmodellist %}"
+                       title="supported coastal model list">
+                        <img src="{{ STATIC_URL }}coastalmodels/img/world.png"
+                             alt="supported coastal model list"/> Supported coastal model list
+                    </a>
+                </li>
+                <li role="presentation" class="divider"></li>
+                <li class="dropdown-submenu">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><img
+                            src="{{ STATIC_URL }}coastalmodels/img/world.png"
+                            alt="supported models"/> Coastal Models</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu"><a href="#">ADCIRC</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url coastalmodels_adcircconfigadd %}">New ADCIRC
+                                        config</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_adcircconfiglist %}">List ADCRIC
+                                        configs</a>
+                                </li>
+                                {#                                <li>#}
+                                {#                                    <a href="{% url coastalmodels_adcircparametersadd %}">New SWAN parameter file</a>#}
+                                {#                                </li>#}
+                                {#                                <li>#}
+                                {#                                    <a href="{% url coastalmodels_swanparameterslist %}">List SWAN parameter files</a>#}
+                                {#                                </li>#}
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a href="#">Delft3D</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url coastalmodels_delft3dconfigadd %}">New Delft3D config</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_delft3dconfiglist %}">List Delft3D configs</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_delft3dparametersadd %}">New Delft3D parameter
+                                        file</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_delft3dparameterslist %}">List Delft3D parameter
+                                        files</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown-submenu"><a href="#">CaFunwave</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url coastalmodels_cafunwaveconfigadd %}">New CaFunwave config</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_cafunwaveconfiglist %}">List CaFunwave configs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a href="#">SWAN</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url coastalmodels_swanconfigadd %}">New SWAN config</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_swanconfiglist %}">List SWAN configs</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu"><a href="#">FVCOM</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{% url coastalmodels_fvcomconfigadd %}">New FVCOM config</a>
+                                </li>
+                                <li>
+                                    <a href="{% url coastalmodels_fvcomconfiglist %}">List FVCOM configs</a>
+                                </li>
+                                {#                                <li>#}
+                                {#                                    <a href="{% url coastalmodels_adcircparametersadd %}">New SWAN parameter file</a>#}
+                                {#                                </li>#}
+                                {#                                <li>#}
+                                {#                                    <a href="{% url coastalmodels_swanparameterslist %}">List SWAN parameter files</a>#}
+                                {#                                </li>#}
+                            </ul>
+                        </li>
+
+                        {#                        <li class="dropdown-submenu"><a href="#">MODELS</a>#}
+                        {#                            <ul class="dropdown-menu">#}
+                        {#                            </ul>#}
+                        {#                        </li>#}
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    {#    <a href="{% url simulocean_help %}">Help</a>&gt;#}
+{% endblock %}
+
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree" xmlns="http://www.w3.org/1999/html">
+
+        <li class="closed"><span class="folder">Coastal Models</span>
+            <ul>
+
+                <li class="closed"><span class="folder">ADCIRC</span>
+                    <ul>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_adcircconfigadd %}">New ADCIRC
+                                config</a></span>
+                        </li>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_adcircconfiglist %}">List ADCIRC
+                                configs</a></span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="closed"><span class="folder">CaFunwave</span>
+                    <ul>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_cafunwaveconfigadd %}">New CaFunwave
+                                config</a></span>
+                        </li>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_cafunwaveconfiglist %}">List CaFunwave
+                                configs</a></span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="closed"><span class="folder">Delft3D</span>
+                    <ul>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_delft3dconfigadd %}">New Delft3D config</a></span>
+                        </li>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_delft3dconfiglist %}">List Delft3D
+                                configs</a></span>
+                        </li>
+                        <li>
+                    <span class="file"><a href="{% url coastalmodels_delft3dparametersadd %}">New Delft3D parameter
+                        file</a></span>
+                        </li>
+                        <li>
+                    <span class="file"><a href="{% url coastalmodels_delft3dparameterslist %}">List Delft3D parameter
+                        files</a></span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="closed"><span class="folder">FVCOM</span>
+                    <ul>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_fvcomconfigadd %}">New FVCOM
+                                config</a></span>
+                        </li>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_fvcomconfiglist %}">List FVCOM configs</a></span>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="closed"><span class="folder">SWAN</span>
+                    <ul>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_swanconfigadd %}">New SWAN
+                                config</a></span>
+                        </li>
+                        <li>
+                            <span class="file"><a href="{% url coastalmodels_swanconfiglist %}">List SWAN
+                                configs</a></span>
+                        </li>
+                        <li>
+                    <span class="file"><a href="{% url coastalmodels_swanparametersadd %}">New SWAN parameter
+                        file</a></span>
+                        </li>
+                        <li>
+                    <span class="file"><a href="{% url coastalmodels_swanparameterslist %}">List SWAN parameter
+                        files</a></span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="file"><a href="{% url coastalmodels_coastalmodellist %}">Coastal model list</a></span>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <span class="file"><a href="{% url coastalmodels_modelinputadd %}">New model input</a></span>
+        </li>
+        <li>
+            <span class="file"><a href="{% url coastalmodels_modelinputlist %}">List model inputs</a></span>
+        </li>
+
+        {#        <li>#}
+        {#            <span class="file"><a onclick="return alert('comming soon!');" href="">New CaFunwave input</a></span>#}
+        {#        </li>#}
+        {#        <li>#}
+        {#            <span class="file"><a onclick="return alert('comming soon!');" href="">New ADCIRC input</a></span>#}
+        {#        </li>#}
+        {#        <li>#}
+        {#            <span class="file"><a onclick="return alert('comming soon!');" href="">New Delft3D Input</a></span>#}
+        {#        </li>#}
+    </ul>
+{% endblock %}
+
+{% block title %}
+    Simulocean - Model
+{% endblock %}
+
+{% block shortcuts_title %}
+    Model Panel
+{% endblock %}
+
+{% block hint_title %}
+   File Upload
+{% endblock %}
+{% block hint_content %}
+   You can upload your input files here.
+{% endblock %}

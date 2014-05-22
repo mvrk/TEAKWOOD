@@ -1,0 +1,57 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Scgate - Laboratory
+{% endblock %}
+
+{% block shortcuts_title %}
+    Simlab Panel
+{% endblock %}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree">
+        <li>
+            <span class="file"><a href="{% url simfactory_joblist %}">List jobs</a></span>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block page_title %}
+    Job Comparison
+{% endblock %}
+{% block panelnavibar %}
+    <a class="brand" href="{% url simfactory_joblist %}">
+        <img class="infobox" src="{{ STATIC_URL }}simfactory/img/monitor.png"/>Laboratory</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Comparisons<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a id="simulation_comparison" role="menuitem" tabindex="-1" href="#" title="">Simulation</a>
+                </li>
+                <li role="presentation">
+                    <a id="modelinput_comparison" role="menuitem" tabindex="-1" href="#" title="">Model inputs</a>
+                </li>
+            </ul>
+        </li>
+{#        <li class="dropdown">#}
+{#            <a id="drop2" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Toggle Jobs<b#}
+{#                    class="caret"></b></a>#}
+{#            <ul class="dropdown-menu" role="menu">#}
+{#                {% for job in object_list %}#}
+{#                    <li role="presentation">#}
+{#                        <a role="menuitem" tabindex="-1" href="javascript:void(0);" title="toggle {{ job.name }}"#}
+{#                           onclick="fnShowHide({{ forloop.counter }});">{{ job.name }}</a>#}
+{#                    </li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+{#        </li>#}
+    </ul>
+
+{% endblock %}
+
+{% block page_hints %}
+<h4>simlab base</h4>
+<hr/>
+{% endblock %}

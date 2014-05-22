@@ -1,0 +1,65 @@
+{% extends "datafactory/base.html" %}
+{% block page_title %}
+    Buoy Data List
+{% endblock %}
+{% block page_content %}
+    {% if object_list %}
+        <table width="100%" id="datatable">
+            <thead>   <!-- header row -->
+            <tr>
+                <th>ID</th>
+                <th>Station</th>
+                <th>Time(UTC)</th>
+                <th>WDIR(&deg;T)</th>
+                <th>WSPD(m/s)</th>
+                <th>GST(m/s)</th>
+                <th>WVHT(m)</th>
+                <th>DPD(sec)</th>
+                <th>APD(sec)</th>
+                <th>MWD(&deg;T)</th>
+                <th>PRES(hPa)</th>
+                <th>ATMP(&deg;C)</th>
+                <th>WTMP(&deg;C)</th>
+                <th>DEWP(&deg;C)</th>
+                <th>VIS(nmi)</th>
+                <th>TIDE(ft)</th>
+            </tr>
+            </thead>
+            <tbody>   <!-- data  -->
+            {% for b in object_list %}
+                <tr>
+                    <td>{{ b.id }}</td>
+                    <td>{{ b.sid }}</td>
+                    <td>{{ b.time|date:"Y-m-d H:i:s" }}</td>
+                    <td>{{ b.wdir }}</td>
+                    <td>{{ b.wspd }}</td>
+                    <td>{{ b.gst }}</td>
+                    <td>{{ b.wvht }}</td>
+                    <td>{{ b.dpd }}</td>
+                    <td>{{ b.apd }}</td>
+                    <td>{{ b.mwd }}</td>
+                    <td>{{ b.pres }}</td>
+                    <td>{{ b.atmp }}</td>
+                    <td>{{ b.wtmp }}</td>
+                    <td>{{ b.dewp }}</td>
+                    <td>{{ b.vis }}</td>
+                    <td>{{ b.tide }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <p class="page_description">You don't have an data request yet. Please click
+            <a href="{% url datafactory_datarequestadd %}" title="Sent a new data request">
+                <img src="{{ STATIC_URL }}datafactory/img/transmit_add.png" alt="Sent a new data request"/>
+            </a>to send a new data request.
+        </p>
+    {% endif %}
+
+{% endblock %}
+
+{% block hint_title %}
+    Buoydata list
+{% endblock %}
+{% block hint_content %}
+    All job outputs under your account will be hosted here.
+{% endblock %}

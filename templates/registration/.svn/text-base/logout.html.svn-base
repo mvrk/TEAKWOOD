@@ -1,0 +1,20 @@
+{% extends "registration/base.html" %}
+
+{% block local_meta %}
+    <meta http-equiv="refresh" content="3;URL={% url simulocean_home %}">
+{% endblock %}
+
+{% block page_title %}
+    Simulocean Logout
+{% endblock %}
+
+{% block page_content %}
+    <ul class="infobox">
+        <li>
+            <h1><img class="infobox" src="{{ STATIC_URL }}simulocean/img/comment.png">Good Bye!</h1>
+            <p>You've successfully logged out. You will be redirected to the <a href="{% url simulocean_home %}" alt="Simulocean Homepage">
+                Simulocean homepage</a> in 3 seconds.</p>
+        </li>
+    </ul>
+{% endblock %}
+

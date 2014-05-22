@@ -1,0 +1,16 @@
+{% extends "registration/base.html" %}
+
+{% block page_title %}
+    Simulocean Registration
+{% endblock %}
+
+{% block page_content %}
+    <ul class="infobox">
+        <li>
+            <h1><img class="infobox" src="{{ STATIC_URL }}simulocean/img/comment.png">Welcome!</h1>
+            <p>You've successfully registered a Simulocean account. Please check your email
+            and follow the instructions in it to activate your account.</p>
+        </li>
+    </ul>
+{% endblock %}
+

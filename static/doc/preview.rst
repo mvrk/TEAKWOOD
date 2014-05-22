@@ -1,0 +1,32 @@
+
+Preview
+=========
+
+.. module:
+.. image: ../doc/_static/delft3d.jpg
+   :height: 300 px
+   :width: 500 px
+   :align: center
+
+.. comments this picture is grabbed from delft3d website.
+
+
+
+
+1,This is the `Scgate`_  welcome page. It provide you general information about simulocean, also it provide you a quick start tutorial, if you want to run jobs, sign in from the right top login entry. see:
+
+.. image:: ../doc/_static/simulocean_welcome.png
+   :height: 470 px
+   :width: 1068 px
+
+2,After you signed in, you can start with models simulocean run.
+
+.. image:: ../doc/_static/workflow_projectmanagement.png
+   :height: 360 px
+   :width: 800 px
+   :align: center
+
+
+
+.. _Scgate: http://localhost:8000/
+

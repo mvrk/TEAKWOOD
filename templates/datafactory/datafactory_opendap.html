@@ -1,0 +1,28 @@
+{% extends "datafactory/base.html" %}
+
+{% block page_title %}
+    Scgate OPeNDAP Server
+{% endblock %}
+
+{% block page_description %}
+    The Scgate OPeNDAP server (powered by <a href = "http://pydap.org/">Pydap</a>)
+    is hosted at <a href = "http://localhost:8000:8080">http://localhost:8000:8080</a>
+{% endblock %}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;<a href="{% url datafactory_datarequestlist %}">Data Requests</a>&gt;#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    <iframe class="opendap"
+            src="http://localhost:8000:8080/{% if job %}{{ job.name }}{% endif %}">
+    </iframe>
+
+{% endblock %}
+
+{% block hint_title %}
+Output details
+{% endblock %}
+{% block hint_content %}
+All job outputs under your account will be hosted here. You can search, reorder and check output details.
+{% endblock %}

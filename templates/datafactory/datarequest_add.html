@@ -1,0 +1,111 @@
+{% extends "datafactory/base.html" %}
+
+{% block local_css %}
+    {#    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css"/>#}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}timepicker/jquery-ui-timepicker-addon.css"/>
+
+{% endblock %}
+
+{% block local_js %}
+    <script type="text/javascript" src="{{ STATIC_URL }}timepicker/jquery-ui-timepicker-addon.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}timepicker/jquery-ui-sliderAccess.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#starttimepicker").datetimepicker();
+            $("#endtimepicker").datetimepicker();
+        })
+    </script>
+{% endblock %}
+
+{% block page_title %}
+    New Data Request
+{% endblock %}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;<a href="{% url datafactory_datarequestlist %}">Data Requests</a>&gt;#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    <form class="form-horizontal" action="{% url datafactory_datarequestadd %}" method="POST">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        <div class="row-fluid">
+            <div class="span4">
+                <table class="table table-hover">
+                    <tbody>
+                    {{ datarequest_form.as_table }}
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Save</span>
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="span8">
+                {% if object_list %}
+                    {#        <form class="form-horizontal" action="{% url  %}" method="POST">#}
+                    <table id="datatable" width="100%">
+                        <thead>
+                        <tr>
+                            <th>Select</th>
+                            {#                            <th>ID</th>#}
+                            <th>Name</th>
+                            <th>Provider</th>
+                            <th>Source</th>
+{#                            <th>Data Type</th>#}
+                            {#                            <th>Longitude (&deg;N)</th>#}
+                            {#                            <th>Latitude (&deg;E)</th>#}
+                            {#                            <th>Description</th>#}
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for s in object_list %}
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="station_list" value="{{ s.id }}"/>
+                                </td>
+                                {#                                <td>#}
+                                {#                                    {{ s.id }}#}
+                                {#                                </td>#}
+                                <td>
+                                    {#                        <a href="http://www.ndbc.noaa.gov/station_page.php?station={{ s.name }}"#}
+                                    {#                           title="View station {{ s.name }}" target="_blank">#}
+                                    {{ s.name }}
+                                    {#                        </a>#}
+                                </td>
+                                <td>{{ s.provider }}</td>
+                                <td>{{ s.source }}</td>
+{#                                <td>{{ s.measurement }}</td>#}
+                                {#                                <td>{{ s.lat }}</td>#}
+                                {#                                <td>{{ s.lon }}</td>#}
+                                {#                                <td>{{ s.description }}</td>#}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                    {#        </form>#}
+                {% else %}
+                    <p class="page_description">The station list is empty.</p>
+                {% endif %}
+            </div>
+        </div>
+    </form>
+
+{% endblock %}
+
+
+{% block hint_title %}
+    Request Station Data
+{% endblock %}
+{% block hint_content %}
+    This multiselection data request interface provides a simple and convenient method
+    to request data from stations provided by NOAA, USGS, etc. This interface is
+    suitable for handling a short list of stations, If you are not sure about the
+    stations or there are too many stations, you shall consider <a href='{% url simesh_domainadd %}'>
+    creating a domain</a> and let Scgate find and download all the data available within the selected domain.
+{% endblock %}

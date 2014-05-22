@@ -1,0 +1,71 @@
+{% extends "simfactory/base.html" %}
+
+{% block page_title %}
+    Computing System List
+{% endblock %}
+
+{#{% block page_description %}#}
+{#    Scgate provides support for the following HPC systems with the NGCHC-LSU team's group allocation.#}
+{#{% endblock %}#}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;<a href="{% url simfactory_joblist %}">Jobs</a>&gt;#}
+{#{% endblock %}#}
+{##}
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>   <!-- header row -->
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Host Name</th>
+                <th>Location</th>
+                <th>Available</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for s in object_list %}
+                <tr>
+                    <td>
+                        {{ s.id }}
+                    </td>
+                    <td>
+                        {{ s.name }}
+                    </td>
+                    {#                    <td>#}
+                    {#                        <a href="{% url simfactory_machineview s.id %}" title="View a job">#}
+                    {#                            <img src="{{ STATIC_URL }}simfactory/img/server_magnify.png" alt="view machine details"/> {{ s.name }}#}
+                    {#                        </a>#}
+                    {#                    </td>#}
+                    <td>
+                        <a href="{{ s.webpage }}"
+                           title="{{ s.name }} Website" target="_blank">
+                            {{ s.hostname }}
+                        </a>
+                    </td>
+                    <td>{{ s.location }}</td>
+                    <td>{{ s.available }}</td>
+                    <td>{{ s.description }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="page_description">The computing system list is empty.</p>
+    {% endif %}
+{% endblock %}
+{% block page_hints %}
+<h4>Machine list</h4>
+<hr/>
+This table shows the computing systems currently supported to run your jobs.
+{% endblock %}
+
+
+{% block hint_title %}
+Machine list
+{% endblock %}
+{% block hint_content %}
+A list of available machines for Scgate.
+{% endblock %}

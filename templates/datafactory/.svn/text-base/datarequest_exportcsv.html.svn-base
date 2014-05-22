@@ -1,0 +1,2 @@
+{% for object in objects %}{% if forloop.first %}{% for name,value in object.get_fields %}{% if forloop.last %}"{{ name }}"{% else %}"{{ name }}";{% endif %}{% endfor %}{% endif %}
+    {% for name,value in object.get_fields %}{% if forloop.last %}"{{ value }}"{% else %}"{{ value }}";{% endif %}{% endfor %}{% endfor %}

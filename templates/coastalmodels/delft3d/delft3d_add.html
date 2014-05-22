@@ -1,0 +1,765 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    New Delft3D Config
+{% endblock %}
+
+{% block local_css %}
+{#    <link rel="stylesheet" href="{{ STATIC_URL }}coastalmodels/css/tabs.css" type="text/css" media="screen, projection"/>#}
+{% endblock %}
+
+{% block local_js %}
+{#    <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>#}
+{#    <script type="text/javascript" src="js/jquery-ui-1.7.custom.min.js"></script>#}
+    <script type="text/javascript" src="{{ STATIC_URL }}coastalmodels/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}coastalmodels/js/jquery.validation.functions.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $tabs = $('#tabs').tabs();
+            $(".ui-tabs-panel").each(function (i) {
+                var totalSize = $(".ui-tabs-panel").size();
+
+                if (i != totalSize) {
+                    next = i + 2;
+                    $(this).append("<a href='#' class='next-tab mover' rel='" + next + "'>Next Page &#187;</a>");
+                }
+                if (i != 0) {
+                    prev = i;
+                    $(this).append("<a href='#' class='prev-tab mover' rel='" + prev + "'>&#17; Prev Page</a>");
+                }
+            });
+            $('.next-tab, .prev-tab').click(function () {
+                $tabs.tabs('select', $(this).attr("rel"));
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        jQuery.validator.setDefaults({
+            debug: true,
+            success: "valid"
+        });
+    </script>
+    <script type="text/javascript">
+    jQuery(function () {
+
+        <!--1 description -->
+
+        jQuery("#001").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+
+        <!--2 domain -->
+
+        jQuery("#002").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#003").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#004").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+
+        <!--3 time frame -->
+
+        jQuery("#005").validate({
+            expression: "if (!isValidDate(parseInt(VAL.split('-')[2]), parseInt(VAL.split('-')[0]), parseInt(VAL.split('-')[1]))) return false; else return true;",
+            message: "Please enter a valid Date"
+        })
+        jQuery("#006").validate({
+            expression: "if (!isValidDate(parseInt(VAL.split('-')[2]), parseInt(VAL.split('-')[0]), parseInt(VAL.split('-')[1]))) return false; else return true;",
+            message: "Please enter a valid Date"
+        });
+        jQuery("#007").validate({
+            expression: "if (!isValidDate(parseInt(VAL.split('-')[2]), parseInt(VAL.split('-')[0]), parseInt(VAL.split('-')[1]))) return false; else return true;",
+            message: "Please enter a valid Date"
+        });
+        jQuery("#008").validate({
+            expression: "if (VAL.match(/^[0-9]*$/) && VAL) return true; else return false;",
+            message: "Please enter a valid integer"
+        });
+        jQuery("#009").validate({
+            expression: "if (!isValidDate(parseInt(VAL.split('-')[2]), parseInt(VAL.split('-')[0]), parseInt(VAL.split('-')[1]))) return false; else return true;",
+            message: "Please enter a valid Date"
+        });
+
+        <!--4 processes -->
+
+        jQuery("#010").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#011").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+
+        <!--5 initial -->
+
+        jQuery("#012").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#013").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+
+        <!--6 boundaries -->
+
+        jQuery("#014").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#015").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#016").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#017").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#018").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#019").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#020").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+
+
+        <!--7 physical parameter -->
+
+        jQuery("#021").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#022").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#023").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+
+        <!--8 numerical parameter -->
+
+        jQuery("#024").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+        jQuery("#025").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+        jQuery("#026").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#027").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#028").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#029").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#030").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#031").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#032").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+
+        <!--9 operations -->
+
+        jQuery("#033").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#034").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#035").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#036").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#037").validate({
+            expression: "if (!isNaN(VAL) && VAL) return true; else return false;",
+            message: "Please enter a valid number"
+        });
+        jQuery("#038").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+
+        <!--10 monitoring -->
+
+        jQuery("#039").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+        jQuery("#040").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+
+        <!--11 additional parameter -->
+
+        jQuery("#041").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please enter the Required field"
+        });
+
+        <!--12 output -->
+
+        jQuery("#042").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+        jQuery("#043").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+        jQuery("#044").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+        jQuery("#045").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+
+        jQuery("#ValidEmail").validate({
+            expression: "if (VAL.match(/^[^\\W][a-zA-Z0-9\\_\\-\\.]+([a-zA-Z0-9\\_\\-\\.]+)*\\@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*\\.[a-zA-Z]{2,4}$/)) return true; else return false;",
+            message: "Please enter a valid Email ID"
+        });
+        jQuery("#ValidPassword").validate({
+            expression: "if (VAL.length > 5 && VAL) return true; else return false;",
+            message: "Please enter a valid Password"
+        });
+        jQuery("#ValidConfirmPassword").validate({
+            expression: "if ((VAL == jQuery('#ValidPassword').val()) && VAL) return true; else return false;",
+            message: "Confirm password field doesn't match the password field"
+        });
+        jQuery("").validate({
+            expression: "if (VAL != '0') return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#MS7").validate({
+            expression: "if (VAL) return true; else return false;",
+            message: "Please make a selection"
+        });
+        jQuery("#R4").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please select a radio button"
+        });
+        jQuery("#B1").validate({
+            expression: "if (isChecked(SelfID)) return true; else return false;",
+            message: "Please check at least one checkbox"
+        });
+
+        jQuery('.AdvancedForm').validate(function () {
+            alert("Use this call to make AJAX submissions.");
+        });
+
+    });
+    </script>
+{% endblock %}
+<!--div class="Tabs">
+
+<a href="#" class="Active">Advanced Demo</a>
+<div class="TabBody">
+<form action="" method="post" class="AdvancedForm">
+    <table cellpadding="3" cellspacing="2">
+        <tr>
+            <td>
+                Enter a Required Field
+            </td>
+            <td>
+                <input type="text" name="ValidField" id="ValidFiel" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter a Number
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter an Integer
+            </td>
+            <td>
+                <input type="text" name="ValidInteger" id="ValidInteger" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter a Date (MM-DD-YYYY)
+            </td>
+            <td>
+                <input type="text" name="ValidDate" id="ValidDat" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter Email ID
+            </td>
+            <td>
+                <input type="text" name="ValidEmail" id="ValidEmail" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                <input type="password" name="ValidPassword" id="ValidPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Confirm Password
+            </td>
+            <td>
+                <input type="password" name="ValidConfirmPassword" id="ValidConfirmPassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Make a selection
+            </td>
+            <td>
+                <select name="ValidSelectin" id="ValidSelection">
+                    <option value="0">Make a Selection</option>
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Make a multi-selection
+            </td>
+            <td>
+                <select name="ValidMultiSelection" id="ValidMultiSelection" multiple="multiple">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select a Radio Button
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Select a Checkbox Button
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="submit" value="Submit" id="FormSubmit" style="background: #EFEFEF;"/>
+            </td>
+        </tr>
+    </table>
+</form>-->
+
+
+<div class="Welcome">
+{#<p>Delft3D, developed by Deltares (formerly Delft Hydraulics), is a flexible integrated modelling suite, which#}
+{#    simulates two-dimensional (in either the horizontal or a vertical plane) and three-dimensional flow, sediment#}
+{#    transport and morphology, waves, water quality and ecology and is capable of handling the interactions between#}
+{#    these processes. After Delft3D-FLOW was open-sourced in 2011, more and more researchers started using#}
+{#    Delft3D.#}
+{#</p>#}
+
+{% block page_content %}
+<div id="page-wrap">
+<div id="tabs">
+
+<ul>
+    <li><a href="#fragment-1">Description</a></li>
+    <li><a href="#fragment-2">Domain</a></li>
+    <li><a href="#fragment-3">Timeframe</a></li>
+    <li><a href="#fragment-4">Processes</a></li>
+    <li><a href="#fragment-5">Initial</a></li>
+    <li><a href="#fragment-6">Boudaries</a></li>
+    <li><a href="#fragment-7">Physical parameters</a></li>
+    <li><a href="#fragment-8">Numerical Parameters</a></li>
+    <li><a href="#fragment-9">Operations</a></li>
+    <li><a href="#fragment-10">Monitoring</a></li>
+    <li><a href="#fragment-11">Additional Parameters</a></li>
+    <li><a href="#fragment-12">Output</a></li>
+</ul>
+
+<form id="myForm" action=" " method="post">
+
+<!--1 description -->
+
+<div id="fragment-1" class="ui-tabs-panel">
+    <h3> Description:</h3>
+    <br/>
+
+    <p>Enter a number of descriptive text lines:</p>
+    <textarea type="text" name="Runtxt" id="001"></textarea>
+</div>
+
+<!--2 domain -->
+
+<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
+    <h3> Domain settings:</h3>
+    <br/>
+    <legend><b>Grid Parameters</b></legend>
+    <p>Open grid :<input type="file" id="002" name="filcoo"/></p>
+
+    <p>Open grid enclosure :<input type="file" id="003" name="file2"/></p>
+    <br/>
+
+    <p>Co-ordinate systems :Spherical</p>
+
+    <p>Grid pointss in M-directions: 185</p>
+
+    <p>Grid pointss in N-directions: 179</p>
+
+    <p>Number of layers :<input type="text" id="004"/value="1"/></p>
+</div>
+
+<!--3 time frame -->
+
+<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide"><h3> Time frame:</h3>
+    <br/>
+
+    <p>Reference date:<input type="text" value="01 08 2014"/>[dd mm yyyy] </p>
+
+    <p>Simulation start time:<input type="text" value="01 08 2014 00 00 00"/>[dd mm yyyy hh mm ss]
+    </p>
+
+    <p>Simulation stop time:<<input type="text" name="ValidDate" value="02 25 2013 00 00 00"/>[dd mm yyyy hh mm ss]
+    </p>
+
+    <p>Time step:<input type="text" id="008" value="6"/> [min] </p>
+
+    <p>Local time zone:<input type="text" name="ValidDate" id="009"/> [dd-mm-yyyy, GMT=Local time-LTZ]</p>
+</div>
+
+<!--4 processes -->
+<div id="fragment-4" class="ui-tabs-panel ui-tabs-hide"><h3> Processes:</h3>
+    <br><br/>
+    <legend><b>Constituents </b></legend>
+                    <span id="010014" class="InputGroup">
+                    <label for="0101">
+                        <input type="checkbox" name="ValidCheckbox" id="0101" value="1"/>salinity
+                    </label>
+                    <br/>
+                    <label for="0102">
+                        <input type="checkbox" name="ValidCheckbox" id="0102" value="2"/>temprature
+                    </label>
+                    <br/>
+                    <label for="0103">
+                        <input type="checkbox" name="ValidCheckbox" id="0103" value="3"/>pollution and tracers
+                    </label>
+                    <br/>
+                    <label for="0104">
+                        <input type="checkbox" name="ValidCheckbox" id="0104" value="4"/>sediments
+                    </label>
+                    </span>
+    <br/>
+    <br><br/>
+    <legend><b>Physical</b></legend>
+
+    <label for="ValidCheckbox_5">
+        <input type="checkbox" name="ValidCheckbox" id="ValidCheckbox_5" value="5"/>wind
+    </label>
+    <br/>
+    <label for="ValidCheckbox_6">
+        <input type="checkbox" name="ValidCheckbox" id="ValidCheckbox_6" value="6"/>Secondary
+    </label>
+    <br/>
+    <label for="ValidCheckbox_7">
+        <input type="checkbox" name="ValidCheckbox" id="ValidCheckbox_7" value="7"/>wave
+    </label>
+    <br/>
+    <label for="ValidCheckbox_8">
+        <input type="checkbox" name="ValidChekbox" id="ValidCheckbox_8" value="8"/>Tidal forces
+    </label>
+    <br/>
+    <!--<legend>Man-made</legend>
+    <label for="ValidCheckbox_9">
+       input type="checkbox" name="ValidCheckbox" id="ValidCheckbox_9" value="9" />Dredging and dumping
+    <br/>-->
+    </span>
+
+    <!--5 initial -->
+
+</div>
+<div id="fragment-5" class="ui-tabs-panel ui-tabs-hide"><h3> Initial conditions:</h3>
+    <br/>
+
+    <p><b>Select one:</b></p>
+    <select id="012">
+        <option>Uniform values</option>
+        <option>Single</option>
+        <option>optional</option>
+    </select>
+    <br/><br/>
+
+    <p><b>Water level</b> <input type="textbox" id="013" value="0"/> [m]</p>
+</div>
+
+<!--6 boundaries -->
+
+<div id="fragment-6" class="ui-tabs-panel ui-tabs-hide"><h3> Boundaries:</h3>
+    <br/>
+
+    <p>Open a file:<input type="file" id="014" name="file1"/></p>
+
+    <p><b>Section name</b></p>
+
+    <p><input type="textbox" value="e01"/></p>
+
+    <p>M1<input type="textbox" value="2"/> N1<input type="textbox" value="179"/></p>
+
+    <p>M2<input type="textbox" value="3"/> N2<input type="textbox" value="179"/></p>
+
+    <legend><b>Flow conditions</b></legend>
+    <p>Type of open boundary(quanity:)
+        <select id="single">
+            <option>Astronomic</option>
+            <option>Harmonic</option>
+            <option>QH-relation</option>
+            <option>Time series</option>
+        </select></p>
+    <button id="button">Edit flow conditions</button>
+</div>
+
+<!--7 physical parameter -->
+
+<div id="fragment-7" class="ui-tabs-panel ui-tabs-hide"><h3> Physical Parameters:</h3>
+    <br/>
+    <legend><b>Wind</b></legend>
+                     <span id="021" class="InputGroup">
+                    <p><input type="checkbox"/>Space varying wind and pressure</p>
+                    <p><input type="checkbox"/>Uniform</p>
+                     </span>
+    <br/>
+
+    <p>Select file:<input type="file" id="022" name="file1"/></p>
+    <br/>
+
+    <p><b>Interpolation Type:</b></p>
+                <span id="023" class="InputGroup">
+                    <p><input type="checkbox"/>Linear</p>
+                    <p><input type="checkbox"/>Block</p>
+                    </span>
+</div>
+
+<!--8 numerical parameter -->
+
+<div id="fragment-8" class="ui-tabs-panel ui-tabs-hide"><h3> Numerical Parameters:</h3>
+    <legend></legend>
+    <br/>
+
+    <p><b>Drying and flooding check at:</b></p>
+
+    <p><input type="checkbox"/>Grid cell centres and<input type="checkbox"/>Grid cell faces only</p>
+
+    <p><b>Depth specified at:</b></p>
+
+    <p><input type="checkbox"/>Grid cell centres<input type="checkbox"/>Grid cell corners</p>
+
+    <p>Depth at grdi cell centres:
+
+        <select id="026">
+            <option>Max</option>
+            <option>Harmonic</option>
+            <option>QH-relation</option>
+            <option>Time series</option>
+        </select></p>
+    <p>Depth at grid cell faces:
+        <select id="027">
+            <option>Mean</option>
+            <option>Harmonic</option>
+            <option>QH-relation</option>
+            <option>Time series</option>
+        </select></p>
+    <p>Threshold depth:<input type="text" value="0.1"/> [m]</p>
+
+    <p>Marginal depth:<input type="text" value="-999"/> [m]</p>
+
+    <p>Smoothing time:<input type="text" value="60"/> [min]</p>
+
+    <p>Advection scheme for momentum:
+        <select id="031">
+            <option>Cyclic</option>
+            <option>Harmonic</option>
+            <option>QH-relation</option>
+            <option>Time series</option>
+        </select></p>
+    <p>Advection scheme for transport:
+        <select id="032">
+            <option>Cyclic</option>
+            <option>Harmonic</option>
+            <option>QH-relation</option>
+            <option>Time series</option>
+        </select></p>
+    <p><input type="checkbox"/>Forster filter(horizontal)</p>
+</div>
+
+<!--9 operations -->
+
+<div id="fragment-9" class="ui-tabs-panel ui-tabs-hide"><h3>Operaitons:</h3>
+    <br/>
+    <legend><b>Discharges</b></legend>
+    <p>Open a file:<input type="file" id="033" name="file1"/></p>
+
+    <p>Name:<input type="textbox" id="034" value="-Unnamed-"/></p>
+
+    <p>Type:<select id="035">
+        <option>Normal</option>
+        <option>Harmonic</option>
+        <option>QH-relation</option>
+        <option>Time series</option>
+    </select></p>
+    <br/>
+
+    <p>Discharge location:M<input type="textbox" id="036" value=" "/> N<input type="textbox" id="037" value=" "/></p>
+
+    <p>Interpolation:<input type="checkbox"/>Linear<input type="checkbox"/>Block</p>
+</div>
+
+<!--10 monitoring -->
+
+<div id="fragment-10" class="ui-tabs-panel ui-tabs-hide">
+    <div id="Monitoring">
+        <br/>
+
+        <h3>Monitoring:</h3>
+        <legend>Monitoring</legend>
+        <button>Observation</button>
+        <button>Drogues</button>
+        <button>Cross-sections</button>
+        <legend>Observation points</legend>
+        <button>Add</button>
+        <button>Delete</button>
+        <button>Open</button>
+        <button>Save</button>
+        <p>Open a file:<input type="file" id="039" name="file1"/></p>
+
+        <p><b>Description</b></p>
+
+        <p><textarea type="text" name="Runtx" id="040"/> </textarea></p>
+    </div>
+</div>
+
+<!--11 additional parameter -->
+
+<div id="fragment-11" class="ui-tabs-panel ui-tabs-hide">
+    <h3>Additional Parameters:</h3>
+    <button>Add</button>
+    <button>Delete</button>
+    <br/>
+
+    <p>Open a flie:<input type="file" id="file1" name="file1"/></p>
+</div>
+
+<!--12 output -->
+
+<div id="fragment-12" class="ui-tabs-panel ui-tabs-hide"><h3>Output:</h3>
+
+    <button>Storage</button>
+    <button>Print</button>
+    <br/>
+
+    <P><b>Output Details:</b></p>
+    <br/>
+
+    <p><b>Output computed quantities(map-file):</b></p>
+                    <span id="042" class="InputGroup">
+                    <p><input type="checkbox"/>Hydrodynamic quantities
+                        <input type="checkbox"/>Constituent/terbulence quantities
+                        <input type="checkbox"/>Derived quantities</p>
+                    </span>
+
+    <p><b>Print computed quantities(map-file):</b></p>
+                    <span id="043" class="InputGroup">
+                    <p><input type="checkbox"/>Hydrodynamic quantities
+                        <input type="checkbox"/>Constituent/turbulence quantities
+                        <input type="checkbox"/>Derived quantities</p>
+                    </span>
+
+    <p><b>Print computed quantities(History-file):</b></p>
+                    <span id="044" class="InputGroup">
+                    <p><input type="checkbox"/>Hydrodynamic quantities
+                        <input type="checkbox"/>Constituent/turbulence quantities
+                        <input type="checkbox"/>Derived quantities
+                        <input type="checkbox"/>Fluxes cross-sections</p>
+                    </span>
+
+    <p><b>Output computed quantities(History-file):</b></p>
+                    <span id="045" class="InputGroup">
+                     <p><input type="checkbox"/>Hydrodynamic quantities
+                         <input type="checkbox"/>Constituent/turbulence quantities
+                         <input type="checkbox"/>Derived quantities
+                         <input type="checkbox"/>Fluxes cross-sections</p>
+                     </span>
+</div>
+<input type="submit" value="Submit"/>
+</form>
+</div>
+</div>
+</div>
+{% endblock %}
+
+{% block hint_title %}
+    Input filling in
+{% endblock %}
+{% block hint_content %}
+   Create Delft3D input file mannually.
+{% endblock %}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/projects/datafactory/!svn/ver/517/Simulocean/templates/coastalmodels
+END
+coastalmodel_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/projects/datafactory/!svn/ver/354/Simulocean/templates/coastalmodels/coastalmodel_list.html
+END
+modelinput_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/projects/datafactory/!svn/ver/456/Simulocean/templates/coastalmodels/modelinput_detail.html
+END
+modelinput_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/projects/datafactory/!svn/ver/407/Simulocean/templates/coastalmodels/modelinput_edit.html
+END
+modelinput_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/projects/datafactory/!svn/ver/407/Simulocean/templates/coastalmodels/modelinput_add.html
+END
+coastalmodel_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/projects/datafactory/!svn/ver/407/Simulocean/templates/coastalmodels/coastalmodel_detail.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/projects/datafactory/!svn/ver/460/Simulocean/templates/coastalmodels/base.html
+END
+modelinput_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/projects/datafactory/!svn/ver/514/Simulocean/templates/coastalmodels/modelinput_list.html
+END
+report.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/projects/datafactory/!svn/ver/140/Simulocean/templates/coastalmodels/report.html
+END

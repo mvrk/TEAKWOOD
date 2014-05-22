@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/projects/datafactory/!svn/ver/517/Simulocean/templates/workflow
+END
+project_add.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/projects/datafactory/!svn/ver/407/Simulocean/templates/workflow/project_add.html
+END
+project_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/517/Simulocean/templates/workflow/project_list.html
+END
+project_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/projects/datafactory/!svn/ver/456/Simulocean/templates/workflow/project_detail.html
+END
+base.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/projects/datafactory/!svn/ver/239/Simulocean/templates/workflow/base.html
+END
+project_edit.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/projects/datafactory/!svn/ver/303/Simulocean/templates/workflow/project_edit.html
+END

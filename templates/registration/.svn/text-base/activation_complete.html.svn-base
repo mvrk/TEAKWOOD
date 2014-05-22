@@ -1,0 +1,21 @@
+{% extends "registration/base.html" %}
+
+{% block page_title %}
+    Simulocean Account Activation
+{% endblock %}
+
+{% block local_meta %}
+    <meta http-equiv="refresh" content="5;URL=/login/">
+{% endblock %}
+
+{% block page_content %}
+    <ul class="infobox">
+        <li>
+            <h1><img class="infobox" src="{{ STATIC_URL }}simulocean/img/comment.png">Thanks!</h1>
+
+            <p>The account {{ user.username }} has been successfully activated.
+               Your will be redirected to the Simulocean
+                <a href="/login/" alt="login">login page</a> in 5 seconds.</p>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    New Delft3D Input Parameter File
+{% endblock %}
+
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#    <a href="{% url coastalmodels_modelinputlist %}">Model Inputs</a>&gt;#}
+{#    <a href="{% url coastalmodels_delft3dparameterslist %}">SWAN Parameters</a>&gt;#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    {% include "table/object_form.html" %}
+{% endblock %}
+{% block hint_title %}
+    Create D3D input
+{% endblock %}
+{% block hint_content %}
+    This form provide a manually way of creating D3D input file, same as you upload a D3D input file.
+{% endblock %}

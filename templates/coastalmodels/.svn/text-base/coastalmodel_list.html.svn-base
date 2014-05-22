@@ -1,0 +1,168 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    Supported Coastal Models
+{% endblock %}
+{##}{#{% block page_description %}#}
+{#    Simulocean provides direct support for a limited number of coastal models.#}
+{#    Please contact your system admin to install desired coastal models.#}
+{#{% endblock %}#}
+{##}
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>   <!-- header row -->
+            <tr>
+                <th>Coastal Model</th>
+                <th>Version</th>
+                <th>Sample Image</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for s in object_list %}
+                <tr>
+                    <td>
+                        <a href="{% url coastalmodels_coastalmodelview s.id %}"
+                           title="{{ s.name }}"> {{ s.name }}
+                        </a>
+                    </td>
+                    <td><a href="{{ s.web_site }}" target="_blank"
+                           title="View the model {{ s.name }}"> {{ s.version }}
+                    </a>
+                    </td>
+                    <td style="width:235px;"><img class="img-rounded" src="{{ MEDIA_URL }}{{ s.image }}"
+                                                  alt="{{ s.name }}"/></td>
+                    <td>{{ s.description }}</td>
+                    <td>
+                        <a href="{{ s.config_editor }}" title="Create a new parameter file for {{ s.name }}">
+                            <i class="icon-plus-sign"></i>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>You don't have a supported model yet. Please contact your system admin to install desired coastal models.</p>
+    {% endif %}
+
+    {#    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="list">#}
+    {#        <tr class="listHead">#}
+    {#            <td class="left">Action</td>#}
+    {#            <td>Model</td>#}
+    {#            <td>Version</td>#}
+    {#            <td>Description</td>#}
+    {#            <td class="right">Sample Image</td>#}
+    {#        </tr>#}
+    {##}
+    {##}
+    {#        <tr class="blue_row">#}
+    {#            <td class="td_left_border td_br_right">#}
+    {#                    <a href="{% url coastalmodels_swaninputadd %}">#}
+    {#                        <img class="infobox"#}
+    {#                             title="Create a parameter file for SWAN"#}
+    {#                             src="{{ STATIC_URL }}coastalmodels/img/plugin_add.png"/>#}
+    {#                    </a>#}
+    {#            </td>#}
+    {#            <td class="td_br_right left">SWAN</td>#}
+    {#            <td class="td_br_right left">40.91</td>#}
+    {#            <td class="td_br_right left">SWAN is a third-generation wave model that computes random,#}
+    {#                short-crested#}
+    {#                wind-generated waves in coastal regions and inland waters.#}
+    {#                More about SWAN can be found#}
+    {#                at <a href="http://swanmodel.sourceforge.net/">http://swanmodel.sourceforge.net/</a>.#}
+    {#            </td>#}
+    {##}
+    {#            <td class="td_br_right"><img width="186px" class="infobox" align="center"#}
+    {#                                         title="Credit to Kelin Hu at LSU"#}
+    {#                                         src="{{ STATIC_URL }}coastalmodels/img/swan.png"/></td>#}
+    {#        </tr>#}
+    {##}
+    {#        <tr class="white_row">#}
+    {#            <td class="td_left_border td_br_right">#}
+    {#                <a href="" onclick="return alert('comming soon !')">#}
+    {#                    <img class="infobox"#}
+    {#                         title="Create a parameter file for CaFunwave"#}
+    {#                         src="{{ STATIC_URL }}coastalmodels/img/plugin_add_disabled.png"/>#}
+    {#                </a>#}
+    {#            </td>#}
+    {#            <td class="td_br_right left">CaFunwave</td>#}
+    {#            <td class="td_br_right left">1.0alpha</td>#}
+    {#    <td class="td_br_right left">#}
+    {#        CaFunwave is developed based on the Total Variation Diminishing (TVD) version of the FUNWAVE code, which is a#}
+    {#        phase-resolving, time-stepping Boussinesq model for ocean surface wave propagation in the nearshore. Our team#}
+    {#        rewrote the FUNWAVE code in C within the Cactus Computational Framework to make it easier to couple to other#}
+    {#        modeling tools and take advantage of various features coming with Cactus, such as flexible explicit time#}
+    {#        integrator, adaptive mesh refinement, checkpointing, optimized I/O, parameter parsing, visualization, etc. Like#}
+    {#        the FUNWAVE code, CaFunwave uses the MUSCLE-TVD finite volume scheme together with adaptive Runge Kutta time#}
+    {#        stepping. The theory and numerical implementation of the code is described in Shi et al (2012)#}
+    {#    </td>#}
+    {##}
+    {#            <td class="td_br_right"><img width="186px" class="infobox"#}
+    {#                                         src="{{ STATIC_URL }}coastalmodels/img/cafunwave.png"/>#}
+    {#            </td>#}
+    {#        </tr>#}
+    {##}
+    {#        <tr class="blue_row">#}
+    {#            <td class="td_left_border td_br_right">#}
+    {#                <a href="" onclick="return alert('comming soon !')">#}
+    {#                    <img class="infobox"#}
+    {#                         title="Create a parameter file for ADCIRC"#}
+    {#                         src="{{ STATIC_URL }}coastalmodels/img/plugin_add_disabled.png"/>#}
+    {#                </a>#}
+    {#            </td>#}
+    {#            <td class="td_br_right left">ADCIRC</td>#}
+    {#            <td class="td_br_right left">49</td>#}
+    {#            <td class="td_br_right left">ADCIRC is a system of computer programs for solving time dependent,#}
+    {#                free surface circulation and transport problems in two and three#}
+    {#                dimensions.#}
+    {#                These programs utilize the finite element method in#}
+    {#                space allowing the use of highly flexible, unstructured grids.#}
+    {#                Typical ADCIRC applications have included: (i) modeling tides#}
+    {#                and wind driven circulation, (ii) analysis of hurricane storm#}
+    {#                surge and flooding, (iii) dredging feasibility and material#}
+    {#                disposal studies, (iv) larval transport studies, (v) near shore#}
+    {#                marine operations.#}
+    {#                More about ADCIRC can be found#}
+    {#                at <a href="http://adcirc.org/">http://adcirc.org/</a>.#}
+    {#            </td>#}
+    {##}
+    {#            <td class="td_br_right"><img width="186px" class="infobox"#}
+    {#                                         title="Credit to ADCIRC Development Group"#}
+    {#                                         src="{{ STATIC_URL }}coastalmodels/img/adcirc.png"/></td>#}
+    {#        </tr>#}
+    {##}
+    {#        <tr class="white_row">#}
+    {#            <td class="td_left_border td_br_right">#}
+    {#                <a href="" onclick="return alert('comming soon !')">#}
+    {#                    <img class="infobox"#}
+    {#                         title="Create a parameter file for Delft3D"#}
+    {#                         src="{{ STATIC_URL }}coastalmodels/img/plugin_add_disabled.png"/>#}
+    {#                </a>#}
+    {#            </td>#}
+    {#            <td class="td_br_right left">Delft3D</td>#}
+    {#            <td class="td_br_right left"></td>#}
+    {#            <td class="td_br_right left">Delft3D is a flexible integrated modelling suite,#}
+    {#                which simulates two-dimensional (in either the horizontal#}
+    {#                or a vertical plane) and three-dimensional flow, sediment#}
+    {#                transport and morphology, waves, water quality and ecology#}
+    {#                and is capable of handling the interactions between these#}
+    {#                processes.#}
+    {#                The suite is designed for use by domain experts#}
+    {#                and non-experts alike, which may range from consultants and#}
+    {#                engineers or contractors, to regulators and government#}
+    {#                officials, all of whom are active in one or more of the#}
+    {#                stages of the design, implementation and management cycle.#}
+    {#                More about Delft3D can be found#}
+    {#                at <a href="http://oss.delft3d.nl/">http://oss.delft3d.nl/</a>.#}
+    {#            </td>#}
+    {##}
+    {#            <td class="td_br_right"><img width="186px" class="infobox" align="center"#}
+    {#                                         title="Credit to Delft3D Open Source Community"#}
+    {#                                         src="{{ STATIC_URL }}coastalmodels/img/delft3d.png"/></td>#}
+    {#        </tr>#}
+    {##}
+    {#    </table>#}
+{% endblock %}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/projects/datafactory/!svn/ver/471/Simulocean/apps/simlab
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/projects/datafactory/!svn/ver/471/Simulocean/apps/simlab/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/projects/datafactory/!svn/ver/212/Simulocean/apps/simlab/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/projects/datafactory/!svn/ver/212/Simulocean/apps/simlab/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/projects/datafactory/!svn/ver/212/Simulocean/apps/simlab/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/projects/datafactory/!svn/ver/212/Simulocean/apps/simlab/urls.py
+END
+forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/projects/datafactory/!svn/ver/471/Simulocean/apps/simlab/forms.py
+END

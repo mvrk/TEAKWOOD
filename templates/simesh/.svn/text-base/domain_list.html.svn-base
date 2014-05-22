@@ -1,0 +1,128 @@
+{% extends "simesh/base.html" %}
+
+{% block page_title %}
+    Domain List
+{% endblock %}
+
+{% block page_content %}
+    {% if object_list %}
+        <table width="100%" id="datatable">
+            <thead>   <!-- header row -->
+
+            {#            <tr>#}
+            {#                {% for name, value in object_list.0.get_fields %}#}
+            {#                    <td>{{ name|upper }}</td>#}
+            {#                {% endfor %}#}
+            {#            </tr>#}
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Time Start (UTC)</th>
+                <th>Time End (UTC)</th>
+                <th>Lat Min (&deg; N)</th>
+                <th>Lon Min (&deg; E)</th>
+                <th>Lat Max (&deg; N)</th>
+                <th>Lon Max (&deg; E)</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>   <!-- data  -->
+            {% for d in object_list %}
+                <tr>
+                    <td>{{ d.id }}</td>
+                    <td>
+                        <a id="description" href="{% url simesh_domainview d.id %}" title="{{ d.name|upper }}"
+                           data-content="{{ d.description }}">
+                            {{ d.name }}
+                        </a>
+                    </td>
+                    <td>{{ d.start_time }}</td>
+                    <td>{{ d.end_time }}</td>
+                    <td>{{ d.latitude_min }}</td>
+                    <td>{{ d.longitude_min }}</td>
+                    <td>{{ d.latitude_max }}</td>
+                    <td>{{ d.longitude_max }}</td>
+                    <td>
+                        <a href="{% url simesh_domainview d.id %}" title="View a domain">
+                            <img src="{{ STATIC_URL }}simesh/img/map_magnify.png" alt="view a domain"/>
+                        </a>
+                        <a href="{% url simesh_domainexportpoihtml d.id %}"
+                           title="Download the points of interest file for the supported stations in this domain">
+                            <img src="{{ STATIC_URL }}simesh/img/map_go.png" alt="dowload POI"/>
+                        </a>
+                        {% ifequal d.user request.user %}
+                            {#                            <a href="{% url simesh_jobedit j.id %}" title="Edit a job">#}
+                            {#                                <img src="{{ STATIC_URL }}simesh/img/monitor_edit.png" alt="edit a job"/>#}
+                            {#                            </a>#}
+                            <a href="{% url simesh_domaindelete d.id %}" title="Delete a domain"
+                               onclick="return confirm('Are you sure you want to delete ?')">
+                                <img src="{{ STATIC_URL }}simesh/img/map_delete.png" alt="delete a domain"/>
+                            </a>
+                        {% endifequal %}
+                    </td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="page_description"> You don't have a domain selected yet. Please click
+            <a href="{% url simesh_domainadd %}" title="Select a new domain">
+                <img src="{{ STATIC_URL }}simesh/img/map_add.png" alt="select a new domain"/></a> to create a
+            new domain.
+        </p>
+    {% endif %}
+    {#        <table id="dataTable" width="100%" border="0" cellspacing="0" cellpadding="0" class="list">#}
+    {#            {% for dr in object_list %}#}
+    {#                {% if forloop.first %}#}
+    {#                    <tr class="listHead">#}
+    {#                        {% for name, value in dr.get_fields %}#}
+    {#                            {% if forloop.first %}#}
+    {#                                <td class="left">{{ name }}</td>#}
+    {#                            {% elif forloop.last %}#}
+    {#                                <td class="right">{{ name }}</td>#}
+    {#                            {% else %}#}
+    {#                                <td>{{ name }}</td>#}
+    {#                            {% endif %}#}
+    {#                        {% endfor %}#}
+    {#                    </tr>#}
+    {#                {% endif %}#}
+    {##}
+    {#                <tr class="{% cycle 'white_row' 'blue_row' %}">#}
+    {#                    {% for name, value in dr.get_fields %}#}
+    {#                        {% if forloop.first %}#}
+    {#                            <td class="td_left_border td_br_right">{{ value }}</td>#}
+    {#                        {% else %}#}
+    {#                            <td class="td_br_right">{{ value }}</td>#}
+    {#                        {% endif %}#}
+    {#                    {% endfor %}#}
+    {#                </tr>#}
+    {#            {% endfor %}#}
+    {#        </table>#}
+
+{% endblock %}
+{##}
+{#{% block hint_title %}#}
+{#    Domain Selection#}
+{#{% endblock %}#}
+{#{% block hint_content %}#}
+{#    Use the tool provided on top right of the map to select an interested domain.#}
+{#    The domain will be used by Simulocean to automatically pull the observational#}
+{#    data and validate models.#}
+{#{% endblock %}#}
+
+{% block hint_title %}
+    Domain Selection
+{% endblock %}
+
+{% block hint_content %}
+    This page lists all the domains under your projects and the projects shared by others.
+    You can create (<img src='{{ STATIC_URL }}simesh/img/map_add.png' alt='Create a domain'/>),
+    delete (<img src='{{ STATIC_URL }}simesh/img/map_delete.png' alt='Delete a domain'/>),
+    and view (<img src='{{ STATIC_URL }}simesh/img/map_magnify.png' alt='View a domain'/>)
+    your projects here.
+    A Simulocean domain is 2 (spatial) + 1 (temporal) dimensional space where the 2D spatial domain covers
+    an area on the Earth surface. On a projected map, the 2D spatial domain is a rectangle
+    uniquely defined by the locations of the lower and upper corner coordinates or a bounding box.
+    The 1D temporal domain is an arbitrary time period of interest.
+{% endblock %}

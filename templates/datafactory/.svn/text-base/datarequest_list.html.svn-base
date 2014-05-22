@@ -1,0 +1,143 @@
+{% extends "datafactory/base.html" %}
+
+{% block page_title %}
+    My Data Requests
+{% endblock %}
+
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>Group</th>
+                <th>Stations</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Status</th>
+                <th>Data</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for dr in object_list %}
+                <tr>
+                    <td>
+                        {{ dr.id }}
+                    </td>
+                    <td>
+                        <a href="{% url datafactory_datarequestview dr.id %}" title="View a data request">
+                            {{ dr.name }}
+                        </a>
+                    </td>
+                    <td>{{ dr.user }}</td>
+                    <td>{{ dr.group }}</td>
+                    <td>
+                        {% for s in dr.stations.all %}
+                            <a href="
+                        {% if s.source == 'NDBC' %}http://www.ndbc.noaa.gov/station_page.php?station={{ s.name }}
+                        {% elif s.source == 'CO-OPS' and s.measurement == 'CURRENT' %}http://tidesandcurrents.noaa.gov/cdata/StationInfo?id={{ s.name }}
+                        {% elif s.source == 'CO-OPS' and s.measurement == 'TIDE' %}http://tidesandcurrents.noaa.gov/geo.shtml?location={{ s.name }}
+                        {% endif %}"
+                               title="View station {{ s.name }}" target="_blank">
+                                <span class="label label-success">
+                                    {{ s.name }}
+                                </span>
+                            </a>
+                        {% endfor %}
+                    </td>
+                    <td>{{ dr.start_time }}</td>
+                    <td>{{ dr.end_time }}</td>
+
+                    {% if dr.status == 0 %}
+                        <td><img src="{{ STATIC_URL }}datafactory/img/emoticon_smile.png"
+                                 title="Ready"
+                                 alt="ready"/></td>
+                        <td>
+                            {% if dr.stations.all.0.source == 'NDBC' %}
+                                <a href="{% url datafactory_buoydatalist dr.id %}" title="View requested data">
+                                    <img src="{{ STATIC_URL }}datafactory/img/magnifier.png" alt="view requested data"/>
+                                </a>
+                                <a href="{% url datafactory_datarequestbuoyexportcsv dr.id %}"
+                                   title="Download requested data as CSV file">
+                                    <img src="{{ STATIC_URL }}datafactory/img/page_excel.png"
+                                         alt="download requested data as CSV file"/>
+                                </a>
+                            {% elif dr.stations.all.0.source == 'CO-OPS' and dr.stations.all.0.measurement == 'CURRENT' %}
+                                <a href="{% url datafactory_currentdatalist dr.id %}" title="View requested data">
+                                    <img src="{{ STATIC_URL }}datafactory/img/magnifier.png" alt="view requested data"/>
+                                </a>
+                                <a href="{% url datafactory_datarequestcurrentexportcsv dr.id %}"
+                                   title="Download requested data as CSV file">
+                                    <img src="{{ STATIC_URL }}datafactory/img/page_excel.png"
+                                         alt="download requested data as CSV file"/>
+                                </a>
+
+                            {% elif dr.stations.all.0.source == 'CO-OPS' and dr.stations.all.0.measurement == 'TIDE' %}
+                                <a href="{% url datafactory_tidedatalist dr.id %}" title="View requested data">
+                                    <img src="{{ STATIC_URL }}datafactory/img/magnifier.png" alt="view requested data"/>
+                                </a>
+                                <a href="{% url datafactory_datarequesttideexportcsv dr.id %}"
+                                   title="Download requested data as CSV file">
+                                    <img src="{{ STATIC_URL }}datafactory/img/page_excel.png"
+                                         alt="download requested data as CSV file"/>
+                                </a>
+
+                            {% endif %}
+
+                            {#                        <a href="" title="Plot requested data">#}
+                            {#                            <img src="{{ STATIC_URL }}datafactory/img/chart_curve.png" alt="plot requested data"/>#}
+                            {#                        </a>#}
+                        </td>
+
+                    {% else %}
+
+                        <td><img src="{{ STATIC_URL }}datafactory/img/emoticon_unhappy.png"
+                                 title="Failed"
+                                 alt="failed"/></td>
+                        <td>
+                            <img src="{{ STATIC_URL }}datafactory/img/magnifier_disabled.png"/>
+                            {#                        <a href="" title="Plot requested data">#}
+                            {#                            <img src="{{ STATIC_URL }}datafactory/img/chart_curve.png" alt="plot requested data"/>#}
+                            {#                        </a>#}
+
+                            <img src="{{ STATIC_URL }}datafactory/img/page_excel_disabled.png"/>
+                        </td>
+                    {% endif %}
+
+
+                    <td>
+                        <a href="{% url datafactory_datarequestview dr.id %}" title="View a data request">
+                            <img src="{{ STATIC_URL }}datafactory/img/transmit_magnify.png" alt="view a input"/>
+                        </a>
+                        {#                        <a href="{% url datafactory_datarequestedit dr.id %}" title="Edit a data request">#}
+                        {#                            <img src="{{ STATIC_URL }}datafactory/img/transmit_edit.png" alt="edit a model input"/>#}
+                        {#                        </a>#}
+                        <a href="{% url datafactory_datarequestdelete dr.id %}" title="Delete a data request"
+                           onclick="return confirm('Are you sure you want to delete?')">
+                            <img src="{{ STATIC_URL }}datafactory/img/transmit_delete.png" alt="delete a model input"/>
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="page_description"> You don't have an data request yet. Please click
+            <a href="{% url datafactory_datarequestadd %}" title="Sent a new data request">
+                <img src="{{ STATIC_URL }}datafactory/img/transmit_add.png" alt="Sent a new data request"/>
+            </a> to send a new data request.
+        </p>
+    {% endif %}
+
+{% endblock %}
+
+
+{% block hint_title %}
+    Data Reqested
+{% endblock %}
+{% block hint_content %}
+    All your data requested is hosted here, you can view, download or edit it.
+{% endblock %}

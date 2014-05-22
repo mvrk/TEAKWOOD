@@ -1,0 +1,55 @@
+#data source list
+
+#tide gage data
+name=co-ops-sos
+description=NOAA Tides and Currents
+baseurl=http://opendap.co-ops.nos.noaa.gov/ioos-dif-sos/SOS?service=SOS&request=GetObservation&version=1.0.0&responseFormat=text/xml;schema=%22ioos/0.6.1%22
+param=offering
+	type=integer
+	prefix=urn:ioos:station:NOAA.NOS.CO-OPS:
+	range=1-9000000
+param=observedProperty
+	type=string
+	option=winds
+	option=water_surface_height_above_reference_datum
+	option=currents
+	option=air_pressure
+	option=sea_water_salinity
+param=result
+	type=string
+	prefix=VerticalDatum%3D%3Durn:ioos:def:datum:
+	option=noaa::IGLD
+	option=noaa::MHW
+	option=noaa::MSL
+	option=epsg::5103
+	option=noaa::STND
+	option=noaa::MLLW
+param=eventTime
+	type=timerange
+	startDate=2000-01-01
+	startTime=00:00:00
+	endDate=2011-08-01
+	endTime=23:59:59
+
+#buoy data
+name = ndbc-sos
+description = national data buoy center
+baseurl = http://sdf.ndbc.noaa.gov/sos/server.php?request=GetObservation&service=SOS&version=1.0.0&responseFormat=text/xml;schema=%22ioos/0.6.1%22
+param = offering
+	type = integer
+	prefix= urn:ioos:station:wmo:
+	range = 1-9000000
+param = observedProperty
+	type = string
+	option=waves
+	option=sea_floor_depth_below_sea_surface
+	option=winds
+	option=airpressure_at_sea_level
+	option=sea_water_salinity
+param= eventTime
+	type=timerange
+	startDate=2000-01-01
+	startTime=00:00:00
+	endDate=2011-08-01
+	endTime=23:59:59
+	

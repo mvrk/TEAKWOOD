@@ -1,0 +1,364 @@
+{% spaceless %}
+    {% autoescape on %}
+        {#I don't know why but it seem openlayers doesn't work with this statement on.#}
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        {#    <!DOCTYPE html>#}
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta name="Robots" content="index,follow"/>
+
+            <link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}simulocean/img/favicon.ico"/>
+
+            {% block local_meta %}
+            {% endblock %}
+
+            <title>{% block title %}Simulocean{% endblock %}</title>
+
+            {% block css %}
+                <link rel="stylesheet" type="text/css"
+                      href="http://code.jquery.com/ui/1.10.3/themes/{% if request.user.profile.theme %}{{ request.user.profile.theme }}{% else %}base{% endif %}/jquery-ui.css"/>
+                <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+                      rel="stylesheet">
+                {#            <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"#}
+                {#                  rel="stylesheet">#}
+                {#            <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/bootstrap.min.css">#}
+                {#            <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/bootstrap-image-gallery.min.css">#}
+
+                <link rel="stylesheet" type="text/css"
+                      href="{{ STATIC_URL }}datatables/media/css/jquery.dataTables_themeroller.css"/>
+                {#            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables_themeroller.css"/>#}
+                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}simulocean/css/main.css"/>
+                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}simulocean/css/treeview.css"/>
+            {% endblock %}
+
+            {% block local_css %}
+            {% endblock %}
+
+            {% block js %}
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+                {#            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>#}
+                <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+                {#            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>#}
+                <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+                {#            <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>#}
+                <script type="text/javascript" src="{{ STATIC_URL }}simulocean/js/treeview.js"></script>
+                {#            <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>#}
+                <script type="text/javascript" src="{{ STATIC_URL }}datatables/media/js/jquery.dataTables.js"></script>
+                <script>
+                    $(function () {
+                        $("#hints").popover({ html: true, trigger: "click", placement: "left"});
+                        {#                    $('#description').popover({ html: true, trigger: "hover", placement: "right" });#}
+                    });
+                    $(document).ready(function () {
+                        $("#browser").treeview();
+
+                        $('#datatable').dataTable({
+                            "bJQueryUI": true,
+                            "sPaginationType": "full_numbers",
+                            "iDisplayLength": 10,
+                            "aLengthMenu": [
+                                [10, 25, 50, -1],
+                                [10, 25, 50, "All"]
+                            ],
+                            "aaSorting": []
+                        });
+
+                        $("#datatable").bind('tabsselect', function (event, ui) {
+                            if (ui.index === 1) {
+                                tables.statistics("metrics", "metric");
+                            }
+                        });
+                    });
+                </script>
+            {% endblock %}
+
+            {% block local_js %}
+            {% endblock %}
+
+        </head>
+
+        <body {% block onload %}{% endblock %}>
+
+        <div id="Header">
+            {% block navi_top %}
+
+                <h3>
+    	<span id="floatright">
+        {% if user.is_authenticated %}
+            <img src="{{ STATIC_URL }}simulocean/img/user.png"/>
+            <span>Welcome back, {{ user.username }}! </span>
+            <a href="{% url auth_logout %}" title="Sign out">
+                <button class="btn btn-primary btn-mini" style="margin-top:0">
+                    <i class="icon-off icon-white"></i>
+                    <span> Sign Out</span>
+                </button>
+            </a>
+        {% else %}
+            <a href="{% url auth_login %}" title="sign in">
+                <button class="btn btn-primary btn-mini">
+                    <i class="icon-user icon-white"></i>
+                    <span> Sign In</span>
+                </button>
+            </a>
+            <a href="{% url registration_register %}" title="Register">
+                <button class="btn btn-primary btn-mini">
+                    <i class="icon-edit icon-white"></i>
+                    <span> Register</span>
+                </button>
+            </a>
+            {##}
+            {#            <img height="12px" src="{{ STATIC_URL }}simulocean/img/shield.png" alt="log in"/>#}
+            {#            <a href="{% url auth_login %}">Sign In</a>#}
+            {#            <img style="height:12px;" src="{{ STATIC_URL }}simulocean/img/user.png" alt="register"/>#}
+            {#            <a href="{% url registration_register %}">Register</a#}
+            {#            <a href="{% url google-login %}">#}
+            {#                <button class="btn btn-primary btn-mini">#}
+            {#                    <img style="height: 18px;" src="{{ STATIC_URL }}simulocean/img/logo_google.png"#}
+            {#                         alt="log in with google"/>#}
+            {#                    <span> Sign in with Google</span>#}
+            {#                </button>#}
+            {##}
+            {#            </a>#}
+        {% endif %}
+	</span>
+                </h3>
+
+                <div style="width:300px;">
+                    <h1 style="width:100%;"></h1>
+                </div>
+                <noscript>
+                    <p class="note error">JavaScript is turned off in your web browser. Turn it on to take full
+                        advantage of this site, then refresh the page.
+                    </p>
+                </noscript>
+
+                {% load activetab_tags %}
+                {% url simulocean_home as home %}
+                {% url coastalmodels_modelinputlist as modelinputlist %}
+                {% url coastalmodels_swaninputadd as swaninputadd %}
+                {% url simesh_domainlist as domain %}
+                {% url datafactory_datarequestlist as data %}
+                {% url simfactory_joblist as job %}
+                {% url simlab_jobcompare as laboratory %}
+                {% url simviz_plotobsdata as plot %}
+                {% url simulocean_report as report %}
+                {% url simulocean_about as about %}
+                {% url simulocean_doc as doc %}
+                {% url simulocean_myadmin as myadmin %}
+                {% url workflow_projectlist as projectlist %}
+                {% url profiles_profile_list as profilelist %}
+
+                <div id="NaviTabs">
+                    <ul id="MainTabs">
+                        <li><a class="{% active request '^/$' %}" href="{{ home }}">Home</a></li>
+                        {% if user.is_authenticated %}
+                            <li><a class="{% active request '^/simesh/' %}" href="{{ domain }}">Domain</a></li>
+                            <li><a class="{% active request '^/datafactory/|^/datarequest/' %}"
+                                   href="{{ data }}">Data</a>
+                            </li>
+                            <li><a class="{% active request '^/model/' %}" href="{{ modelinputlist }}">Model</a></li>
+                            <li><a class="{% active request '^/simfactory/' %}" href="{{ job }}">Simulation</a></li>
+                            <li><a class="{% active request '^/simlab/' %}" href="{{ laboratory }}">Laboratory</a></li>
+{#                            <li><a class="{% active request '^/simviz/' %}" href="{{ plot }}">Plot</a></li>#}
+                            {#                        <li><a class="{% active request report %}" href="{{ report }}">Report</a></li>#}
+                            {#                <li><a class="{% active request '^/about/' %}" href="{{ about }}">About</a></li>#}
+                            <li style="float: right; margin-right: 30px;">
+                                <a class="{% active request '^/project/' %}" href="{{ projectlist }}">My Projects</a>
+                                <a class="{% active request '^/profiles/' %}"
+                                   href="/profiles/{{ user.username }}">Profile</a>
+                                {% if user.is_active and user.is_superuser %}
+                                    <a class="{% active request '^/myadmin/' %}" href="{{ myadmin }}">Admin</a>
+                                {% endif %}
+                                <a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a>
+                            </li>
+                        {% else %}
+                            <li><a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
+                            {#                <li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>#}
+                            {#                <li><a class="{% active request about %}" href="{{ about }}">About</a></li>#}
+                        {% endif %}
+
+                    </ul>
+                </div>
+            {% endblock %}
+
+        </div>
+
+        <div id="Wrapper">
+            <div class="MainContainer">
+
+                <table width="100%" cellspacing="0px" cellpadding="0px">
+                    <tr>
+                        <td>
+                            {% block content %}
+                                <div class="Center" style='width:100%;'>
+                                    <div class="col">
+                                        <div class="Block">
+                                            <table width="100%" border="0" cellspacing="0px" cellpadding="0">
+                                                <tr>
+                                                    <td valign="top" class="td_leftmenu">
+                                                        <div class="leftmenu">
+                                                            {% block navi_left %}
+                                                                {#                                                            <script type="text/javascript">#}
+                                                                {#                                                                $(document).ready(function () {#}
+                                                                {#                                                                    $("#browser").treeview();#}
+                                                                {#                                                                });#}
+                                                                {#                                                            </script>#}
+                                                                <ul id="menu">
+                                                                    <li>
+                                                                        {% block shortcuts_title %}Simulocean
+                                                                            About{% endblock %}
+                                                                    </li>
+                                                                </ul>
+                                                                {% block shortcuts %}
+                                                                    {% if not user.is_authenticated %}
+                                                                        {% block urllinks %}
+                                                                            {#                                                                        {% include "urllinks.html" %}#}
+                                                                        {% endblock %}
+                                                                    {% endif %}
+                                                                {% endblock %}
+                                                            {% endblock %}
+                                                        </div>
+                                                    </td>
+                                                    <td width="8px"></td>
+                                                    <td id="content" height="540px" valign="top">
+                                                        <div class="navbar navbar-static-top">
+                                                            <div class="navbar-inner">
+                                                                <div class="container" style="width: auto;">
+                                                                    {% block panelnavibar %}
+                                                                    {% endblock %}
+                                                                    {% if request.user.profile.show_hints %}
+                                                                        <a class="btn pull-right" id="hints"
+                                                                           href="#"
+                                                                           data-content="
+                                                                               {% block hint_content %}{% endblock %}"
+                                                                           title="{% block hint_title %}{% endblock %}">
+                                                                            <img src="{{ STATIC_URL }}simulocean/img/wand.png"/>
+                                                                        </a>
+                                                                    {% endif %}
+
+                                                                    <a class="brand" style="float:right;" href="#">
+                                                                        {% block page_title %}
+                                                                        {% endblock %}
+                                                                    </a>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <hr/>
+                                                        {% block panel %}
+                                                            <ul class="info-box">
+                                                                {#                                                                                                                        <li>#}
+                                                                {#                                                                                                                            <span class="message">#}
+                                                                {#                                                                                                                                {% block message %}#}
+                                                                {#                                                                                                                                {% endblock %}#}
+                                                                {#                                                                                                                            </span>#}
+                                                                {#                                                                                                                        </li>#}
+                                                                <li>
+                                                                    {#                                                                <h1>{% block page_title %}{% endblock %}</h1>#}
+                                                                    {##}
+                                                                    <p class="page_description">
+                                                                        {% block page_description %}{% endblock %}
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    {#                                                                {% if request.user.profile.show_hints %}#}
+                                                                    {#                                                                    <li>#}
+                                                                    {#                                                                        <div class="row-fluid">#}
+                                                                    {#                                                                            <div class="span10">#}
+                                                                    {#                                                                    {% else %}#}
+                                                                    <div>
+                                                                        {#                                                                    {% endif %}#}
+                                                                        {% block page_content %}
+                                                                        {% endblock %}
+                                                                        {#                                                                    {% if request.user.profile.show_hints %}#}
+                                                                        {#                                                                            </div>#}
+                                                                        {#                                                                            <div class="span2">#}
+                                                                        {#                                                                                <div class="alert alert-info">#}
+                                                                        {#                                                                                <button type="button" class="close" data-dismiss="alert">&times;</button>#}
+                                                                        {#                                                                                   {% block page_hints %}#}
+                                                                        {#                                                                                        <h5>{% block hints_title%}{% endblock %}</h5>#}
+                                                                        {#                                                                                        <hr/>#}
+                                                                        {#                                                                                        {% block hints_content %}#}
+                                                                        {#                                                                                        {% endblock %}#}
+                                                                        {#                                                                                    {% endblock %}#}
+                                                                        {#                                                                                </div>#}
+                                                                        {#                                                                            </div>#}
+                                                                        {#                                                                        </div>#}
+                                                                        {#                                                                    {% else %}#}
+                                                                    </div>
+                                                                </li>
+                                                                {#                                                                {% endif %}#}
+                                                            </ul>
+                                                        {% endblock %}
+                                                        {% block warning %}
+                                                        {% endblock %}
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        {#            {% block notification %}#}
+                                        {#                <div id="messages">#}
+                                        {#                    {% if messages %}#}
+                                        {#                        <img src="{{ STATIC_URL }}simulocean/img/exclaim.gif"> Test simulocean message !#}
+                                        {#                        {% for message in messages %}#}
+                                        {#                            <li{% if message.tags %}#}
+                                        {#                                class="{{ message.tags }}"{% endif %}>{{ message }}</li>#}
+                                        {#                        {% endfor %}#}
+                                        {#                    {% endif %}#}
+                                        {#                </div>#}
+                                        {#            {% endblock %}#}
+
+                                    </div>
+                                </div>
+                            {% endblock %}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="footer">
+                {% block footer %}
+                    <ul>
+                        <li style="float:left; margin:10px 0px 10px 0;">Copyright &copy; 2012, Coastal Hazards Research
+                            Collaboratory @ LSU
+                        </li>
+                        {#        <li><a href="http://cactuscode.org/" target="_blank" title="Cactus Computational Framework">#}
+                        {#            <img src="{{ STATIC_URL }}simulocean/img/logo_cactus.png" alt="cactus" height="35"/></a></li>#}
+                        {#        <li><a href="https://www.djangoproject.com/" target="_blank" title="Django Web Framework">#}
+                        {#            <img src="{{ STATIC_URL }}simulocean//img/logo_django.png" alt="django" height="35"/></a></li>#}
+                        <li><a href="http://coastalhazards.org" target="_blank"
+                               title="Coastal Hazards Research Collaboratory">
+                            <img style="height:35px" src="{{ STATIC_URL }}simulocean/img/logo_charcoal.png"
+                                 alt="charcoal"/></a>
+                        </li>
+                        <li><a href="http://www.cct.lsu.edu" target="_blank"
+                               title="Center for Computation and Technology at Louisiana State University">
+                            <img style="height:35px" src="{{ STATIC_URL }}simulocean/img/logo_cct.png"
+                                 alt="lsu-cct"/></a>
+                        </li>
+                        <li><a href="http://www.loni.org" target="_blank" title="Louisiana Optical Network Initiative">
+                            <img src="{{ STATIC_URL }}simulocean//img/logo_loni.png" alt="loni" height="35"/></a></li>
+                        <li><a href="http://www.ngchc.org" target="_blank"
+                               title="Northern Gulf Coastal Hazards Collaboratory">
+                            <img style="height:35px" src="{{ STATIC_URL }}simulocean/img/logo_ngchc.png"
+                                 alt="ngchc"/></a>
+                        </li>
+                        <li><a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1010640"
+                               target="_blank" title="NSF (Award #1010640)"><img style="height:35px;"
+                                                                              src="{{ STATIC_URL }}simulocean/img/logo_nsf.jpg"
+                                                                              alt="NSF (Award #1010640)"/></a>
+                        </li>
+                    </ul>
+                {% endblock %}
+                <br/><br/>
+
+            </div>
+        </div>
+        </body>
+        </html>
+    {% endautoescape %}
+{% endspaceless %}
+

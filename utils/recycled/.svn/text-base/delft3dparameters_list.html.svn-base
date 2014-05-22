@@ -1,0 +1,104 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    <img class="infobox" src="{{ STATIC_URL }}coastalmodels/img/page_white_star.png"/>My Delft3D Input Parameter Files
+    <a href="{% url coastalmodels_delft3dparametersadd %}" title="Create a new Delft3D input parameter file">
+        <img style="padding-right: 20px;float:right;" src="{{ STATIC_URL }}coastalmodels/img/page_white_add.png"
+             alt="create a new Delft3D input parameter file"/></a>
+{% endblock %}
+
+{% block panelnavibar %}
+    <a href="{% url workflow_projectlist %}">Projects</a>&gt;
+    <a href="{% url coastalmodels_modelinputlist %}">Model Inputs</a>&gt;
+{% endblock %}
+
+{% block page_content %}
+    {% if object_list %}
+        <table id="datatable" width="100%">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>Group</th>
+                <th>Model</th>
+                <th>Input Data</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for m in object_list %}
+                <tr>
+                    <td>
+                            {{ m.id }}
+                    </td>
+                    <td>
+                            {{ m }}
+                    </td>
+                    <td>{{ m.model_input.user }}</td>
+                    <td>{{ m.model_input.group }}</td>
+                    <td>
+                        <a href="{% url coastalmodels_coastalmodelview m.model_input.model.id %}"
+                           title="View the model input {{ m.model.id }}">
+                            {{ m.model }}
+                        </a>
+                    </td>
+                    {#                    <td>#}
+                    {#                        {% if not m.upload_parfile and m.parfile_ready %}#}
+                    {#                            <a href="{% url coastalmodels_modelinputexport m.id %}"#}
+                    {#                               title="Download the model intput file">#}
+                    {#                                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_put.png"#}
+                    {#                                     alt="view requested data"/>#}
+                    {#                            </a>#}
+                    {# TODO: we shall show the parameter file if it is uploaded #}
+                    {#                        {% endif %}#}
+                    {#                    </td>#}
+                    <td>
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 20px; margin: 0; border:1px;">
+
+                                    <a href="{% url coastalmodels_modelinputdataadd m.id %}" title="Upload input data">
+                                        <button class="btn btn-primary btn-small" title="upload model input data">
+                                            <i class="icon-plus icon-white"></i>
+                                        </button>
+                                    </a>
+                                </td>
+                                <td style="padding: 0; margin: 0; border:1px;">
+                                    {% for i in m.inputdatasets.all %}
+                                        {% if request.user == i.user or i.group in request.user.groups.all %}
+                                            <a href="{{ MEDIA_URL }}{{ m.input_dir }}/{{ i.name }}"
+                                               title="Show model input details">{{ i.name }}</a>
+                                            <br/>
+                                        {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <a href="{% url coastalmodels_modelinputview m.id %}" title="View the model input">
+                            <img src="{{ STATIC_URL }}coastalmodels/img/plugin_magnify.png" alt="view the input"/>
+                        </a>
+                        {% ifequal m.user request.user %}
+                            <a href="{% url coastalmodels_modelinputdelete m.id %}"
+                               title="Delete a model input"
+                               onclick="return confirm('Are you sure you want to delete ? All input data will be deleted.')">
+                                <img src="{{ STATIC_URL }}coastalmodels/img/plugin_delete.png"
+                                     alt="delete a model input"/>
+                            </a>
+                        {% endifequal %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p> You don't have a Delft3D input parameter file yet. Please click
+            <a href="{% url coastalmodels_delft3dparametersadd %}" title="Create a new Delft3D input parameter file">
+                <img src="{{ STATIC_URL }}coastalmodels/img/page_white_add.png"
+                     alt="create a new Delft3D input parameter file"/>
+            </a>create a new Delft3D parameter file.</p>
+
+    {% endif %}
+{% endblock %}

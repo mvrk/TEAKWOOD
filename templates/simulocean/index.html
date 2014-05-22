@@ -1,0 +1,97 @@
+{% extends "template_index.html" %}
+{% block local_js %}
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.carousel').carousel('cycle');
+});
+</script>
+{% endblock %}
+{% block jumbotron %}
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+{#                        <div class="item active">#}
+{#                            <img src="{{ STATIC_URL }}simulocean/img/slide/slide1.jpg" alt="">#}
+{#                            <div class="carousel-caption">#}
+{#                            </div>#}
+{#                        </div>#}
+            <div class="item active">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/slide1.jpg">
+
+                <div class="carousel-caption">
+                    <p>Leveraging the computational perspective)</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/slide3.jpg">
+
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ STATIC_URL }}simulocean/img/slide/slide4.png">
+
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+                        <div class="item">
+                            <img src="{{ STATIC_URL }}simulocean/img/slide/slide2.jpg" alt="">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <div class="jumbotron">
+        <p class="lead">Scgate, a web-based scientific application aims providing scientists easier to use open source tools.</p>
+        <a class="btn btn-large btn-success" href="{% url simulocean_tutorials %}">Quickstart
+            Tutorials</a>
+
+                <h2>Scgate, where computing start !</h2>
+        <hr>
+    </div>
+{% endblock %}
+
+
+{% block components %}
+    <div class="row-fluid">
+        <div class="span3">
+            <h2>Models</h2>
+
+            <p>Support open source coastal modelling tools, including, etc.</p>
+
+                        <p><a class="btn" href="#">View supported open source models &raquo;</a></p>
+        </div>
+        <div class="span3">
+            <h2>Deployment</h2>
+
+            <p>Deploy your open source packages on dedicated servers, supercomputers or Amazon cloud with minimum footprints on
+                the systems. your job can run locally or remotely.</p>
+
+                        <p><a class="btn" href="#">View deployment workflow &raquo;</a></p>
+        </div>
+        <div class="span3">
+            <h2>Analysis</h2>
+
+            <p>Enable model validation and verification by comparing against
+                observational data.</p>
+
+                        <p><a class="btn" href="#">View data analysis toolkit &raquo;</a></p>
+        </div>
+        <div class="span3">
+            <h2>Visualization</h2>
+
+            <p>Depending on your data type, we could visualize your data by provide high-quality charts and dynamic scaling.</p>
+
+                        <p><a class="btn" href="#">View visualization tools &raquo;</a></p>
+        </div>
+    </div>
+{% endblock %}

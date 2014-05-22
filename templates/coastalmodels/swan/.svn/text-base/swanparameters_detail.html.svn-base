@@ -1,0 +1,15 @@
+{% extends "coastalmodels/base.html" %}
+
+{% block page_title %}
+    SWAN Parameters Detail
+{% endblock %}
+
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#    <a href="{% url coastalmodels_modelinputlist %}">Model Configs</a>&gt;#}
+{#    <a href="{% url coastalmodels_delft3dparameterslist %}">SWAN Parameters</a>&gt;#}
+{#{% endblock %}#}
+
+{% block page_content %}
+    {% include "table/object_table.html" %}
+{% endblock %}

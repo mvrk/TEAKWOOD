@@ -1,0 +1,64 @@
+{% extends "template.html" %}
+
+{% block title %}
+    Scgate - Domain
+{% endblock %}
+
+{% block shortcuts_title %}
+    Domain Panel
+{% endblock %}
+
+{% block local_css %}
+    <style type="text/css">
+        div.olControlMousePosition {
+            color: red;
+        }
+    </style>
+{% endblock %}
+{% block panelnavibar %}
+    <a class="brand" href="{% url simesh_domainlist %}">
+        <img class="infobox" src="{{ STATIC_URL }}simesh/img/map.png"/>Domain Tools</a>
+    <ul class="nav" role="navigation">
+        <li class="dropdown">
+            <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Domain<b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url simesh_domainadd %}"
+                       title="Create a new datarequest">
+                        <img src="{{ STATIC_URL }}simesh/img/map_add.png"
+                             alt="create a new datarequest"/> Create a new domain
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="{% url simesh_domainlist %}"
+                       title="List all my datarequests">
+                        <img src="{{ STATIC_URL }}simesh/img/map.png"
+                             alt="list all my datarequests"/> List all my domains
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+{% endblock %}
+
+{#{% block title %}#}
+{#    Scgate - Data Factory#}
+{#{% endblock %}#}
+{##}
+{#{% block shortcuts_title %}#}
+{#    Data Panel#}
+{#{% endblock %}#}
+{##}
+{#{% block panelnavibar %}#}
+{#    <a href="{% url workflow_projectlist %}">Projects</a>&gt;#}
+{#{% endblock %}#}
+
+{% block shortcuts %}
+    <ul id="browser" class="filetree" xmlns="http://www.w3.org/1999/html">
+        <li><span class="file"><a href="{% url simesh_domainadd %}">New domain</a></span>
+        </li>
+        <li><span class="file"><a href="{% url simesh_domainlist %}">List all domains</a></span>
+        </li>
+    </ul>
+{% endblock %}

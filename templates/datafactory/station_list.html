@@ -1,0 +1,64 @@
+{% extends "datafactory/base.html" %}
+
+{% block page_title %}
+    Station List
+{% endblock %}
+
+{% block page_content %}
+    {% if object_list %}
+        {#        <form class="form-horizontal" action="{% url  %}" method="POST">#}
+        <table id="datatable" width="100%">
+            <thead>
+            <tr>
+                {#                    <th>Select</th>#}
+                <th>ID</th>
+                <th>Name</th>
+                <th>Provider</th>
+                <th>Latitude (&deg;N)</th>
+                <th>Longitude (&deg;E)</th>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Source</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for s in object_list %}
+                <tr>
+                    <td>
+                        {{ s.id }}
+                    </td>
+                    <td>
+                        <a href="
+                        {% if s.source == 'NDBC' %}http://www.ndbc.noaa.gov/station_page.php?station={{ s.name }}
+                        {% elif s.source == 'CO-OPS' and s.measurement == 'CURRENT' %}http://tidesandcurrents.noaa.gov/cdata/StationInfo?id={{ s.name }}
+                        {% elif s.source == 'CO-OPS' and s.measurement == 'TIDE' %}http://tidesandcurrents.noaa.gov/geo.shtml?location={{ s.name }}
+                        {% endif %}"
+                           title="View station {{ s.name }}" target="_blank">
+                            {{ s.name }}
+                        </a>
+                    </td>
+                    <td>{{ s.provider }}</td>
+                    <td>{{ s.lat }}</td>
+                    <td>{{ s.lon }}</td>
+                    <td>{{ s.description }}</td>
+                    <td>{{ s.measurement }}</td>
+                    <td>{{ s.source }}</td>
+                    {#<iframe src="http://www.ndbc.noaa.gov/widgets/station_page.php?station={{ s.name }}" style="border: solid thin #3366ff; width:300px; height:300px"></iframe>                    #}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {#        </form>#}
+    {% else %}
+        <p class="page_description">The station list is empty.</p>
+    {% endif %}
+{% endblock %}
+
+{% block hint_title %}
+    Station list
+{% endblock %}
+{% block hint_content %}
+    This page shows all the supported stations
+    {#    All the time series data served on Scgate data factory are#}
+    {#    in <b>UTC</b>.#}
+{% endblock %}

@@ -1,0 +1,86 @@
+10
+
+dir
+549
+https://svn.cct.lsu.edu/repos/projects/datafactory/Simulocean/static/datatables/examples
+https://svn.cct.lsu.edu/repos/projects/datafactory
+
+
+
+2013-05-30T03:32:41.319543Z
+343
+jtao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2908abe8-ccde-48d4-8bd1-99c7b865067d
+
+ajax
+dir
+
+basic_init
+dir
+
+advanced_init
+dir
+
+api
+dir
+
+examples_support
+dir
+
+server_side
+dir
+
+index.html
+file
+
+
+
+
+2014-04-12T05:10:02.678999Z
+1091934e10bfc30e53011fe5414a9d30
+2012-10-20T04:20:03.185318Z
+90
+jtao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8636
+
+data_sources
+dir
+
+plug-ins
+dir
+

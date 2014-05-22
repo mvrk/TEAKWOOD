@@ -1,0 +1,37 @@
+SET FOREIGN_KEY_CHECKS=0;
+--
+-- Table structure for table `coastalmodels_coastalmodel`
+--
+
+DROP TABLE IF EXISTS `coastalmodels_coastalmodel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `coastalmodels_coastalmodel` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(60) NOT NULL,
+  `version` varchar(20) NOT NULL,
+  `description` longtext,
+  `image` varchar(100) NOT NULL,
+  `web_site` varchar(200) DEFAULT NULL,
+  `parfile_name` varchar(60) DEFAULT NULL,
+  `parfile_extension` varchar(5) DEFAULT NULL,
+  `config_editor` varchar(256) DEFAULT NULL,
+  `config_list` varchar(256) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `coastalmodels_coastalmodel`
+--
+
+LOCK TABLES `coastalmodels_coastalmodel` WRITE;
+/*!40000 ALTER TABLE `coastalmodels_coastalmodel` DISABLE KEYS */;
+INSERT INTO `coastalmodels_coastalmodel` VALUES 
+(1,'SWAN','40.91','SWAN is a third-generation wave model that computes random, short-crested wind-generated waves in coastal regions and inland waters. SWAN accounts for the following physics: Wave propagation in time and space, shoaling, refraction due to current and depth, frequency shifting due to currents and non-stationary depth, Wave generation by wind, Three- and four-wave interactions, Whitecapping, bottom friction and depth-induced breaking, Dissipation due to vegetation, Wave-induced set-up, Propagation from laboratory up to global scales, Transmission through and reflection (specular and diffuse) against obstacles, and Diffraction.','images/swan.png','http://swanmodel.sourceforge.net/','INPUT','','/model/config/swan/add/','/model/config/swan/list/'),
+(2,'Delft3D','5.00.00.1234','Delft3D is a flexible integrated modelling suite, which simulates two-dimensional (in either the horizontal or a vertical plane) and three-dimensional flow, sediment transport and morphology, waves, water quality and ecology is capable of handling the interactions between these processes. The suite is designed for use by domain experts and non-experts alike, which may range from consultants and engineers or contractors, to regulators and government officials, all of whom are active in one or more of the stages of the design, implementation and management cycle.','images/delft3d.png','http://www.deltaressystems.com/hydro/product/621497/delft3d-suite','','mdf','/model/config/delft3d/add/','/model/config/delft3d/list/'),
+(3,'ADCIRC','50.79','ADCIRC is a system of computer programs for solving time dependent, free surface circulation and transport problems in two and three dimensions. These programs utilize the finite element method in space allowing the use of highly flexible, unstructured grids. Typical ADCIRC applications have included: (i) modeling tides and wind driven circulation, (ii) analysis of hurricane storm surge and flooding, (iii) dredging feasibility and material disposal studies, (iv) larval transport studies, (v) near shore marine operations.','images/adcirc.png','http://adcirc.org/','fort.15','','/model/config/adcirc/add/','/model/config/adcirc/list/'),
+(4,'CaFunwave','0.9alpha','CaFunwave is developed based on the Total Variation Diminishing (TVD) version of the FUNWAVE code, which is a phase-resolving, time-stepping Boussinesq model for ocean surface wave propagation in the nearshore. Our team rewrote the FUNWAVE code in C within the Cactus Computational Framework to make it easier to couple to other modeling tools and take advantage of various features coming with Cactus, such as flexible explicit time integrator, adaptive mesh refinement, checkpointing, optimized I/O, parameter parsing, visualization, etc. Like the FUNWAVE code, CaFunwave uses the MUSCLE-TVD finite volume scheme together with adaptive Runge Kutta time stepping. The theory and numerical implementation of the code is described in Shi et al (2014)','images/cafunwave.png','http://cactuscode.org/projects/cafunwave/index.php','','par','',''),
+(5,'FVCOM','2.5-customized','FVCOM is a three dimensional,time dependent,primitive equations,      \r\ncoastal ocean circulation model. The model computes the momentum,       \r\ncontinuity, temperature, salinity, and density equations and is closed  \r\nphysically and mathematically using the Mellor and Yamada level-2.5     \r\nturbulent closure submodel. The irregular bottom slope is represented   \r\nusing a sigma-coordinate transformation, and the horizontal grids       \r\ncomprise unstructured triangular cells. The finite-volume method (FVM)  \r\nused in this model combines the advantages of the finite-element        \r\nmethod (FEM) for geometric flexibility and the finite-difference        \r\nmethod (FDM) for simple discrete computation. Current, temperature,     \r\nand salinity in the model are computed in the integral form of the      \r\nequations, which provides a better representation of the conservation   \r\nlaws for mass, momentum, and heat in the coastal region with complex    \r\ngeometry.','images/fvcom.jpg','http://fvcom.smast.umassd.edu/FVCOM/','','','/model/config/fvcom/add/','/model/config/fvcom/list/');
+/*!40000 ALTER TABLE `coastalmodels_coastalmodel` ENABLE KEYS */;
+UNLOCK TABLES;
