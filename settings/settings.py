@@ -1,4 +1,4 @@
-# Django settings for simulocean
+# Django settings for TEAKWOOD
 import os, sys, socket
 
 import djcelery
@@ -27,7 +27,7 @@ if HOSTNAME == "localhost.localdomain" or "guojiarui@gmail.com":
             # 'ENGINE': 'django.contrib.gis.db.backends.mysql',
             'ENGINE': 'django.db.backends.mysql',
             # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'simulocean', # Or path to database file if using sqlite3.
+            'NAME': 'TEAKWOOD', # Or path to database file if using sqlite3.
             'USER': 'root', # Not used with sqlite3.
             'PASSWORD': '699622', # Not used with sqlite3.
             'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
@@ -47,7 +47,7 @@ elif HOSTNAME == "Ubuntu":
             # 'ENGINE': 'django.contrib.gis.db.backends.mysql',
             'ENGINE': 'django.db.backends.mysql',
             # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-            'NAME': 'simulocean', # Or path to database file if using sqlite3.
+            'NAME': 'TEAKWOOD', # Or path to database file if using sqlite3.
             'USER': 'root', # Not used with sqlite3.
             'PASSWORD': '699622', # Not used with sqlite3.
             'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
@@ -61,14 +61,14 @@ elif HOSTNAME == "Ubuntu":
 # for production systems. RabbitMQ works better. You can config your own system by following 
 # the example below.
 
-elif HOSTNAME == "simulocean.ngchc.org":
+elif HOSTNAME == "TEAKWOOD.ngchc.org":
     SITE_ID = 2
     DEBUG = False
     SIMULOCEAN_AMQP = 'rabbitmq'
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'simulocean', # Or path to database file if using sqlite3.
+            'NAME': 'TEAKWOOD', # Or path to database file if using sqlite3.
             'USER': 'root', # Not used with sqlite3.
             'PASSWORD': '699622', # Not used with sqlite3.
             'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
@@ -84,7 +84,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'simulocean', # Or path to database file if using sqlite3.
+            'NAME': 'TEAKWOOD', # Or path to database file if using sqlite3.
             'USER': 'root', # Not used with sqlite3.
             'PASSWORD': '699622', # Not used with sqlite3.
             'HOST': 'localhost', # Set to empty string for localhost. Not used with sqlite3.
@@ -128,7 +128,7 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 
-# TODO this is a specific setup for simulocean since we don't have enough space on the VM.
+# TODO this is a specific setup for TEAKWOODsince we don't have enough space on the VM.
 # we have to rely on mounted external storeage for this.
 if HOSTNAME == "localhost:8000":
     MEDIA_ROOT = "/data/media/"
@@ -248,7 +248,7 @@ LOGGING = {
         'logfile': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': SIMULOCEAN_HOME + "/simulocean.logfile",
+            'filename': SIMULOCEAN_HOME + "/TEAKWOOD.logfile",
             'maxBytes': 10 * 1024 * 1024,
             'backupCount': 2,
             'formatter': 'standard',

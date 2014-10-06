@@ -2208,3 +2208,1263 @@ error: [Errno 111] Connection refused
 [21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
 [21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
 [21/May/2014 19:10:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 21:41:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 21:41:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 21:41:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 21:41:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[21/May/2014 23:18:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[21/May/2014 23:18:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:12:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:12:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:12:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:12:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:13:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:13:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:14:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:14:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:14:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:14:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:22:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:22:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:22:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:22:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:24:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:24:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:24:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:24:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:25:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:25:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:25:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:25:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:25:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:25:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:25:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:25:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:26:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:26:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:27:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:27:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:27:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:28:02] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[22/May/2014 14:28:02] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[22/May/2014 14:28:03] WARNING [django.request:142] Not Found: /favicon.ico
+[22/May/2014 14:28:03] WARNING [django.request:142] Not Found: /favicon.ico
+[22/May/2014 14:28:11] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[22/May/2014 14:28:11] ERROR [django.request:215] Internal Server Error: /simfactory/job/submitall/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 238, in job_submitall
+    job_submit(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[22/May/2014 14:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:31:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:31:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:32:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:32:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:33:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:17] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:33:17] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:33:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:33] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:33:33] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:33:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:33:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:33:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:33:59] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:33:59] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:34:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:34:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:34:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:34:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:45] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:35:45] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:35:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:46] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:35:46] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/May/2014 14:35:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:35:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:35:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:36:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:36:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:38:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:38:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:38:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:38:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:38:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:40:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:42:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:43:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:43:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:43:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:43:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:43:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:43:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:43:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:43:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:44:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:45:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:45:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:45:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:45:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:45:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:45:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:47:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:47:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:47:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:47:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:57:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:57:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:57:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:57:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:58:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:58:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:58:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:58:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:59:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 14:59:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 14:59:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:00:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:00:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:00:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:00:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:01:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:01:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:01:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:01:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:01:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:01:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:02:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:02:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:02:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:02:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:02:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:02:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:03:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:03:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:03:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:03:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:03:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:04:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:04:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:04:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:04:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:05:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:05:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:05:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:05:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:05:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:06:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:06:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:06:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:06:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:07:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:07:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:08:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:08:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:08:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:08:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:08:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:08:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:08:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:08:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:09:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:09:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:09:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:10:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:10:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:12:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:14:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:14:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:14:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:15:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:15:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:15:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:16:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:16:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:17:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:17:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:17:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:18:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:18:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:18:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:21:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:21:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:22:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:22:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:22:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:23:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:35] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:23:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:23:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:30:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:30:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:22] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:31:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:31:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:32:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:32:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:32:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:33:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/May/2014 15:33:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/May/2014 15:33:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 05:11:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 05:11:02] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[23/May/2014 07:08:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[23/May/2014 07:08:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/May/2014 07:08:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[23/May/2014 07:08:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[27/May/2014 01:47:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[27/May/2014 01:47:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[27/May/2014 01:47:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[27/May/2014 01:47:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[27/May/2014 01:47:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[27/May/2014 01:47:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[28/May/2014 23:52:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[28/May/2014 23:52:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[28/May/2014 23:52:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:15:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:15:50] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:16:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:16:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:16:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:16:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:16:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:17:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:14] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:17:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:17:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:17:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:17:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:21:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:21:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[06/Jun/2014 13:21:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[06/Jun/2014 13:21:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:17:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:17:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:17:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:17:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:17:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:17:59] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:18:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:18:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:18:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:18:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:57] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:20:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:57] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:20:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:58] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:20:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:20:58] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:21:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:21:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:21:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:21:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:21:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:54] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:21:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:54] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:21:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:21:56] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:21:56] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:22:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:22:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:55] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:22:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:55] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:22:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:22:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:23:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:23:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:23:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:23:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:24:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:04] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:24:04] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:24:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:24:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:24:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:24:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:24:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:29] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:24:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:24:29] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:27:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:27:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:27:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:27:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:27:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:27:58] WARNING [django.request:142] Not Found: /favicon.ico
+[15/Jul/2014 15:27:58] WARNING [django.request:142] Not Found: /favicon.ico
+[15/Jul/2014 15:28:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:09] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:28:09] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:28:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:28:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:28:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:37] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:28:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:52] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:54] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:28:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:54] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:28:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:56] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:28:56] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:28:56] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[15/Jul/2014 15:29:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:29:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:29:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:29:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:38:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:38:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[15/Jul/2014 15:38:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[15/Jul/2014 15:38:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[18/Jul/2014 08:27:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[18/Jul/2014 08:27:24] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[18/Jul/2014 08:27:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[18/Jul/2014 08:27:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:09:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:09:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:09:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:09:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:30] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:56] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/users/U5/P2/M5/MODELINPUT
+[22/Jul/2014 14:09:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:09:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:01] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:12] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:10:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:10:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:11:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:11:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:36] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:36] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:11:36] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:11:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:38] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:11:38] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:11:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:11:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:14:11] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:14:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:14:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:15:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:15:23] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:16:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:16:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:16:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:16:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:16:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:16:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:17:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[22/Jul/2014 14:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:06] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:32] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:17:32] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:17:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:34] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[22/Jul/2014 14:17:34] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[22/Jul/2014 14:17:34] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[23/Jul/2014 13:45:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:45:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:45:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:45:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:45:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:45:58] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:08] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:13] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:15] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:46:18] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:46:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:46:33] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[23/Jul/2014 13:46:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[23/Jul/2014 13:46:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:32:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:32:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:32:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:32:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:32:59] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[05/Oct/2014 00:32:59] ERROR [django.request:215] Internal Server Error: /simfactory/job/checkstatus/all/
+Traceback (most recent call last):
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 217, in job_checkstatusall
+    job_checkstatus(request, job.id, render=False)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/SCGATE/apps/simfactory/views.py", line 201, in job_checkstatus
+    t_job_checkstatus.delay(job.id)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/base.py", line 351, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/vir_env/lib/python2.6/site-packages/celery-3.1.11-py2.6.egg/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 461, in _ensured
+    interval_max)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 373, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 241, in connect
+    return self.connection
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 758, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/connection.py", line 713, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/vir_env/lib/python2.6/site-packages/kombu-3.0.15-py2.6.egg/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/connection.py", line 165, in __init__
+    self.transport = create_transport(host, connect_timeout, ssl)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 294, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/vir_env/lib/python2.6/site-packages/amqp-1.4.5-py2.6.egg/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[05/Oct/2014 00:32:59] WARNING [django.request:142] Not Found: /favicon.ico
+[05/Oct/2014 00:32:59] WARNING [django.request:142] Not Found: /favicon.ico
+[05/Oct/2014 00:33:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:16] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:17] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:21] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:27] WARNING [django.request:142] Not Found: /simfactory/machine/list/lsu.edu
+[05/Oct/2014 00:33:27] WARNING [django.request:142] Not Found: /simfactory/machine/list/lsu.edu
+[05/Oct/2014 00:33:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:33:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:33:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:33:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:09] INFO [utils.system:17] mkdir -p /home/alex/SCGATE/media/users/U5/P3
+[05/Oct/2014 00:34:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:34:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:10] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:34:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:20] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:39] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:34:54] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:35:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:35:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:35:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:35:09] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:36:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:36:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:36:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:36:32] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:36:32] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:36:32] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:37:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:37:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:37:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:37:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:37:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:37:49] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:37:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:37:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:38:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:31] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:38:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:42] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:44] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:44] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:38:44] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:38:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:45] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:45] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:38:45] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:38:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:38:48] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:38:48] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:39:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:39:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:39:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:19] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:29] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:39:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:39:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:00] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:03] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:04] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:04] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:04] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:05] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:05] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:05] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:07] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:07] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:07] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:38] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:41] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:48] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:40:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:40:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:41:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:25] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:26] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:27] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:41:27] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:41:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:28] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:41:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[05/Oct/2014 00:41:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png
+[05/Oct/2014 00:41:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 00:41:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings.png

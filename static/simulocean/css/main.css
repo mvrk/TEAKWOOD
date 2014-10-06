@@ -30,7 +30,7 @@ iframe {
 
 td {
     font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /*select, input {*/
@@ -504,7 +504,7 @@ div#NaviTabs a:link, div#NaviTabs a:visited {
 
 #NaviTabs ul#MainTabs a:link, #NaviTabs ul#MainTabs a:visited {
     float: left;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     padding: 3px 8px 3px 8px;
     margin: 0;

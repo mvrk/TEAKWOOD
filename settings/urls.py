@@ -21,7 +21,7 @@ urlpatterns = patterns('',
     # url(r'^google/login-complete/$', 'django_openid_auth.views.login_complete', name='openid-complete'),
     # url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/', }, name='google-logout'),
 
-    # simulocean urls
+    # TEAKWOODurls
     url(r'^', include('apps.simulocean.urls')),
 
     # workflow urls

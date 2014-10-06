@@ -158,7 +158,7 @@
                                 <a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
                         {% else %}
                             <li><a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
-                            <li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>
+{#                            <li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>#}
 
                         {% endif %}
 
@@ -180,24 +180,24 @@
                                         <div class="Block">
                                             <table width="100%" border="0" cellspacing="0px" cellpadding="0">
                                                 <tr>
-                                                    <td valign="top" class="td_leftmenu">
-                                                        <div class="leftmenu">
-                                                            {% block navi_left %}
-                                                                <ul id="menu">
-                                                                    <li>
-                                                                        {% block shortcuts_title %}Scgate
-                                                                            About{% endblock %}
-                                                                    </li>
-                                                                </ul>
-                                                                {% block shortcuts %}
-                                                                    {% if not user.is_authenticated %}
-                                                                        {% block urllinks %}
-                                                                        {% endblock %}
-                                                                    {% endif %}
-                                                                {% endblock %}
-                                                            {% endblock %}
-                                                        </div>
-                                                    </td>
+{#                                                    <td valign="top" class="td_leftmenu">#}
+{#                                                        <div class="leftmenu">#}
+{#                                                            {% block navi_left %}#}
+{#                                                                <ul id="menu">#}
+{#                                                                    <li>#}
+{#                                                                        {% block shortcuts_title %}Scgate#}
+{#                                                                            About{% endblock %}#}
+{#                                                                    </li>#}
+{#                                                                </ul>#}
+{#                                                                {% block shortcuts %}#}
+{#                                                                    {% if not user.is_authenticated %}#}
+{#                                                                        {% block urllinks %}#}
+{#                                                                        {% endblock %}#}
+{#                                                                    {% endif %}#}
+{#                                                                {% endblock %}#}
+{#                                                            {% endblock %}#}
+{#                                                        </div>#}
+{#                                                    </td>#}
                                                     <td width="8px"></td>
                                                     <td id="content" height="540px" valign="top">
                                                         <div class="navbar navbar-static-top">
