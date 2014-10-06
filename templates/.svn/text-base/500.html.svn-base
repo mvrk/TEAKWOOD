@@ -1,9 +1,0 @@
-{% extends "template_index.html" %}
-{% block title %}Server error (500){% endblock %}
-{% block jumbotron %}
-    <h4>
-        There's been an error. It's been reported to the site administrators
-        via e-mail and should be fixed shortly. Thanks for your patience.
-    </h4>
-{% endblock %}
-

@@ -1,2 +1,0 @@
-{% for poi in poi_list %}{{ poi.lat }} {{ poi.lon }} "{{ poi.provider }} ({{ poi.source }})"
-{% endfor %}

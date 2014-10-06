@@ -1,3 +1,0 @@
-lat     lon     icon    iconSize        iconOffset      title   description     popupSize
-{% for poi in poi_list %}{{ poi.lat }}  {{ poi.lon }}  http://www.openlayers.org/dev/img/marker.png  21,25  -10,-25  {{ poi.title }}  {{ poi.description }} 200,80
-{% endfor %}

@@ -1,9 +1,0 @@
-{% extends "template.html" %}
-
-{% block title %}Invalid request{% endblock %}
-
-{% block content %}
-
-    <h2>Invalid request</h2>
-
-{% endblock %}

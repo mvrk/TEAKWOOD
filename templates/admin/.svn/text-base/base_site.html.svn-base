@@ -1,9 +1,0 @@
-{% extends "admin/base.html" %}
-
-{% block title %}{{ title }}{% endblock %}
-
-{% block branding %}
-    <h1 id="site-name">Control Panel</h1>
-{% endblock %}
-
-{% block nav-global %}{% endblock %}
