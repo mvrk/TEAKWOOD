@@ -7,7 +7,7 @@ from django.db import models
 from django.db.models import Q
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.views.generic import ListView
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.workflow.models import Project
 
 
@@ -162,5 +162,5 @@ class SimeshPOI(object):
                 print self.x[j][i], self.y[j][i]
 
                 # if __name__ == "__main__":
-                #     poi = SimeshPOI(grd_file="new02b.grd", poi_file="simulocean.poi", obs_file='simulocean.obs')
+                #     poi = SimeshPOI(grd_file="new02b.grd", poi_file="teakwood.poi", obs_file='teakwood.obs')
                 #     poi.delft3d_obs_file()

@@ -3,64 +3,62 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="Robots" content="index,follow"/>
-    <link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}simulocean/img/favicon1.png"/>
-    <title>{% block title %}Scgate-Faciliate your computing task{% endblock %}</title>
+    <link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}teakwood/img/favicon1.png"/>
+    <title>{% block title %}Teakwood-Faciliate your computing task{% endblock %}</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
     {% block local_js %}{% endblock %}
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
           rel="stylesheet">
-{#        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"#}
+{#        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/3.2.0/css/bootstrap-responsive.min.css"#}
 {#              rel="stylesheet">#}
-{#    <link href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css"#}
+{#    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"#}
 {#            rel="stylesheet">#}
     <link rel="stylesheet" type="text/css"
-          href="{{ STATIC_URL }}simulocean/css/index.css"/>
+          href="{{ STATIC_URL }}teakwood/css/index.css"/>
     {% block local_css %}{% endblock %}
 </head>
 
 {% load activetab_tags %}
-{% url simulocean_home as home %}
-{% url simulocean_about as about %}
-{% url simulocean_services as services %}
-{% url simulocean_tutorials as tutorials %}
-{% url simulocean_software as software %}
-{% url simulocean_license as license %}
+{% url teakwood_home as home %}
+{% url teakwood_about as about %}
+{% url teakwood_services as services %}
+{% url teakwood_tutorials as tutorials %}
+{% url teakwood_software as software %}
+{% url teakwood_license as license %}
 {% url workflow_projectlist as projectlist %}
-{% url simulocean_contact as contact %}
-{% url simulocean_doc_detached as doc_detached %}
+{% url teakwood_contact as contact %}
+{% url teakwood_doc_detached as doc_detached %}
 
 <body>
 <div class="container">
     <div class="masthead">
-        <a href="{{ home }}"><img style="padding-bottom:10px;" src="{{ STATIC_URL }}simulocean/img/logo.png"/></a>
+        <a href="{{ home }}"><img style="padding-bottom:10px;" src="{{ STATIC_URL }}teakwood/img/logo.png"/></a>
         <div style="float: right">
             {% if user.is_authenticated %}
-                <img src="{{ STATIC_URL }}simulocean/img/user.png"/>
-                <span> Welcome to Scgate, {{ user.username }} ! </span>
+                <img src="{{ STATIC_URL }}teakwood/img/user.png"/>
+                <span> Welcome to the Teakwood, {{ user.username }} ! </span>
                 <a class="btn btn-primary btn-mini" href="{% url auth_logout %}" title="Sign out">
                     <i class="icon-off icon-white"></i><span> Sign Out</span></a>
                 <a class="btn btn-primary btn-mini" href="{% url workflow_projectlist %} " title="My Projects">
-                    <i class="icon-th-large icon-white"></i><span> My Projects</span>
-                </a>
-{#                {% url workflow_projectlist as projectlist %}#}
+                    <i class="icon-th-large icon-white"></i><span>My Projects</span></a>
+           {#  {% url workflow_projectlist as projectlist %} #}
             {% else %}
                 <a class="btn btn-primary btn-mini" href="{% url auth_login %}" title="Sign in">
-                    <i class="icon-user icon-white"></i><span> Sign In</span>
-                </a>
+                    <i class="icon-user icon-white"></i><span> Sign In</span></a>
                 <a class="btn btn-primary btn-mini" href="{% url registration_register %}" title="Register">
                     <i class="icon-edit icon-white"></i><span> Register</span>
                 </a>
             {% endif %}
         </div>
-{#              <h3 class="muted">Scgate</h3>#}
+     <!--<h3 class="mutTeakwoodgate " h3>-->
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <ul class="nav">
                         <li class="{% active request '^/$' %}"><a href="{{ home }}">Home</a></li>
-                        <li class="{% active request '^/about/services/$' %}"><a href="{{ services }}">Services</a></li>
+                        <!--<li class="{% active request '^/about/services/$' %}"><a href="{{ services }}">Services</a></li>-->
                         <li class="{% active request '^/about/contact/$' %}"><a href="{{ contact }}">Forum</a></li>
                         <li class="{% active request '^/about/software/$' %}"><a href="{{ software }}">Software</a></li>
                         <li class="{% active request '^/about/tutorials/$' %}"><a href="{{ tutorials }}">Tutorials</a> </li>
@@ -69,37 +67,29 @@
                 </div>
             </div>
         </div>
-        <!-- /.navbar -->
     </div>
-    <!-- Jumbotron -->
     <div>
         {% block marketing %}
         {% endblock %}
     </div>
-
-    <!-- Jumbotron -->
     {% block jumbotron %}
     {% endblock %}
-    <!-- Example row of columns -->
     <div class="well-large">
         {% block components %}
         {% endblock %}
     </div>
+
     <hr>
-
     <div class="foot" style="text-align: center">
-
         {% block footer %}
-{#            <a href="http://www.csc.lsu.edu" target="_blank"#}
-{#               title="Department of Computer Science at Louisiana State University">#}
-                <img style="height:35px" src="{{ STATIC_URL }}simulocean/img/logo.png" alt="lsu-cct"/></a>
+           <a href="https://github.com/mvrk/TEAKWOOD" target="_blank"
+              title="CLICK TO GET THE TEAKWOOD SOURCE CODE">
+                <img style="height:35px" src="{{ STATIC_URL }}teakwood/img/logo.png" alt="lsu-cct"/></a>
         {% endblock %}
-        <br/><br/>
-
-        <div class="container">
-            <p class="muted">Scgate is maintained by Rui Guo, &copy;LSUEECS-RUI GUO 2014</p>
+        <div class="container"></div>
+            <div class = "center">
+            <p>Teakwood is an ongoing product that maintained by Rui Guo from Louisiana State University, &copy;LSUEECS-RUI GUO 2014 </p>
         </div>
     </div>
-</div>
 </body>
 </html>

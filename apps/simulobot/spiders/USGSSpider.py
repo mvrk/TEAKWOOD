@@ -8,7 +8,7 @@ import pytz
 
 
 DB_SETTINGS = {
-    'DATABASE_NAME': 'simulocean',
+    'DATABASE_NAME': 'teakwood',
     'DATABASE_USER': 'root',
     'DATABASE_PASSWORD': 'ngchc',
     'DATABASE_HOST': 'localhost',

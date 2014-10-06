@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `django_site` (
 
 INSERT INTO `django_site` (`id`, `domain`, `name`) VALUES
 (1, 'localhost:8090', 'Jian''s Laptop'),
-(2, 'localhost:8000', 'Simulocean'),
+(2, 'localhost:8000', 'Teakwood'),
 (3, 'Ubuntu', 'Alex''s Laptop');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -2,7 +2,7 @@
 
 """
 !!! CAUTIOUS !!!
-This script will reset Scgate database. Only run it when you
+This script will reset Teakwood database. Only run it when you
 know for sure what you are doing. Everything in your database
 will be gone once you run this. Database information are from
 Django settings file. No input is required for this script.
@@ -27,7 +27,7 @@ SIMULOCEAN_LOGO = "\n\
 ===========================================================\n"
 
 
-class SimuloceanInstaller(object):
+class TeakwoodInstaller(object):
     def __init__(self):
         """all attributes are private
         """
@@ -69,7 +69,7 @@ class SimuloceanInstaller(object):
     def backup_db(self):
         """back up database
         """
-        print "back up simulocean database ..."
+        print "back up teakwood database ..."
         cmd_backup_db = 'mysqldump -u%s -p%s %s > %s/log/%s_%s.sql' \
                         % (self.__db_user,
                            self.__db_password,
@@ -82,7 +82,7 @@ class SimuloceanInstaller(object):
     def drop_db(self):
         """drop old database
         """
-        print "drop simulocean database ..."
+        print "drop teakwood database ..."
         cmd_drop_db = 'mysqladmin -u%s -p%s drop %s' % (self.__db_user,
                                                         self.__db_password,
                                                         self.__db_name)
@@ -91,7 +91,7 @@ class SimuloceanInstaller(object):
     def create_db(self):
         """create a new database
         """
-        print "create simulocean database ..."
+        print "create teakwood database ..."
         cmd_create_db = 'mysqladmin -u%s -p%s create %s' % (self.__db_user,
                                                             self.__db_password,
                                                             self.__db_name)
@@ -112,7 +112,7 @@ class SimuloceanInstaller(object):
         """check all the sql files under settings/init_sql to see
         if we need to initialize any tables.
         this shall be only run once to initialized the database.
-        initialize database for Scgate with sql files under settings/init_sql.
+        initialize database for Teakwood with sql files under settings/init_sql.
         """
         sql_files = os.listdir(self.__db_initsql_dir)
         for f in sql_files:
@@ -126,10 +126,10 @@ class SimuloceanInstaller(object):
             subprocess.call(cmd_init_db, shell=True)
 
     def clean_up(self):
-        """check all the sql files under simulocean/sql to see
+        """check all the sql files under teakwood/sql to see
         if we need to initialize any tables.
         this shall be only run once to initialized the database.
-        initialize database for Scgate with sql files under simulocean/init_sql.
+        initialize database for Teakwood with sql files under teakwood/init_sql.
         """
         print "cleaning up media/users directory ..."
         cmd_rm_dir = 'rm -rf %s/users/*' % (settings.MEDIA_ROOT)
@@ -139,7 +139,7 @@ class SimuloceanInstaller(object):
         subprocess.call(cmd_mk_dir, shell=True)
 
     def run(self):
-        """set up Scgate
+        """set up Teakwood
         """
         print SIMULOCEAN_LOGO
         self.clean_up()
@@ -153,5 +153,5 @@ class SimuloceanInstaller(object):
 
 
 if __name__ == "__main__":
-    installer = SimuloceanInstaller()
+    installer = TeakwoodInstaller()
     installer.run()

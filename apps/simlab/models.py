@@ -1,6 +1,6 @@
 from django.db import models
 from django.db.models import Q
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.simfactory.models import Job
 import logging
 log = logging.getLogger(__name__)

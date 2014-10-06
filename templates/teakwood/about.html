@@ -1,0 +1,98 @@
+{% extends "template_index.html" %}
+{#{% block page_title %}#}
+{#    <img class="infobox" src="{{ STATIC_URL }}teakwood/img/teakwood.png"/>About Teakwood#}
+{#{% endblock %}#}
+
+{% block components %}
+    <fieldset>
+        <legend><h3>Vision</h3></legend>
+        <p>
+            Teakwood aims to help scientist using open sources tools easily.
+        </p>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Design &amp; Implementation</h3></legend>
+        <p>
+          Teakwood is a web-based deployment and visualization framework that provides:
+        </p>
+        <div>
+            <p><img src="{{ STATIC_URL }}teakwood/img/bullet_go.png"/>projects and coastal model management,</p>
+
+            <p><img src="{{ STATIC_URL }}teakwood/img/bullet_go.png"/>numerical data interpolators,</p>
+
+            <p><img src="{{ STATIC_URL }}teakwood/img/bullet_go.png"/>output visualization,</p>
+
+            <p><img src="{{ STATIC_URL }}teakwood/img/bullet_go.png"/>report generation,</p>
+
+            <p><img src="{{ STATIC_URL }}teakwood/img/bullet_go.png"/>model verification and validation,</p>
+        </div>
+
+
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>About me</h3></legend>
+
+        <table class="table table-hover table-striped ">
+            <thead>
+            <th>Name</th>
+            <th>Contact</th>
+
+            <th width="60%">Brief Bio</th>
+            </thead>
+
+            <tbody>
+
+            <tr>
+                <td>Rui Guo</td>
+                <td><a href="mailto:guojiarui@gmail.com">guojiarui@gmail.com</a></td>
+                <td>
+                    Rui Guo is a graduate student from <a href="http://www.csc.lsu.edu/" target="_blank">
+                    Computer Science and Engineering Division</a> at <a href="http://www.lsu.edu/" target="_blank">LSU</a>, Majoring in Computer Science. He is interested in big data analysis related stuff, cloud computing and visual design.
+                    He believes the ability to chose right tools and packages leads to an efficient programmer. Besides working and study, He is an energy guy. Outdoor sports is his favorite, playing basketball is his weekly sport.
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <br/><br/>
+    <fieldset>
+        <legend><h3>Contact</h3></legend>
+        Please feel free to send your questions, suggestions, comments, and feature requests to our public google groups
+        <a href="https://groups.google.com/forum/#!forum/teak-wood">Teakwood</a>.
+    </fieldset>
+    <br/><br/>
+    <hr>
+    <div>
+        <p>Technologies and tools that used in this project. No ranking from right to left.</p>
+          <a href="http://fedoraproject.org/" target="_blank"><img style="height:70px; border:0; float:right"
+                                                              src="http://tdistler.com/media/images/Fedora_Logo.gif"
+                                                              border="0"
+                                                              alt="Powered by fedora." title="Powered by fedora"/></a><a href="http://www.djangoproject.com/" target="_blank"><img style="height:54px; border:0;float:right"
+                                                                     src="https://www.djangoproject.com/m/img/badges/djangopowered126x54.gif"
+                                                                     border="0"
+                                                                     alt="Powered by Django."
+                                                                     title="Powered by Django"/></a>
+        <a href="http://www.mysql.com/" target="_blank"><img style="height:54px; border:0;float:right"
+                                                             src="http://www.mysql.com/common/logos/powered-by-mysql-125x64.png"
+                                                             border="0"
+                                                             alt="Powered by MySQL." title="Powered by MySQL"/></a>
+        <a href="http://www.apache.org/" target="_blank"><img style="height:54px; border:0; float:right"
+                                                              src="{{ STATIC_URL }}teakwood/img/logo_apache.png"
+                                                              border="0"
+                                                              alt="Powered by Apache." title="Powered by Apache"/></a>
+        <a href="http://www.python.org/" target="_blank"><img style="height:54px; border:0; float:right"
+                                                              src="http://python.net/~goodger/projects/graphics/python/newlogo-repro.png"
+                                                              border="0"
+                                                              alt="Powered by Python." title="Powered by Python"/></a>
+         <a href="http://redis.io/" target="_blank"><img style="height:70px; border:0; float:right"
+                                                              src="http://hsto.org/files/c99/019/0d1/c990190d149b4458838f95dff159c9dc.jpg"
+                                                              border="0"
+                                                              alt="Powered by redis." title="Powered by redis"/></a>
+
+
+    </div>
+    <br/><br/>
+{% endblock %}

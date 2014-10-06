@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# simulocean documentation build configuration file, created by
+# teakwood documentation build configuration file, created by
 # sphinx-quickstart on Fri Mar 22 11:27:27 2014.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -40,8 +40,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'simulocean report'
-copyright = u'2014, © Copyright 2014, The Scgate deployment and visualization framework for coastal modeling is © 2014 the Coastal Hazards Research Collaboratory and distributed under the GNU Lesser General Public License (LGPL) v 3.0. This website makes use of the wonderful icon sets by Studio MX and FAMFAMFAM. The icons used are distributed following the original license respectively. The computational resources are provided by the Coastal Hazards Research Collaboratory, the Center for Computational and Technology, and the Louisiana Optical Network Initiative.'
+project = u'teakwood report'
+copyright = u'2014, © Copyright 2014, The Teakwood deployment and visualization framework for coastal modeling is © 2014 the Coastal Hazards Research Collaboratory and distributed under the GNU Lesser General Public License (LGPL) v 3.0. This website makes use of the wonderful icon sets by Studio MX and FAMFAMFAM. The icons used are distributed following the original license respectively. The computational resources are provided by the Coastal Hazards Research Collaboratory, the Center for Computational and Technology, and the Louisiana Optical Network Initiative.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -103,14 +103,14 @@ html_theme = 'nature'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Scgate Navigation Page'
+html_title = 'Teakwood Navigation Page'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = Simulocean_logo.jpg
+#html_logo = Teakwood_logo.jpg
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -164,7 +164,7 @@ html_use_index = False
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'simuloceandoc'
+htmlhelp_basename = 'teakwooddoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -185,7 +185,7 @@ latex_elements = { 'classoptions': ',openany, oneside', 'babel' : '\\usepackage[
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'simulocean.tex', u'Automatic Scgate Report',
+  ('index', 'teakwood.tex', u'Automatic Teakwood Report',
    u'user name', 'manual'),
 ]
 
@@ -214,8 +214,8 @@ latex_domain_indices = False
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'simulocean', u'simulocean Documentation',
-     [u'Scgate Group'], 1)
+    ('index', 'teakwood', u'teakwood Documentation',
+     [u'Teakwood Group'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,8 +228,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'simulocean', u'simulocean Documentation',
-   u'Scgate Group', 'simulocean', 'One line description of project.',
+  ('index', 'teakwood', u'teakwood Documentation',
+   u'Teakwood Group', 'teakwood', 'One line description of project.',
    'Miscellaneous'),
 ]
 

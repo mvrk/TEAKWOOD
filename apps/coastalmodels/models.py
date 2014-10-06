@@ -3,7 +3,7 @@ from django.db import models
 from django.utils.datastructures import SortedDict
 from django.views.generic import ListView
 from django.db.models import Q
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.workflow.models import Project
 from settings.settings import MEDIA_ROOT
 import logging
@@ -63,12 +63,12 @@ class CoastalModelList(ListView):
 
 SIMULOCEAN_POI = [
     ('domain', 'use domain'),
-    ('file', 'file (simulocean.poi)'),
+    ('file', 'file (teakwood.poi)'),
 ]
 
 
 class ModelInput(CommonInfo):
-# associated project (important to link this to other parts of simulocean)
+# associated project (important to link this to other parts of teakwood)
     project = models.ForeignKey(Project, related_name="%(class)s_related")
     model = models.ForeignKey(CoastalModel)
     # extend the authentication modules; group shares the project
@@ -446,8 +446,8 @@ class Delft3DConfig(CommonInfo):
     a0_correction = models.FloatField(default=0.0, help_text="(A0 correction water level boundaries for nesthd2)")
 
     # madel specific controlling parameters
-    # config_name = models.CharField("Config file name", max_length=60, null=False, blank=False, default="simulocean.ini")
-    # mdf_file = models.CharField("MDF file name", max_length=60, null=True, blank=True, default="simulocean.mdf")
+    # config_name = models.CharField("Config file name", max_length=60, null=False, blank=False, default="teakwood.ini")
+    # mdf_file = models.CharField("MDF file name", max_length=60, null=True, blank=True, default="teakwood.mdf")
     nested_model = models.BooleanField("Nested model", default=False)
 
     # # the following fields are relevant to nested runs

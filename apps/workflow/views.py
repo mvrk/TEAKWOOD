@@ -58,7 +58,7 @@ def project_export(request, output_format):
     output = serializers.serialize(output_format, pl)
     # sticks in a POST or renders empty form
     response = HttpResponse(output, mimetype='text/txt')
-    response["Content-Disposition"] = "attachment; filename= simulocean_project.%s" % output_format
+    response["Content-Disposition"] = "attachment; filename= teakwood_project.%s" % output_format
     return response
 
 

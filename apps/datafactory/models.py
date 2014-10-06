@@ -6,7 +6,7 @@ from django.db import models
 from django.db.models import Q
 from django.contrib.auth.models import User, Group
 from django.shortcuts import get_object_or_404
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 
 import math
 

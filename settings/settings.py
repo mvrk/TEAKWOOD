@@ -212,7 +212,7 @@ INSTALLED_APPS = (
     #    'olwidget',
     'registration',
     'djcelery',
-    'apps.simulocean',
+    'apps.teakwood',
     'apps.simfactory',
     'apps.simlab',
     'apps.coastalmodels',
@@ -341,7 +341,7 @@ elif SIMULOCEAN_AMQP == 'redis':
 # Django Email
 #EMAIL_HOST = 'localhost:8000'
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_HOST_USER = 'simulocean@localhost:8000'
+#EMAIL_HOST_USER = 'teakwood@localhost:8000'
 #EMAIL_PORT = 25
 
 # here you can define a system wide spatial region for your site

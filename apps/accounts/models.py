@@ -2,7 +2,7 @@ from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.shortcuts import redirect
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 
 # JQuery Themes http://jqueryui.com/themeroller/
 THEMEROLLER = [
@@ -40,7 +40,7 @@ class UserProfile(models.Model):
     last_name = models.CharField(max_length=32, null=True, blank=True)
     affiliation = models.CharField(max_length=256, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
-    theme = models.CharField("Scgate theme", max_length=32,
+    theme = models.CharField("Teakwood theme", max_length=32,
                              default='smoothness',
                              choices=THEMEROLLER, null=True, blank=True)
     public_profile = models.BooleanField("Visible to others", default=True)

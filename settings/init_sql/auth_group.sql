@@ -20,6 +20,6 @@ CREATE TABLE `auth_group` (
 
 LOCK TABLES `auth_group` WRITE;
 /*!40000 ALTER TABLE `auth_group` DISABLE KEYS */;
-INSERT INTO `auth_group` VALUES (2,'development'),(1,'simulocean');
+INSERT INTO `auth_group` VALUES (2,'development'),(1,'teakwood');
 /*!40000 ALTER TABLE `auth_group` ENABLE KEYS */;
 UNLOCK TABLES;

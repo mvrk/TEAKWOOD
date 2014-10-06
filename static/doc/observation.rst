@@ -8,13 +8,13 @@ Coastal Data Factory
     data in the northern gulf and beyond. CDF provides an on-demand data grabbing engine, which allows users to easily
     fetch data from both external data sources(e.g.NOAA, USGS) and internal CDF data center, and generates formatted data
     for future use. The CDF client could be easily adapted as an independent tool for grabbing coastal
-    data. In our Scgate framework, we use CDF to verify and validate simulation output.
+    data. In our Teakwood framework, we use CDF to verify and validate simulation output.
 
 Coastal data factory(CDF) provides the following functions:
 
 Grabbing observational data.
 -------------------------------------
-Scgate provides an on-demand data grabbing engine, so that user can easily fetch time series data from public data
+Teakwood provides an on-demand data grabbing engine, so that user can easily fetch time series data from public data
 sources(e.g.NOAA USGS).
 
 Host your data.

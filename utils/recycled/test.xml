@@ -45,7 +45,7 @@
         <server>localhost</server>
         <Checkpoint>u</Checkpoint>
         <ctime>1359904594</ctime>
-        <Error_Path>localhost.localdomain:/var/www/html/Simulocean/media/simulations/J0004/J0004.err</Error_Path>
+        <Error_Path>localhost.localdomain:/var/www/html/Teakwood/media/simulations/J0004/J0004.err</Error_Path>
         <exec_host>localhost/3+localhost/2+localhost/1+localhost/0</exec_host>
         <exec_port>15003+15003+15003+15003</exec_port>
         <Hold_Types>n</Hold_Types>
@@ -53,7 +53,7 @@
         <Keep_Files>n</Keep_Files>
         <Mail_Points>bea</Mail_Points>
         <mtime>1359904594</mtime>
-        <Output_Path>localhost.localdomain:/var/www/html/Simulocean/media/simulations/J0004/J0004.out</Output_Path>
+        <Output_Path>localhost.localdomain:/var/www/html/SiTeakwoodedia/simulations/J0004/J0004.out</Output_Path>
         <Priority>0</Priority>
         <qtime>1359904594</qtime>
         <Rerunable>True</Rerunable>
@@ -81,7 +81,7 @@
         <queue_type>E</queue_type>
         <comment>Job started on Sun Feb 03 at 09:16</comment>
         <etime>1359904594</etime>
-        <submit_args>/var/www/html/Simulocean/media/simulations/J0004/J0004.pbs</submit_args>
+        <submit_args>/var/www/html/Teakwood/media/simulations/J0004/J0004.pbs</submit_args>
         <start_time>1359904594</start_time>
         <Walltime>
             <Remaining>3352</Remaining>

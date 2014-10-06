@@ -40,7 +40,7 @@
             var pois = new OpenLayers.Layer.Text("My Points",
                     {
                         {# TODO: create hash table to hide the direct link #}
-                        location: "{{ url }}{{ MEDIA_URL }}data/station/simulocean_station.csv",
+                        location: "{{ url }}{{ MEDIA_URL }}data/station/teakwood_station.csv",
                         projection: map.displayProjection
                     });
 
@@ -90,7 +90,7 @@
                 </a> are
                 collected.
                 The active station list is continuously updated at
-                <a href="{% url datafactory_stationlist %}" target="_blank">Scgate data factory</a>.
+                <a href="{% url datafactory_stationlist %}" target="_blank">Teakwood data factory</a>.
                 Only the stations deployed in or near the North Gulf of Mexico are shown in the map view.
 
             </div>
@@ -115,8 +115,8 @@
     Active station map view
 {% endblock %}
 {% block hint_content %}
-    This pages provides a map view of all the supported active stations on Scgate data factory.
-    The active station list is continuously updated at Scgate data factory. Only active stations from <a
+    This pages provides a map view of all the supported active stations on Teakwood data factory.
+    The active station list is continuously updated at Teakwood data factory. Only active stations from <a
         href='http://www.ndbc.noaa.gov/activestations.shtml'
         target='_blank'>NDBC <img src='http://labs.google.com/ridefinder/images/mm_20_purple.png'/></a> and <a
         href='http://tidesandcurrents.noaa.gov/cdata/StationList?type=Current+Data&filter=active'

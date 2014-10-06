@@ -15,7 +15,7 @@ from django.views.generic import ListView
 from django.core.exceptions import ObjectDoesNotExist
 from apps.simesh.models import SimeshPOI
 from apps.workflow.models import Project
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.coastalmodels.models import ModelInput, CoastalModel
 from settings.settings import MEDIA_ROOT
 from utils.system import render_to_file, rsync, symlink_all, scp
@@ -138,7 +138,7 @@ class Machine(CommonInfo):
     machinearch = models.CharField("Machine architecture", max_length=10,
                                    default="other_cpu",
                                    choices=CPU, )
-    # simulocean extension (not defined in DRMAA)
+    # teakwood extension (not defined in DRMAA)
     location = models.CharField(max_length=60, null=False, blank=False)
     # description = models.CharField(max_length=60, null=False, blank=False)
     webpage = models.CharField("Web page", max_length=60, null=False, blank=False)
@@ -189,7 +189,7 @@ class Machine(CommonInfo):
         # finishtime = models.DateTimeField("finish time", null=True, blank=True)
         #
         # accountingid = models.CharField("account ID", max_length=64, null=True, blank=True)
-        # # simulocean extension (not defined in DRMAA)
+        # # teakwood extension (not defined in DRMAA)
         # local_dir = models.CharField("local job directory", max_length=256, null=True, blank=True)
         # remote_dir = models.CharField("remote job directory", max_length=256, null=True, blank=True)
         # script_template = models.ForeignKey(ScriptTemplate, null=True, blank=True)
@@ -290,7 +290,7 @@ class Job(CommonInfo):
     finishtime = models.DateTimeField("finish time", null=True, blank=True)
 
     accountingid = models.CharField("account ID", max_length=64, null=True, blank=True)
-    # simulocean extension (not defined in DRMAA)
+    # teakwood extension (not defined in DRMAA)
     local_dir = models.CharField("local job directory", max_length=256, null=True, blank=True)
     remote_dir = models.CharField("remote job directory", max_length=256, null=True, blank=True)
     script_template = models.ForeignKey(ScriptTemplate, null=True, blank=True)
@@ -323,7 +323,7 @@ class Job(CommonInfo):
             'contact': self.user.email,
             'url': 'http://localhost:8000:8080/%s/' % self.name,
             'date': self.time_created.date(),
-            'keyword': 'simulocean %s %s %s' % (self.model_input.model, self.model_input.name, self.name)
+            'keyword': 'teakwood %s %s %s' % (self.model_input.model, self.model_input.name, self.name)
         })
         response = urllib2.urlopen(url, params).read()
         log.info(response)
@@ -374,8 +374,8 @@ class Job(CommonInfo):
 
             #TODO this is Delft3D specific. need to generalize
     def prepare_inputdata(self):
-        simulocean_poi = os.path.normpath("%s/%s/simulocean.poi" % (MEDIA_ROOT, self.local_dir))
-        simulocean_obs = os.path.normpath("%s/%s/simulocean.obs" % (MEDIA_ROOT, self.local_dir))
+        teakwood_poi = os.path.normpath("%s/%s/teakwood.poi" % (MEDIA_ROOT, self.local_dir))
+        teakwood_obs = os.path.normpath("%s/%s/teakwood.obs" % (MEDIA_ROOT, self.local_dir))
 
         grd_file = glob(os.path.normpath("%s/%s/*.grd" % (MEDIA_ROOT, self.local_dir)))
         if len(grd_file) == 0:
@@ -384,11 +384,11 @@ class Job(CommonInfo):
             log.warn("there are more than one grid files")
         else:
             if self.model_input.poi_type == 'file':
-                if os.path.exists(simulocean_poi):
-                    poi = SimeshPOI(grd_file=grd_file[0], poi_file=simulocean_poi, obs_file=simulocean_obs)
+                if os.path.exists(teakwood_poi):
+                    poi = SimeshPOI(grd_file=grd_file[0], poi_file=teakwood_poi, obs_file=teakwood_obs)
                     poi.delft3d_obs_file()
                 else:
-                    log.warning("User %s set POI type to file by didn't upload simulocean.poi." % self.user.username)
+                    log.warning("User %s set POI type to file by didn't upload teakwood.poi." % self.user.username)
 
                     # def poi_from_domain_id(self, domain_id=None):
                     #     try:
@@ -399,20 +399,20 @@ class Job(CommonInfo):
                     #         raise
 
 
-                    # we only rsync simulocean.out and simulocean.err back to the web server.
+                    # we only rsync teakwood.out and teakwood.err back to the web server.
 
     def scp_to_server(self):
         try:
             # src_dir = "%s@%s:%s" % (self.machine.account, self.machine.hostname,
             #                         os.path.normpath(
-            #                             "%s/%s/simulocean.out" % (self.machine.workingdirectory, self.name)))
+            #                             "%s/%s/teakwood.out" % (self.machine.workingdirectory, self.name)))
             server = os.path.normpath("%s/%s" % (MEDIA_ROOT, self.local_dir))
             # rsync(src_dir, rsync_to_dest, block=True)
 
             # scp to the web server
             src_dir = "%s@%s:%s" % (self.machine.account, self.machine.hostname,
                                     os.path.normpath(
-                                        "%s/%s/simulocean.*" % (self.machine.workingdirectory, self.name)))
+                                        "%s/%s/teakwood.*" % (self.machine.workingdirectory, self.name)))
             scp(src_dir, server, block=True)
 
             # rsync to the storage to serve the file
@@ -422,7 +422,7 @@ class Job(CommonInfo):
             #     # this is only for the sake of development.
             #         ssh_cmd = None
             #
-            #         src = os.path.normpath("%s/simulocean.*" % server)
+            #         src = os.path.normpath("%s/teakwood.*" % server)
             #
             #         rsync_to_dest = "%s@%s:%s/%s" % (
             #             self.machine.storageuser, self.machine.storagehost, self.machine.storagedirectory, self.name)
@@ -430,12 +430,12 @@ class Job(CommonInfo):
             #         rsync(src, rsync_to_dest, ssh_cmd=ssh_cmd, rsync_cmd='rsync',
             #               rsync_options=self.machine.rsyncoptions, block=True)
             #
-            #         if self.group.name == 'simulocean':
+            #         if self.group.name == 'teakwood':
             #             self.send_metadata()
             #     else:
             #         log.error("rsync to storage failed ! storage system settings are not complete.")
             # else:
-            #     log.warn("simulocean won't be able to serve files without a storage system running")
+            #     log.warn("teakwood won't be able to serve files without a storage system running")
             # if we have a vizscript we will try to rsync data back and visualize
             if self.script_template.viz_scriptname and self.script_template.data_file:
                 src_dir = "%s@%s:%s" % (self.machine.account, self.machine.hostname,
@@ -470,12 +470,12 @@ class Job(CommonInfo):
 
                 rsync(src, rsync_to_dest, ssh_cmd=ssh_cmd, rsync_cmd=self.machine.rsynccmd,
                       rsync_options=self.machine.rsyncoptions, block=False)
-                if self.group.name == 'simulocean':
+                if self.group.name == 'teakwood':
                     self.send_metadata()
             else:
                 log.error("rsync to storage failed ! storage system settings are not complete.")
         else:
-            log.warn("simulocean won't be able to serve files without a storage system running")
+            log.warn("teakwood won't be able to serve files without a storage system running")
 
     def visualize_output(self):
         try:
@@ -542,12 +542,12 @@ class Job(CommonInfo):
             self.qstat_xml = None
             self.save()
             self.rsync_to_storage()
-            # send_mail('Subject here', 'Here is the message.', 'simulocean@localhost:8000', ['guojiarui@gmail.com'], fail_silently=False)
+            # send_mail('Subject here', 'Here is the message.', 'teakwood@localhost:8000', ['guojiarui@gmail.com'], fail_silently=False)
             if (self.machine.hostname != 'localhost.localdomain'):
                 send_mail(self.name,
                           "Job %s has finished and the data can be viewed at http://localhost:8000:8080/%s" % (
                               self.name, self.name),
-                          'simulocean@localhost:8000', [self.user.email, ], fail_silently=False)
+                          'teakwood@localhost:8000', [self.user.email, ], fail_silently=False)
 
             if self.machine.vizhost and self.machine.vizscript:
                 pass
@@ -596,22 +596,22 @@ class Job(CommonInfo):
 
         # if a job doesn't have a jobid from qsub and it doesn't have qstat_xml entry.
         # we will mark it unknown..
-        # copy back the simulocean.out|err from the compute machine and display.
+        # copy back the teakwood.out|err from the compute machine and display.
         if self.jobstate in 'RC':
             self.scp_to_server()
         try:
-            stdout = open(os.path.normpath("%s/%s/simulocean.out" % (MEDIA_ROOT, self.local_dir)), 'r')
+            stdout = open(os.path.normpath("%s/%s/teakwood.out" % (MEDIA_ROOT, self.local_dir)), 'r')
             if stdout:
                 stdout = (stdout.readlines())[-300:]
                 self.stdout = ''.join(stdout)
 
-            stderr = open(os.path.normpath("%s/%s/simulocean.err" % (MEDIA_ROOT, self.local_dir)), 'r')
+            stderr = open(os.path.normpath("%s/%s/teakwood.err" % (MEDIA_ROOT, self.local_dir)), 'r')
             if stderr:
                 stderr = (stderr.readlines())[-300:]
                 self.stderr = ''.join(stderr)
 
         except IOError:
-            log.warn("simulocean.out and simulocean.err are not ready yet.")
+            log.warn("teakwood.out and teakwood.err are not ready yet.")
 
         self.save()
 

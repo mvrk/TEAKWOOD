@@ -3,7 +3,7 @@ Models
 
 .. topic:: Models
 
-    Currently Scgate support five models: CaFunWAVE, Delft3D, SWAN, ADCIRC and FVCOM.
+    Currently Teakwood support five models: CaFunWAVE, Delft3D, SWAN, ADCIRC and FVCOM.
 
 
 Delft3D
@@ -67,7 +67,7 @@ comprised of unstructured triangular cells and the irregular bottom is presented
 
 .. topic:: Servers
 
-    Currently Scgate provides conditional computing resources to our customers. more information about customer
+    Currently Teakwood provides conditional computing resources to our customers. more information about customer
     levels please navigate to `here`_.
 
 .. _here: http://localhost:8000/about/services/

@@ -2,7 +2,7 @@ import os
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.shortcuts import redirect
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.coastalmodels.models import ModelInput
 from settings.settings import MEDIA_ROOT
 

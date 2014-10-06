@@ -1,7 +1,7 @@
 Submit a job step by step
 =========================
 
-simulocean workflow
+teakwood workflow
 --------------------
 
 
@@ -10,7 +10,7 @@ simulocean workflow
    :height: 500 px
    :width: 800 px
 
-Scgate provides multiple ways to help our user to use simulocean.
+Teakwood provides multiple ways to help our user to use teakwood.
 
 1) Magical wand.
 Each page on the top right, there is a magical wand; it provides you detailed info of this page.
@@ -26,20 +26,20 @@ Please navigate to this `page`_ to see the video tutorial.
 This page will give you a screen shot tutorial.
 
 
-4)Post topic on simulocean forum if you have questions or encountered problems.
+4)Post topic on teakwood forum if you have questions or encountered problems.
 Please navigate to this `web page`_ to visit our forum.
 
 
 Handle your job in seven steps
 -------------------------------
 
-Since the workflow provided us a big picture of how Scgate works, here are seven steps that can help us run
-a general simulocean job.
+Since the workflow provided us a big picture of how Teakwood works, here are seven steps that can help us run
+a general teakwood job.
 
 
 Create a **project**
 ``````````````````````
-In the first step, you will need to creating a project, Scgate will generate an file management directory for you automatically.
+In the first step, you will need to creating a project, Teakwood will generate an file management directory for you automatically.
 
 .. image:: ../doc/_static/cproject1.png
    :align: center
@@ -90,7 +90,7 @@ Simply submit your job, and your job will be in the waiting list and ready to go
 **Check** status
 `````````````````
 
-Check status during the Job running from Scgate control panel. All your jobs are under control.
+Check status during the Job running from Teakwood control panel. All your jobs are under control.
 
 **Post-process**
 ````````````````

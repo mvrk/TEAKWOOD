@@ -1,27 +1,27 @@
 {% spaceless %}
     {% autoescape on %}
-        {#I don't know why but it seem openlayers doesn't work with this statement on.#}
+
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-        {#    <!DOCTYPE html>#}
+        {#<!DOCTYPE html>#}
         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
             <meta name="Robots" content="index,follow"/>
 
-            <link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}simulocean/img/favicon.ico"/>
+            <link rel="shortcut icon" type="image/ico" href="{{ STATIC_URL }}teakwood/img/favicon.ico"/>
 
             {% block local_meta %}
             {% endblock %}
 
-            <title>{% block title %}Scgate{% endblock %}</title>
+            <title>{% block title %}Teakwood{% endblock %}</title>
 
             {% block css %}
                 <link rel="stylesheet" type="text/css"
                       href="http://code.jquery.com/ui/1.10.3/themes/{% if request.user.profile.theme %}{{ request.user.profile.theme }}{% else %}base{% endif %}/jquery-ui.css"/>
 {#                <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"#}
 {#                 rel="stylesheet">#}
-                <link href="{{ STATIC_URL }}simulocean/css/bootstrap-combined.min.css" type = text/css rel="stylesheet">
+                <link href="{{ STATIC_URL }}teakwood/css/bootstrap-combined.min.css" type = text/css rel="stylesheet">
                             <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"
                                   rel="stylesheet">
                 {#            <link rel="stylesheet" href="{{ STATIC_URL }}fileupload/css/bootstrap.min.css">#}
@@ -30,8 +30,8 @@
                 <link rel="stylesheet" type="text/css"
                       href="{{ STATIC_URL }}datatables/media/css/jquery.dataTables_themeroller.css"/>
                 {#            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables_themeroller.css"/>#}
-                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}simulocean/css/main.css"/>
-                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}simulocean/css/treeview.css"/>
+                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}teakwood/css/main.css"/>
+                <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}teakwood/css/treeview.css"/>
             {% endblock %}
 
             {% block local_css %}
@@ -44,7 +44,7 @@
                 {#            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>#}
                 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
                 {#            <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>#}
-                <script type="text/javascript" src="{{ STATIC_URL }}simulocean/js/treeview.js"></script>
+                <script type="text/javascript" src="{{ STATIC_URL }}teakwood/js/treeview.js"></script>
                 {#            <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>#}
                 <script type="text/javascript" src="{{ STATIC_URL }}datatables/media/js/jquery.dataTables.js"></script>
                 <script>
@@ -87,8 +87,8 @@
                 <h3>
     	<span id="floatright">
         {% if user.is_authenticated %}
-            <img src="{{ STATIC_URL }}simulocean/img/user.png"/>
-            <span>Welcome to the Scgate control panel, {{ user.username }}! </span>
+            <img src="{{ STATIC_URL }}teakwood/img/user.png"/>
+            <span>Welcome to the Teakwood working space, {{ user.username }}! </span>
             <a href="{% url auth_logout %}" title="Sign out">
                 <button class="btn btn-primary btn-mini" style="margin-top:0">
                     <i class="icon-off icon-white"></i>
@@ -122,7 +122,7 @@
                 </noscript>
 
                 {% load activetab_tags %}
-                {% url simulocean_home as home %}
+                {% url teakwood_home as home %}
                 {% url coastalmodels_modelinputlist as modelinputlist %}
                 {% url coastalmodels_swaninputadd as swaninputadd %}
                 {% url simesh_domainlist as domain %}
@@ -130,10 +130,10 @@
                 {% url simfactory_joblist as job %}
                 {% url simlab_jobcompare as laboratory %}
                 {% url simviz_plotobsdata as plot %}
-                {% url simulocean_report as report %}
-                {% url simulocean_about as about %}
-                {% url simulocean_doc as doc %}
-                {% url simulocean_myadmin as myadmin %}
+                {% url teakwood_report as report %}
+                {% url teakwood_about as about %}
+                {% url teakwood_doc as doc %}
+                {% url teakwood_myadmin as myadmin %}
                 {% url workflow_projectlist as projectlist %}
                 {% url profiles_profile_list as profilelist %}
 
@@ -165,9 +165,7 @@
                     </ul>
                 </div>
             {% endblock %}
-
         </div>
-
         <div id="Wrapper">
             <div class="MainContainer">
 
@@ -185,7 +183,7 @@
 {#                                                            {% block navi_left %}#}
 {#                                                                <ul id="menu">#}
 {#                                                                    <li>#}
-{#                                                                        {% block shortcuts_title %}Scgate#}
+{#                                                                        {% block shortcuts_titlTeakwoodgate#}
 {#                                                                            About{% endblock %}#}
 {#                                                                    </li>#}
 {#                                                                </ul>#}
@@ -211,7 +209,7 @@
                                                                            data-content="
                                                                                {% block hint_content %}{% endblock %}"
                                                                            title="{% block hint_title %}{% endblock %}">
-                                                                            <img src="{{ STATIC_URL }}simulocean/img/wand.png"/>
+                                                                            <img src="{{ STATIC_URL }}teakwood/img/wand.png"/>
                                                                         </a>
                                                                     {% endif %}
 
@@ -254,6 +252,18 @@
                     </tr>
                 </table>
             </div>
+        </div>
+
+        <!--<div class="foot" style="text-align: center">-->
+        <!--{% block footer %}-->
+           <!--<a href="https://github.com/mvrk/TEAKWOOD" target="_blank"-->
+              <!--title="CLICK TO GET THE TEAKWOOD SOURCE CODE">-->
+                <!--<img style="height:35px" src="{{ STATIC_URL }}teakwood/img/logo.png" alt="lsu-cct"/></a>-->
+        <!--{% endblock %}-->
+        <!--<hr>-->
+        <!--<div class="container"></div>-->
+            <div class = "center">
+        <p>Teakwood is an ongoing product maintained by Rui Guo from Louisiana State University, &copy;LSUEECS-RUI GUO 2014 </p>
         </div>
         </body>
     </html>

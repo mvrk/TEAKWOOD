@@ -3,7 +3,7 @@ from django.db import models
 from utils.system import mkdir_p, symlink_all
 from settings.settings import MEDIA_ROOT, STATIC_ROOT
 
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from apps.workflow.models import Project
 
 class Report(CommonInfo):

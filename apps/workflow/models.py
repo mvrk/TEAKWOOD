@@ -2,9 +2,9 @@ import os
 from django.views.generic import ListView
 #from django.contrib.auth.models import User, Group
 from django.db import models
-from apps.simulocean.models import CommonInfo
+from apps.teakwood.models import CommonInfo
 from django.db.models import Q
-# this helps to separate Scgate framework from specific application
+# this helps to separate Teakwood framework from specific application
 #from apps.coastalmodels.models import CoastalModel
 #from apps.datafactory.models import DataRequest
 
@@ -37,7 +37,7 @@ class Project(CommonInfo):
     #        unique_together = ("name", "user")
     cwd = models.CharField(max_length=120)
 
-    # from_descriptor = models.BooleanField(default="false", help_text="create a Scgate project from a descriptor file")
+    # from_descriptor = models.BooleanField(default="false", help_text="create a Teakwood project from a descriptor file")
     # descriptor = models.FileField(upload_to="documents", help_text="upload the project descriptor")
 
     def get_fields(self):

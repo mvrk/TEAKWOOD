@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     # url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/', }, name='google-logout'),
 
     # TEAKWOODurls
-    url(r'^', include('apps.simulocean.urls')),
+    url(r'^', include('apps.teakwood.urls')),
 
     # workflow urls
     url(r'^', include('apps.workflow.urls')),

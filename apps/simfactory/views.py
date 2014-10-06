@@ -65,7 +65,7 @@ def job_add(request, project_id=None):
         pmodel.save()
         pmodel.name = "%s_J%d" % (pmodel.model_input.name, pmodel.id)
         pmodel.name = pmodel.name.upper()
-        pmodel.script_name = "simulocean.pbs"
+        pmodel.script_name = "teakwood.pbs"
         pmodel.local_dir = "%s/%s" % (os.path.dirname(pmodel.model_input.input_dir), pmodel.name)
         pmodel.remote_dir = "%s/%s" % (pmodel.machine.workingdirectory, pmodel.name)
         pmodel.script_template = ScriptTemplate.objects.get(model=pmodel.model_input.model, machine=pmodel.machine)
@@ -127,20 +127,20 @@ def job_export(request, output_format):
 
     # sticks in a POST or renders empty form
     response = HttpResponse(output, mimetype='text/txt')
-    response["Content-Disposition"] = "attachment; filename= simulocean_job.%s" % output_format
+    response["Content-Disposition"] = "attachment; filename= teakwood_job.%s" % output_format
     return response
 
 @login_required
 def job_exportstdout(request, job_id):
     job = get_object_or_404(Job, pk=job_id)
-    stdout_file = os.path.normpath("%s/%s/simulocean.out" % (MEDIA_ROOT, job.local_dir))
-    return exportfile(fin_name=stdout_file, fout_name="simulocean.out", content_type='text/plain')
+    stdout_file = os.path.normpath("%s/%s/teakwood.out" % (MEDIA_ROOT, job.local_dir))
+    return exportfile(fin_name=stdout_file, fout_name="teakwood.out", content_type='text/plain')
 
 @login_required
 def job_exportstderr(request, job_id):
     job = get_object_or_404(Job, pk=job_id)
-    stderr_file = os.path.normpath("%s/%s/simulocean.err" % (MEDIA_ROOT, job.local_dir))
-    return exportfile(fin_name=stderr_file, fout_name="simulocean.err", content_type='text/plain')
+    stderr_file = os.path.normpath("%s/%s/teakwood.err" % (MEDIA_ROOT, job.local_dir))
+    return exportfile(fin_name=stderr_file, fout_name="teakwood.err", content_type='text/plain')
 
 #@login_required
 #def job_edit(request, job_id):
@@ -302,7 +302,7 @@ def job_exportpbs(request, job_id):
 #    trash = file(os.devnull, 'a')
 #
 #    job = get_object_or_404(Job, pk=job_id)
-#    #    cmd_line = 'cd /home/alex/Development/Simulocean/media/models/swan/exe; ./swan_ser'
+#    #    cmd_line = 'cd /home/alex/Development/Teakwood/media/models/swan/exe; ./swan_ser'
 #    #    cwd = os.path.dirname(job.exe_file)
 #
 #

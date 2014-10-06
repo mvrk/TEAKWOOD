@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2014/Debian) (format=pdf
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**simulocean.tex
-(./simulocean.tex
+**teakwood.tex
+(./teakwood.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
 aded.
@@ -783,12 +783,12 @@ Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
 \bigstrutjot=\dimen139
 )
 \@indexfile=\write5
-\openout5 = `simulocean.idx'.
+\openout5 = `teakwood.idx'.
 
 
-Writing index file simulocean.idx
-(./simulocean.aux)
-\openout1 = `simulocean.aux'.
+Writing index file teakwood.idx
+(./teakwood.aux)
+\openout1 = `teakwood.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
 LaTeX Font Info:    ... okay on input line 113.
@@ -859,9 +859,9 @@ LaTeX Info: Redefining \ref on input line 113.
 LaTeX Info: Redefining \pageref on input line 113.
 LaTeX Info: Redefining \nameref on input line 113.
 
-(./simulocean.out) (./simulocean.out)
+(./teakwood.out) (./teakwood.out)
 \@outlinefile=\write6
-\openout6 = `simulocean.out'.
+\openout6 = `teakwood.out'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--116
@@ -899,12 +899,12 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 116.
 
-(./simulocean.toc
+(./teakwood.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 )
 \tf@toc=\write7
-\openout7 = `simulocean.toc'.
+\openout7 = `teakwood.toc'.
 
 
 
@@ -934,19 +934,19 @@ less on input line 116.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 116.
 
-<Simulocean_logo.jpg, id=70, 291.0875pt x 65.24374pt>
-File: Simulocean_logo.jpg Graphic file (type jpg)
+<Teakwood_logo.jpg, id=70, 291.0875pt x 65.24374pt>
+File: SiTeakwoodogo.jpg Graphic file (type jpg)
 
-<use Simulocean_logo.jpg>
-Package pdftex.def Info: Simulocean_logo.jpg used on input line 118.
+<use SimuTeakwoodo.jpg>
+Package pdftex.def Info: SimuloTeakwoodjpg used on input line 118.
 (pdftex.def)             Requested size: 291.08678pt x 65.24358pt.
-File: Simulocean_logo.jpg Graphic file (type jpg)
- <use Simulocean_logo.jpg>
-Package pdftex.def Info: Simulocean_logo.jpg used on input line 118.
+File: SimuloceTeakwoodg Graphic file (type jpg)
+ <use TeakwoodTeakwood
+Package pdftex.def Info: Teakwood_lTeakwooded on input line 118.
 (pdftex.def)             Requested size: 291.08678pt x 65.24358pt.
  [1
 
- <./Simulocean_logo.jpg>]
+ <./Teakwood_logo.jpg>]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 123.
@@ -1045,14 +1045,14 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 396.
  [12]
-(./simulocean.ind)
+(./teakwood.ind)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
  [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
- (./simulocean.aux)
+ (./teakwood.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
-Package rerunfilecheck Info: File `simulocean.out' has not changed.
+Package rerunfilecheck Info: File `teakwood.out' has not changed.
 (rerunfilecheck)             Checksum: 22F15903B11C7643FED13527B7AE66A9;461.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
  ) 
@@ -1078,7 +1078,7 @@ texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on simulocean.pdf (15 pages, 244337 bytes).
+Output written on teakwood.pdf (15 pages, 244337 bytes).
 PDF statistics:
  227 PDF objects out of 1000 (max. 8388607)
  189 compressed objects within 2 object streams

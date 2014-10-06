@@ -1,0 +1,25 @@
+{% extends "template_index.html" %}
+{% block components %}
+
+    <legend><h3>License</h3></legend>
+    <div class="well">
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
+        INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY,
+        OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+        OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+        EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    </div>
+
+    <fieldset>
+        <legend><h3>Download</h3></legend>
+
+        The first stable release will be available for downloading at the end of September 2014. However I provides the beta version in github for testing now. see<a href="https://github.com/mvrk/TEAKWOOD" target="_blank">
+                    TEAKWOOD</a> at github.
+    </fieldset>
+        <legend><h3>Documentation</h3></legend>
+        <iframe id="doc_iframe" style="width: 100%; border: 0; height: 600px;"
+                src="{{ STATIC_URL }}doc/_build/html/index.html"></iframe>
+    </fieldset>
+{% endblock %}

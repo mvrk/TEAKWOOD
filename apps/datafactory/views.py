@@ -34,9 +34,9 @@ def station_poilist(request):
 def station_exportmarker(request):
     poi_list = station_poilist(request)
     # domain_dir = os.path.normpath("%s/D%d" % (domain.project.cwd, domain.id))
-    # poi_file = open(os.path.normpath("%s/%s/simulocean_marker.txt" % (MEDIA_ROOT, domain_dir)), 'wb')
+    # poi_file = open(os.path.normpath("%s/%s/teakwood_marker.txt" % (MEDIA_ROOT, domain_dir)), 'wb')
     response = HttpResponse(content_type='text/csv')
-    response["Content-Disposition"] = "attachment; filename= simulocean_station.csv"
+    response["Content-Disposition"] = "attachment; filename= teakwood_station.csv"
     poi_writer = csv.writer(response, delimiter='\t')
     poi_writer.writerow(['lat', 'lon', 'title', 'icon', 'iconSize', 'iconOffset', 'description'])
     for poi in poi_list:
@@ -269,7 +269,7 @@ def datarequest_exportjson(request, datarequest_id, field_name):
 #
 # class ReportRequest(Report):
 #     title = 'Report'
-#     author = 'NGCHC Scgate'
+#     author = 'NGCHC Teakwood'
 #
 #     page_size = landscape(A4)
 #     margin_left = 2 * cm

@@ -13,13 +13,13 @@ Preview
 
 
 
-1,This is the `Scgate`_  welcome page. It provide you general information about simulocean, also it provide you a quick start tutorial, if you want to run jobs, sign in from the right top login entry. see:
+1,This is the `Teakwood`_  welcome page. It provide you general information about teakwood, also it provide you a quick start tutorial, if you want to run jobs, sign in from the right top login entry. see:
 
-.. image:: ../doc/_static/simulocean_welcome.png
+.. image:: ../doc/_static/teakwood_welcome.png
    :height: 470 px
    :width: 1068 px
 
-2,After you signed in, you can start with models simulocean run.
+2,After you signed in, you can start with models teakwood run.
 
 .. image:: ../doc/_static/workflow_projectmanagement.png
    :height: 360 px
@@ -28,5 +28,5 @@ Preview
 
 
 
-.. _Scgate: http://localhost:8000/
+.. _Teakwood: http://localhost:8000/
 

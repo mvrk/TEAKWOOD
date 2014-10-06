@@ -19,7 +19,7 @@ DATAFACTORY_STATIONS = {
     }
 }
 
-stations_file = 'simulocean-stations-%s.csv' % datetime.date.today().isoformat()
+stations_file = 'teakwood-stations-%s.csv' % datetime.date.today().isoformat()
 
 # all the stations will be written into one file
 fout = open(stations_file, 'wb')

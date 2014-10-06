@@ -97,7 +97,7 @@ def domain_exportpoi_html(request, domain_id):
     poi_list = domain_poilist(domain)
     response = render_to_response("simesh/poi_template.html",
                                   {'poi_list': poi_list}, context_instance=RequestContext(request), mimetype='text/txt')
-    response["Content-Disposition"] = "attachment; filename= simulocean.poi"
+    response["Content-Disposition"] = "attachment; filename= teakwood.poi"
     return response
 
 
@@ -105,7 +105,7 @@ def domain_exportpoi_txt(domain_id):
     domain = get_object_or_404(Domain, pk=domain_id)
     poi_list = domain_poilist(domain)
     domain_dir = os.path.normpath("%s/D%d" % (domain.project.cwd, domain.id))
-    poi_file = os.path.normpath("%s/%s/simulocean.poi" % (MEDIA_ROOT, domain_dir))
+    poi_file = os.path.normpath("%s/%s/teakwood.poi" % (MEDIA_ROOT, domain_dir))
     log.debug(poi_file)
     try:
         render_to_file(poi_file, 'simesh/poi_template.html', {"poi_list": poi_list})
@@ -118,7 +118,7 @@ def domain_exportpoi_marker(request, domain_id):
     domain = get_object_or_404(Domain, pk=domain_id)
     poi_list = domain_poilist(domain)
     domain_dir = os.path.normpath("%s/D%d" % (domain.project.cwd, domain.id))
-    poi_file = open(os.path.normpath("%s/%s/simulocean_marker.txt" % (MEDIA_ROOT, domain_dir)), 'wb')
+    poi_file = open(os.path.normpath("%s/%s/teakwood_marker.txt" % (MEDIA_ROOT, domain_dir)), 'wb')
     poi_writer = csv.writer(poi_file, delimiter='\t')
     poi_writer.writerow(['lat', 'lon', 'title', 'icon', 'iconSize', 'iconOffset', 'description'])
     for poi in poi_list:
@@ -134,7 +134,7 @@ def domain_export_depth(request, domain_id):
     domain = get_object_or_404(Domain, pk=domain_id)
 
     depth_fin_name = os.path.abspath("%s/%s" % (MEDIA_ROOT, "data/bathymetry/nCHC_3_Arc_2011.nc"))
-    depth_fout_name=os.path.normpath("%s/%s/simulocean_depth.nc" % (MEDIA_ROOT, domain.get_path()))
+    depth_fout_name=os.path.normpath("%s/%s/teakwood_depth.nc" % (MEDIA_ROOT, domain.get_path()))
 
     depth_fout = nc.Dataset(depth_fout_name,'w')
 
@@ -185,7 +185,7 @@ def domain_export_depth(request, domain_id):
 
     depth_fout.close()
 
-    return exportfile(fin_name=depth_fout_name, fout_name="simulocean_depth.nc", content_type='application/x-netcdf')
+    return exportfile(fin_name=depth_fout_name, fout_name="teakwood_depth.nc", content_type='application/x-netcdf')
 
 # using Jerry's stage 2 arc 3 data
 # input (lat, lon) outout (idx_lat, idx_lon)

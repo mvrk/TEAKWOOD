@@ -2,7 +2,7 @@
 Functions and Features
 ======================
 
-Simply, Scgate provides the following functions:
+Simply, Teakwood provides the following functions:
 
 1) Acts as a job submission agency;
 
@@ -30,6 +30,6 @@ and it has the following features:
 
 * direct comparison of the output of a series of simulations using the same model.
 
-.. image:: ../doc/_static/simulocean_flowchart.png
+.. image:: ../doc/_static/teakwood_flowchart.png
    :align: center
 

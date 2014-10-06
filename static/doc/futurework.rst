@@ -4,15 +4,15 @@ Future Work
 
 Scientific models
 -----------------
-We will deploy more and more scientific models in Scgate.
+We will deploy more and more scientific models in Teakwood.
 
 Visualization
 -------------
-We will build in more and more visualization tool in Scgate to help our users unveiling the abstract numerical output data.
+We will build in more and more visualization tool in Teakwood to help our users unveiling the abstract numerical output data.
 
 Submit your job to the world
 -----------------------------
-Once provide credentials to Scgate, Scgate can submit your job to wherever machines you want, including commercial cloud.
+Once provide credentials to Teakwood, Teakwood can submit your job to wherever machines you want, including commercial cloud.
 
 Data mining and Machine Learning
 --------------------------------

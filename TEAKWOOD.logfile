@@ -1,20 +1,343 @@
-[05/Oct/2014 18:56:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:40] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:43] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:40] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:40] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
 [05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
 [05/Oct/2014 18:56:46] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
-[05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
 [05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
 [05/Oct/2014 18:56:47] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
-[05/Oct/2014 18:56:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:51] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:53] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:55] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
-[05/Oct/2014 18:56:57] WARNING [django.request:142] Not Found: /static/simulocean/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:51] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:51] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:55] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:55] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:57] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[05/Oct/2014 18:56:57] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:11:23] ERROR [django.request:215] Internal Server Error: /about/software/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 79, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 55, in resolve_template
+    return loader.select_template(template)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 193, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+TemplateDoesNotExist: teakwood/software.html
+[06/Oct/2014 00:11:23] ERROR [django.request:215] Internal Server Error: /about/software/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 79, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 55, in resolve_template
+    return loader.select_template(template)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 193, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+TemplateDoesNotExist: teakwood/software.html
+[06/Oct/2014 00:11:24] WARNING [django.request:142] Not Found: /favicon.ico
+[06/Oct/2014 00:11:24] WARNING [django.request:142] Not Found: /favicon.ico
+[06/Oct/2014 00:11:34] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 79, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 55, in resolve_template
+    return loader.select_template(template)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 193, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+TemplateDoesNotExist: teakwood/index.html
+[06/Oct/2014 00:11:34] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 79, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 55, in resolve_template
+    return loader.select_template(template)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 193, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+TemplateDoesNotExist: teakwood/index.html
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/favicon1.png
+[06/Oct/2014 00:14:12] WARNING [django.request:142] Not Found: /static/teakwood/img/favicon1.png
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/js/treeview.js
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/bootstrap-combined.min.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/bootstrap-combined.min.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/main.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/js/treeview.js
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/treeview.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/main.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/css/treeview.css
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:21] WARNING [django.request:142] Not Found: /static/teakwood/img/favicon.ico
+[06/Oct/2014 00:14:21] WARNING [django.request:142] Not Found: /static/teakwood/img/favicon.ico
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:14:23] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:15:16] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:20] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/logo_apache.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/bullet_go.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/logo_apache.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:22] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/img/bullet_go.png
+[06/Oct/2014 00:15:21] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:22] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:23] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/logo.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/user.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/css/index.css
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide3.jpg
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide4.png
+[06/Oct/2014 00:15:24] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide1.jpg
+[06/Oct/2014 00:15:25] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:15:25] WARNING [django.request:142] Not Found: /static/teakwood/img/slide/slide2.jpg
+[06/Oct/2014 00:16:54] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:16:54] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:44] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:44] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:49] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:49] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:52] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:17:52] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:20:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:20:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:24:16] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_flowchart.png
+[06/Oct/2014 00:24:16] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_flowchart.png
+[06/Oct/2014 00:39:51] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:39:51] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:15] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:15] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:24] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:24] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:25] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:25] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:27] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:27] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:35] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:35] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:40:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:04] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
+[06/Oct/2014 00:41:05] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:05] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 00:41:05] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 00:41:05] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:12] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:12] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:14] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:14] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:20] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 50, in job_add
+    if form.is_valid():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 124, in is_valid
+    return self.is_bound and not bool(self.errors)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 115, in _get_errors
+    self.full_clean()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 271, in full_clean
+    self._clean_form()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 299, in _clean_form
+    self.cleaned_data = self.clean()
+  File "/home/alex/TEAKWOOD/apps/simfactory/forms.py", line 45, in clean
+    script_template = ScriptTemplate.objects.filter(Q(machine=machine), Q(model=model_input.model))
+AttributeError: 'NoneType' object has no attribute 'model'
+[06/Oct/2014 00:41:20] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 50, in job_add
+    if form.is_valid():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 124, in is_valid
+    return self.is_bound and not bool(self.errors)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 115, in _get_errors
+    self.full_clean()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 271, in full_clean
+    self._clean_form()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/forms/forms.py", line 299, in _clean_form
+    self.cleaned_data = self.clean()
+  File "/home/alex/TEAKWOOD/apps/simfactory/forms.py", line 45, in clean
+    script_template = ScriptTemplate.objects.filter(Q(machine=machine), Q(model=model_input.model))
+AttributeError: 'NoneType' object has no attribute 'model'
+[06/Oct/2014 00:41:41] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:41] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:07] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:07] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:11] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:11] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:15] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:15] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 00:42:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 00:42:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:23:59] WARNING [django.request:142] Not Found: /static/ teakwood/img/favicon.ico
+[06/Oct/2014 01:23:59] WARNING [django.request:142] Not Found: /static/ teakwood/img/favicon.ico
+[06/Oct/2014 01:26:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:26:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:23] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:23] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:29] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:29] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:35:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:35:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:37:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:37:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:37:30] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:37:30] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:37:30] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:37:30] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:38:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:38:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:38:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:38:21] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:47:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:47:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 01:47:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:47:16] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 01:47:45] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_flowchart.png
+[06/Oct/2014 01:47:45] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_flowchart.png
+[06/Oct/2014 01:47:46] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_welcome.png
+[06/Oct/2014 01:47:46] WARNING [django.request:142] Not Found: /static/doc/_build/html/_images/teakwood_welcome.png
+[06/Oct/2014 01:51:32] WARNING [django.request:142] Not Found: /static/teakwood/img/logo1.png
+[06/Oct/2014 01:51:32] WARNING [django.request:142] Not Found: /static/teakwood/img/logo1.png
+[06/Oct/2014 02:13:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:13:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:13:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:13:39] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:13:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:13:43] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:13:46] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:15:28] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:15:28] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:15:28] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:15:28] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:15:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:15:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:15:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:15:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:17:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:17:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:17:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:17:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:17:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:17:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:17:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:17:31] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:18:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:18:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:18:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:18:53] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:20:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:20:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:20:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:20:01] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:22:48] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:22:48] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 02:22:48] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 02:22:48] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 03:26:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 03:26:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png
+[06/Oct/2014 03:26:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings-white.png
+[06/Oct/2014 03:26:47] WARNING [django.request:142] Not Found: /static/teakwood/img/glyphicons-halflings.png

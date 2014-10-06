@@ -1,4 +1,4 @@
-# Django settings for simulocean
+# Django settings for teakwood
 from subprocess import Popen, PIPE
 
 project = {
@@ -15,8 +15,8 @@ project = {
 
     'machines': {
         'hostname': 'localhost:8000',
-        'account': 'simulocean',
-        'working_directory': '/home/simulocean',
+        'account': 'teakwood',
+        'working_directory': '/home/teakwood',
     }
 }
 

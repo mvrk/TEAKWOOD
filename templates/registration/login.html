@@ -7,14 +7,14 @@
 {% endblock %}
 
 {% block page_title %}
-    Scgate Login
+    Teakwood Login
 {% endblock %}
 
 {% block page_content %}
     {% if user.is_authenticated %}
         <ul class="infobox">
             <li>
-                <h1><img class="infobox" src="{{ STATIC_URL }}simulocean/img/comment.png">Hmmm ...</h1>
+                <h1><img class="infobox" src="{{ STATIC_URL }}teakwood/img/comment.png">Hmmm ...</h1>
                 <p class="page_description">You are already logged in. You will be redirected to the <a
                         href="{% url workflow_projectlist %}" alt="project page">Project page</a> in 3 seconds.
                 </p>

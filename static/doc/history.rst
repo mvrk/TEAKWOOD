@@ -21,4 +21,4 @@ Plot model is ready.
 
 V1.0
 -----
-Reorganized the structure of Scgate Documentation.
+Reorganized the structure of Teakwood Documentation.
