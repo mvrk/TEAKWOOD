@@ -800,3 +800,17 @@ error: [Errno 111] Connection refused
 [08/Oct/2014 12:52:20] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT
 [08/Oct/2014 12:56:39] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
 [08/Oct/2014 12:56:39] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:20:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[08/Oct/2014 14:21:18] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[08/Oct/2014 14:21:18] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[08/Oct/2014 14:21:20] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[08/Oct/2014 14:21:20] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[08/Oct/2014 14:21:37] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
+[08/Oct/2014 14:22:31] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT

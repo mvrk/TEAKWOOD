@@ -61,7 +61,7 @@ class CoastalModelList(ListView):
 #
 #===============================
 
-SIMULOCEAN_POI = [
+TEAKWOOD_POI = [
     ('domain', 'use domain'),
     ('file', 'file (teakwood.poi)'),
 ]
@@ -80,7 +80,7 @@ class ModelInput(CommonInfo):
     upload_now = models.BooleanField("Upload input data now", default=True)
     parfile_ready = models.BooleanField(default=False)
     poi_type = models.CharField(help_text="(Select how the points of interest shall be added)", max_length=64,
-                                choices=SIMULOCEAN_POI, null=True, blank=True)
+                                choices=TEAKWOOD_POI, null=True, blank=True)
 
     def get_fields(self):
         return [(field.verbose_name, field._get_val_from_obj(self))

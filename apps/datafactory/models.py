@@ -12,7 +12,7 @@ import math
 
 import logging
 # from settings.settings import MEDIA_ROOT
-from settings.settings import SIMULOCEAN_DOMAIN
+from settings.settings import TEAKWOOD_DOMAIN
 
 log = logging.getLogger(__name__)
 
@@ -241,8 +241,8 @@ class StationList(ListView):
     #
     # def get_queryset(self):
     #     return Station.objects.filter(
-    #         Q(lat__gte=SIMULOCEAN_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=SIMULOCEAN_DOMAIN['LATITUDE_MAX']) & Q(
-    #             lon__gte=SIMULOCEAN_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=SIMULOCEAN_DOMAIN['LONGITUDE_MAX']))
+    #         Q(lat__gte=TEAKWOOD_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=TEAKWOOD_DOMAIN['LATITUDE_MAX']) & Q(
+    #             lon__gte=TEAKWOOD_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=TEAKWOOD_DOMAIN['LONGITUDE_MAX']))
 
 
 class TideData(models.Model):

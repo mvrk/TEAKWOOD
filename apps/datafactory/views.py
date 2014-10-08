@@ -15,7 +15,7 @@ from django.db.models import Q
 from django.http import HttpResponse
 import subprocess
 import os
-from settings.settings import SIMULOCEAN_DOMAIN
+from settings.settings import TEAKWOOD_DOMAIN
 from apps.simfactory.models import Job
 from utils.simlib import station_poi_list
 
@@ -23,8 +23,8 @@ from utils.simlib import station_poi_list
 @login_required
 def station_poilist(request):
     stations = Station.objects.filter(
-        Q(lat__gte=SIMULOCEAN_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=SIMULOCEAN_DOMAIN['LATITUDE_MAX']) & Q(
-            lon__gte=SIMULOCEAN_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=SIMULOCEAN_DOMAIN['LONGITUDE_MAX']))
+        Q(lat__gte=TEAKWOOD_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=TEAKWOOD_DOMAIN['LATITUDE_MAX']) & Q(
+            lon__gte=TEAKWOOD_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=TEAKWOOD_DOMAIN['LONGITUDE_MAX']))
     return station_poi_list(stations)
 
 
@@ -49,8 +49,8 @@ def station_exportmarker(request):
 @login_required
 def datarequest_mapview(request):
     stations = Station.objects.filter(
-        Q(lat__gte=SIMULOCEAN_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=SIMULOCEAN_DOMAIN['LATITUDE_MAX']) & Q(
-            lon__gte=SIMULOCEAN_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=SIMULOCEAN_DOMAIN['LONGITUDE_MAX']))
+        Q(lat__gte=TEAKWOOD_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=TEAKWOOD_DOMAIN['LATITUDE_MAX']) & Q(
+            lon__gte=TEAKWOOD_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=TEAKWOOD_DOMAIN['LONGITUDE_MAX']))
     #
     # stations = Station.objects.filter(
     #     Q(lat__gte=15) & Q(lat__lte=33) & Q(lon__gte=-99) & Q(lon__lte=-84))
@@ -107,8 +107,8 @@ def datarequest_add(request):
         return redirect(reverse("datafactory_datarequestlist"))
     stations = Station.objects.all()
     # stations = Station.objects.filter(
-    #     Q(lat__gte=SIMULOCEAN_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=SIMULOCEAN_DOMAIN['LATITUDE_MAX']) & Q(
-    #         lon__gte=SIMULOCEAN_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=SIMULOCEAN_DOMAIN['LONGITUDE_MAX']))
+    #     Q(lat__gte=TEAKWOOD_DOMAIN['LATITUDE_MIN']) & Q(lat__lte=TEAKWOOD_DOMAIN['LATITUDE_MAX']) & Q(
+    #         lon__gte=TEAKWOOD_DOMAIN['LONGITUDE_MIN']) & Q(lon__lte=TEAKWOOD_DOMAIN['LONGITUDE_MAX']))
     return render_to_response('datafactory/datarequest_add.html',
                               {'datarequest_form': form, 'object_list': stations,
                                'error_msg': error_msg},

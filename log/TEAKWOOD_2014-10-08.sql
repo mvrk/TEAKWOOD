@@ -35,7 +35,7 @@ CREATE TABLE `accounts_userprofile` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `user_id_refs_id_81d7010f` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +44,7 @@ CREATE TABLE `accounts_userprofile` (
 
 LOCK TABLES `accounts_userprofile` WRITE;
 /*!40000 ALTER TABLE `accounts_userprofile` DISABLE KEYS */;
+INSERT INTO `accounts_userprofile` VALUES (1,1,NULL,NULL,NULL,NULL,'smoothness',1,0);
 /*!40000 ALTER TABLE `accounts_userprofile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,7 +161,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'alex','','','guojiarui@gmail.com','pbkdf2_sha256$10000$GU89jw3pMMyc$EHq69+1FlUrXiTM8HzG1pNopLcXOviiyLldgbuaAhlI=',1,1,1,'2013-03-17 00:43:23','2013-02-13 22:02:45');
+INSERT INTO `auth_user` VALUES (1,'alex','','','guojiarui@gmail.com','pbkdf2_sha256$10000$djyp3aePgXzS$GN7XQ4b94JnMISc81lzqXjX28M4l308BiKWZhvNED34=',1,1,1,'2014-10-08 19:20:06','2014-10-08 19:06:41');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,8 +179,10 @@ CREATE TABLE `auth_user_groups` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`,`group_id`),
   KEY `auth_user_groups_fbfc09f1` (`user_id`),
-  KEY `auth_user_groups_bda51c3c` (`group_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+  KEY `auth_user_groups_bda51c3c` (`group_id`),
+  CONSTRAINT `group_id_refs_id_f0ee9890` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
+  CONSTRAINT `user_id_refs_id_831107f1` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +191,6 @@ CREATE TABLE `auth_user_groups` (
 
 LOCK TABLES `auth_user_groups` WRITE;
 /*!40000 ALTER TABLE `auth_user_groups` DISABLE KEYS */;
-INSERT INTO `auth_user_groups` VALUES (1,1,1),(2,1,2),(8,2,1),(9,2,2),(3,3,2),(10,4,1),(11,4,2),(4,5,1),(5,5,2),(6,6,1),(7,6,2);
 /*!40000 ALTER TABLE `auth_user_groups` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -857,7 +859,7 @@ CREATE TABLE `coastalmodels_modelinput` (
   CONSTRAINT `prior_model_id_refs_id_9d31afcd` FOREIGN KEY (`prior_model_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `project_id_refs_id_ab0b773b` FOREIGN KEY (`project_id`) REFERENCES `workflow_project` (`id`),
   CONSTRAINT `user_id_refs_id_dd22bd31` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -866,6 +868,7 @@ CREATE TABLE `coastalmodels_modelinput` (
 
 LOCK TABLES `coastalmodels_modelinput` WRITE;
 /*!40000 ALTER TABLE `coastalmodels_modelinput` DISABLE KEYS */;
+INSERT INTO `coastalmodels_modelinput` VALUES (1,'ALEX_SWAN_M1',1,1,'2014-10-08 19:22:30','2014-10-08 19:22:34','',1,1,NULL,'users/U1/P1/M1/MODELINPUT',1,1,NULL);
 /*!40000 ALTER TABLE `coastalmodels_modelinput` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -895,7 +898,7 @@ CREATE TABLE `coastalmodels_swanconfig` (
   CONSTRAINT `model_input_id_refs_id_dfe3d54f` FOREIGN KEY (`model_input_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `parameters_id_refs_id_43eb87f1` FOREIGN KEY (`parameters_id`) REFERENCES `coastalmodels_swanparameters` (`id`),
   CONSTRAINT `user_id_refs_id_6c6d1b6b` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -904,6 +907,7 @@ CREATE TABLE `coastalmodels_swanconfig` (
 
 LOCK TABLES `coastalmodels_swanconfig` WRITE;
 /*!40000 ALTER TABLE `coastalmodels_swanconfig` DISABLE KEYS */;
+INSERT INTO `coastalmodels_swanconfig` VALUES (1,'ALEX_SWAN_M1_C1',1,1,'2014-10-08 19:22:34','2014-10-08 19:22:34',NULL,1,NULL);
 /*!40000 ALTER TABLE `coastalmodels_swanconfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1229,7 +1233,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('714e935ed62211f32e5aa96375ec0a5c','YzIyNjY1ZjkwZjk0ZDI3NjgxNmQ3OGQ1MjI2MzM3NmJkZWU1ODI5NzqAAn1xAVUKdGVzdGNvb2tp\nZVUGd29ya2VkcQJzLg==\n','2014-10-22 17:44:27');
+INSERT INTO `django_session` VALUES ('a052b97cee9eec854f7f633ff048d639','NDljZmE4MTk5NTdlNTZkMDMwMjE5ZDdiMmI5MDM5ZTY2N2M2YWEzMTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n','2014-10-22 19:20:06');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1467,7 +1471,7 @@ CREATE TABLE `fileupload_modelinputdata` (
   CONSTRAINT `group_id_refs_id_7b43f415` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   CONSTRAINT `model_input_id_refs_id_879871e` FOREIGN KEY (`model_input_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `user_id_refs_id_bcbcea4c` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1476,6 +1480,7 @@ CREATE TABLE `fileupload_modelinputdata` (
 
 LOCK TABLES `fileupload_modelinputdata` WRITE;
 /*!40000 ALTER TABLE `fileupload_modelinputdata` DISABLE KEYS */;
+INSERT INTO `fileupload_modelinputdata` VALUES (1,'agioncmd.ftn90',1,1,'2014-10-08 19:22:55','2014-10-08 19:22:55','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/agioncmd.ftn90');
 /*!40000 ALTER TABLE `fileupload_modelinputdata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1892,7 +1897,7 @@ CREATE TABLE `workflow_project` (
   KEY `workflow_project_bda51c3c` (`group_id`),
   CONSTRAINT `group_id_refs_id_d734ab5a` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   CONSTRAINT `user_id_refs_id_c436e247` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1901,6 +1906,7 @@ CREATE TABLE `workflow_project` (
 
 LOCK TABLES `workflow_project` WRITE;
 /*!40000 ALTER TABLE `workflow_project` DISABLE KEYS */;
+INSERT INTO `workflow_project` VALUES (1,'alex_test1',1,1,'2014-10-08 19:21:37','2014-10-08 19:21:37','','users/U1/P1');
 /*!40000 ALTER TABLE `workflow_project` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1913,4 +1919,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-08 12:47:53
+-- Dump completed on 2014-10-08 14:57:57

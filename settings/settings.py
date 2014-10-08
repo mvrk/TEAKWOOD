@@ -20,7 +20,7 @@ HOSTNAME = socket.gethostname()
 if HOSTNAME == "localhost.localdomain" or "guojiarui@gmail.com":
     SITE_ID = 1
     DEBUG = True
-    SIMULOCEAN_AMQP = 'rabbitmq'
+    TEAKWOOD_AMQP = 'rabbitmq'
     DATABASES = {
         'default': {
             # 'ENGINE': 'django.contrib.gis.db.backends.mysql',
@@ -40,7 +40,7 @@ if HOSTNAME == "localhost.localdomain" or "guojiarui@gmail.com":
 elif HOSTNAME == "Ubuntu":
     SITE_ID = 3
     DEBUG = True
-    SIMULOCEAN_AMQP = 'django'
+    TEAKWOOD_AMQP = 'django'
     DATABASES = {
         'default': {
             # 'ENGINE': 'django.contrib.gis.db.backends.mysql',
@@ -63,7 +63,7 @@ elif HOSTNAME == "Ubuntu":
 elif HOSTNAME == "http://dare.cct.lsu.edu/teakwood":
     SITE_ID = 2
     DEBUG = False
-    SIMULOCEAN_AMQP = 'rabbitmq'
+    TEAKWOOD_AMQP = 'rabbitmq'
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
@@ -77,7 +77,7 @@ elif HOSTNAME == "http://dare.cct.lsu.edu/teakwood":
 
 else:
     DEBUG = False
-    SIMULOCEAN_AMQP = 'django'
+    TEAKWOOD_AMQP = 'django'
 
     # set your database information here
     DATABASES = {
@@ -331,12 +331,12 @@ LOGOUT_URL = '/logout/'
 AUTH_PROFILE_MODULE = "accounts.UserProfile"
 
 # Celery settings
-if SIMULOCEAN_AMQP == 'rabbitmq':
+if TEAKWOOD_AMQP == 'rabbitmq':
     BROKER_URL = 'amqp://guest:guest@localhost:5672/'
-elif SIMULOCEAN_AMQP == 'django':
+elif TEAKWOOD_AMQP == 'django':
     BROKER_URL = 'django://'
     INSTALLED_APPS += ('kombu.transport.django', )
-elif SIMULOCEAN_AMQP == 'redis':
+elif TEAKWOOD_AMQP == 'redis':
 # Where the URL is in the format of: redis://:password@hostname:port/db_number
     BROKER_URL = 'redis://localhost:6379/0'
 
@@ -351,7 +351,7 @@ elif SIMULOCEAN_AMQP == 'redis':
 # hosting the observation data. We only need to query the database
 # and get a subset of the availd stations.
 
-SIMULOCEAN_DOMAIN = {
+TEAKWOOD_DOMAIN = {
     'LONGITUDE_MIN': -99,
     'LONGITUDE_MAX': -84,
     'LATITUDE_MIN': 15,
