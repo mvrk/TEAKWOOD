@@ -3,7 +3,7 @@
 
 __author__ = 'wuyi'
 
-# append the SIMULOCEAN_HOME to be in python path
+# append the teakwood_home to be in python path
 import sys
 #from BeautifulSoup import BeautifulSoup
 

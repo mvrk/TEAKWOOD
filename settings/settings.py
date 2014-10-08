@@ -6,7 +6,7 @@ import djcelery
 djcelery.setup_loader()
 
 # an extra join is necessary due to the file structure used.
-SIMULOCEAN_HOME = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
+teakwood_home = os.path.normpath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 
 # we have the following options now for the celery broker. More could be easily added 
 # http://docs.celeryproject.org/en/latest/getting-started/brokers/index.html
@@ -17,7 +17,6 @@ SIMULOCEAN_HOME = os.path.normpath(os.path.join(os.path.dirname(__file__), os.pa
 
 HOSTNAME = socket.gethostname()
 
-# for both Jian and Alex's laptops.
 if HOSTNAME == "localhost.localdomain" or "guojiarui@gmail.com":
     SITE_ID = 1
     DEBUG = True
@@ -61,7 +60,7 @@ elif HOSTNAME == "Ubuntu":
 # for production systems. RabbitMQ works better. You can config your own system by following 
 # the example below.
 
-elif HOSTNAME == "TEAKWOOD.ngchc.org":
+elif HOSTNAME == "http://dare.cct.lsu.edu/teakwood":
     SITE_ID = 2
     DEBUG = False
     SIMULOCEAN_AMQP = 'rabbitmq'
@@ -92,7 +91,7 @@ else:
         }
     }
 
-sys.path.insert(0, os.path.join(SIMULOCEAN_HOME, 'apps'))
+sys.path.insert(0, os.path.join(teakwood_home, 'apps'))
 
 TEMPLATE_DEBUG = DEBUG
 
@@ -128,23 +127,26 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 
-# TODO this is a specific setup for TEAKWOODsince we don't have enough space on the VM.
-# we have to rely on mounted external storeage for this.
+# TODO this is a specific setup for TEAKWOOD since we don't have enough space on the VM.
+# we have to rely on mounted external storage for this.
 if HOSTNAME == "localhost:8000":
-    MEDIA_ROOT = "/data/media/"
+    MEDIA_ROOT = ' '
+    # MEDIA_ROOT = "/data/media/"
+
 else:
-    MEDIA_ROOT = os.path.normpath(os.path.join(SIMULOCEAN_HOME, 'media/').replace('\\', '/'))
+    MEDIA_ROOT = os.path.normpath(os.path.join(teakwood_home, 'media/').replace('\\', '/'))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = '/media/'
+MEDIA_URL = ' '
+# MEDIA_URL = '/media/
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.normpath(os.path.join(SIMULOCEAN_HOME, 'static/').replace('\\', '/'))
+STATIC_ROOT = os.path.normpath(os.path.join(teakwood_home, 'static/').replace('\\', '/'))
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -192,7 +194,7 @@ ROOT_URLCONF = 'settings.urls'
 WSGI_APPLICATION = 'settings.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(SIMULOCEAN_HOME, 'templates').replace('\\', '/'),
+    os.path.join(teakwood_home, 'templates').replace('\\', '/'),
 )
 
 # don't activate unnecessary apps
@@ -248,7 +250,7 @@ LOGGING = {
         'logfile': {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': SIMULOCEAN_HOME + "/TEAKWOOD.logfile",
+            'filename': teakwood_home + "/TEAKWOOD.logfile",
             'maxBytes': 10 * 1024 * 1024,
             'backupCount': 2,
             'formatter': 'standard',
@@ -312,7 +314,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 # Django-registration settings
 # One-week activation window; you may, of course, use a different value.
 ACCOUNT_ACTIVATION_DAYS = 7
-REGISTRATION_OPEN = False
+REGISTRATION_OPEN = True
 # Accounts
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/project/list/'

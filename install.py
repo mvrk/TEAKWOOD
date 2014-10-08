@@ -34,7 +34,7 @@ class TeakwoodInstaller(object):
         self.__db_name = settings.DATABASES["default"]["NAME"]
         self.__db_user = settings.DATABASES["default"]["USER"]
         self.__db_password = "'%s'" % settings.DATABASES["default"]["PASSWORD"]
-        self.__db_initsql_dir = "%s/settings/init_sql" % settings.SIMULOCEAN_HOME
+        self.__db_initsql_dir = "%s/settings/init_sql" % settings.teakwood_home
 
     def start_celery(self):
         """start celery
@@ -45,7 +45,7 @@ class TeakwoodInstaller(object):
             cmd_start_celery = '/etc/init.d/celeryd start'
         elif settings.SIMULOCEAN_AMQP == "django":
             cmd_start_celery = "nohup %s/manage.py celeryd -v 2 -c 2 -B -s %s/run/celery -E -l INFO -f %s/log/celery.log --pidfile %s/run/celery.pid >/dev/null 2>&1 &" % (
-                settings.SIMULOCEAN_HOME, settings.SIMULOCEAN_HOME, settings.SIMULOCEAN_HOME, settings.SIMULOCEAN_HOME)
+                settings.teakwood_home, settings.teakwood_home, settings.teakwood_home, settings.teakwood_home)
 
         if cmd_start_celery != '':
             print "start celery daemon ..."
@@ -59,8 +59,8 @@ class TeakwoodInstaller(object):
         if settings.SIMULOCEAN_AMQP == "rabbitmq":
             cmd_stop_celery = '/etc/init.d/celeryd stop'
         elif settings.SIMULOCEAN_AMQP == "django":
-            if os.path.exists("%s/run/celery.pid" % settings.SIMULOCEAN_HOME):
-                cmd_stop_celery = "kill -15 `cat %s/run/celery.pid`" % settings.SIMULOCEAN_HOME
+            if os.path.exists("%s/run/celery.pid" % settings.teakwood_home):
+                cmd_stop_celery = "kill -15 `cat %s/run/celery.pid`" % settings.teakwood_home
 
         if cmd_stop_celery != '':
             print "stop celery daemon ..."
@@ -74,7 +74,7 @@ class TeakwoodInstaller(object):
                         % (self.__db_user,
                            self.__db_password,
                            self.__db_name,
-                           settings.SIMULOCEAN_HOME,
+                           settings.teakwood_home,
                            self.__db_name,
                            datetime.date.today())
         subprocess.call(cmd_backup_db, shell=True)
@@ -100,9 +100,9 @@ class TeakwoodInstaller(object):
     def sync_db(self):
         """make sure we are at the right dir and then synchronize database
         """
-        manage_file = "%s/manage.py" % settings.SIMULOCEAN_HOME
+        manage_file = "%s/manage.py" % settings.teakwood_home
 
-        cmd_sync_db = 'cd %s; python %s syncdb' % (settings.SIMULOCEAN_HOME, manage_file)
+        cmd_sync_db = 'cd %s; python %s syncdb' % (settings.teakwood_home, manage_file)
         if not os.path.exists(manage_file):
             return "Error: %s doesn't exist" % manage_file
             # syncdb for Django installation
@@ -135,7 +135,7 @@ class TeakwoodInstaller(object):
         cmd_rm_dir = 'rm -rf %s/users/*' % (settings.MEDIA_ROOT)
         subprocess.call(cmd_rm_dir, shell=True)
 
-        cmd_mk_dir = 'mkdir -p %s/log %s/run' % (settings.SIMULOCEAN_HOME, settings.SIMULOCEAN_HOME)
+        cmd_mk_dir = 'mkdir -p %s/log %s/run' % (settings.teakwood_home, settings.teakwood_home)
         subprocess.call(cmd_mk_dir, shell=True)
 
     def run(self):
