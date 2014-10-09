@@ -37,10 +37,10 @@ if HOSTNAME == "localhost.localdomain" or "guojiarui@gmail.com":
         }
     }
 
-elif HOSTNAME == "Ubuntu":
+elif HOSTNAME == "teakwood":
     SITE_ID = 3
     DEBUG = True
-    TEAKWOOD_AMQP = 'django'
+    TEAKWOOD_AMQP = 'rabbitmq'
     DATABASES = {
         'default': {
             # 'ENGINE': 'django.contrib.gis.db.backends.mysql',

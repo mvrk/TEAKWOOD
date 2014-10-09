@@ -15,7 +15,7 @@ from settings import settings
 TEAKWOOD_LOGO = "\n\
 ===========================================================\n\
              Welcome to TEAKWOOD world!!! \n\
-              (c) Copyright The Authors \n\
+              (c) Copyright to The Authors \n\
 	      LGPL Licensed. No Warranty \n\
 ===========================================================\n"
 

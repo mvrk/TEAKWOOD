@@ -814,3 +814,583 @@ error: [Errno 111] Connection refused
 [08/Oct/2014 14:21:20] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
 [08/Oct/2014 14:21:37] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
 [08/Oct/2014 14:22:31] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT
+[09/Oct/2014 10:01:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/Oct/2014 10:01:28] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/Oct/2014 10:48:00] WARNING [django.request:142] Not Found: /favicon.ico
+[09/Oct/2014 10:48:00] WARNING [django.request:142] Not Found: /favicon.ico
+[09/Oct/2014 11:38:50] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
+[09/Oct/2014 11:39:01] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT
+[09/Oct/2014 11:41:49] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:41:49] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:41:49] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:41:49] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:42:04] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[09/Oct/2014 11:42:04] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[09/Oct/2014 11:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:42:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:46:33] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:46:33] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:46:33] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:46:33] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[09/Oct/2014 11:47:14] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/Oct/2014 11:47:14] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[09/Oct/2014 11:51:00] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 11:51:00] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 11:53:12] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 11:53:12] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 12:07:59] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 12:07:59] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 436, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 180, in _publish
+    [maybe_declare(entity) for entity in declare]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 111, in maybe_declare
+    return maybe_declare(entity, self.channel, retry, **retry_policy)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 113, in maybe_declare
+    return _maybe_declare(entity, declared, ident, channel)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/common.py", line 120, in _maybe_declare
+    entity.declare()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 505, in declare
+    self.queue_declare(nowait, passive=False)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/entity.py", line 531, in queue_declare
+    nowait=nowait)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/virtual/__init__.py", line 446, in queue_declare
+    self._new_queue(queue, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/django/__init__.py", line 36, in _new_queue
+    Queue.objects.get_or_create(name=queue)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 134, in get_or_create
+    return self.get_query_set().get_or_create(**kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 445, in get_or_create
+    return self.get(**lookup), False
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 361, in get
+    num = len(clone)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 85, in __len__
+    self._result_cache = list(self.iterator())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 291, in iterator
+    for row in compiler.results_iter():
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 763, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 818, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/util.py", line 40, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/backends/mysql/base.py", line 114, in execute
+    return self.cursor.execute(query, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+DatabaseError: (1146, "Table 'TEAKWOOD.djkombu_queue' doesn't exist")
+[09/Oct/2014 12:12:47] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/Oct/2014 12:12:47] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/Oct/2014 12:12:48] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
+[09/Oct/2014 12:12:48] WARNING [django.request:142] Not Found: /datarequest/exportjson//wspd
