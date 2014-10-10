@@ -5,6 +5,7 @@ Pillow==2.6.0
 Scrapy==0.16.5
 argparse==1.2.1
 billiard==2.7.3.28
+celery
 django-celery==3.0.17
 django-profiles==0.2
 django-registration==1.0
