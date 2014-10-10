@@ -52,16 +52,16 @@
                 </a>
             {% endif %}
         </div>
-     <!--<h3 class="mutTeakwoodgate " h3>-->
+     <!--<h4 class=Teakwood " h4>-->
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <ul class="nav">
                         <li class="{% active request '^/$' %}"><a href="{{ home }}">Home</a></li>
+                        <li class="{% active request '^/about/software/$' %}"><a href="{{ software }}">Documentation</a></li>
                         <!--<li class="{% active request '^/about/services/$' %}"><a href="{{ services }}">Services</a></li>-->
-                        <li class="{% active request '^/about/contact/$' %}"><a href="{{ contact }}">Forum</a></li>
-                        <li class="{% active request '^/about/software/$' %}"><a href="{{ software }}">Software</a></li>
-                        <li class="{% active request '^/about/tutorials/$' %}"><a href="{{ tutorials }}">Tutorials</a> </li>
+                        <li class="{% active request '^/about/contact/$' %}"><a href="{{ contact }}">Community</a></li>
+                        <li class="{% active request '^/about/tutorials/$' %}"><a href="{{ tutorials }}">Tutorial</a> </li>
                         <li class="{% active request '^/about/$' %}"><a href="{{ about }}">About</a></li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
         {% endblock %}
         <div class="container"></div>
             <div class = "center">
-            <p>Teakwood is an ongoing product that maintained by Rui Guo from Louisiana State University, &copy;LSUEECS-RUI GUO 2014 </p>
+            <p>Teakwood is an ongoing product that maintained by Rui Guo from Louisiana State University, &copy;LSU-EECS-RUI GUO 2014 </p>
         </div>
     </div>
 </body>

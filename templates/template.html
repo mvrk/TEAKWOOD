@@ -19,8 +19,6 @@
             {% block css %}
                 <link rel="stylesheet" type="text/css"
                       href="http://code.jquery.com/ui/1.10.3/themes/{% if request.user.profile.theme %}{{ request.user.profile.theme }}{% else %}base{% endif %}/jquery-ui.css"/>
-{#                <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"#}
-{#                 rel="stylesheet">#}
                 <link href="{{ STATIC_URL }}teakwood/css/bootstrap-combined.min.css" type = text/css rel="stylesheet">
                             <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css"
                                   rel="stylesheet">
@@ -29,7 +27,7 @@
 
                 <link rel="stylesheet" type="text/css"
                       href="{{ STATIC_URL }}datatables/media/css/jquery.dataTables_themeroller.css"/>
-                {#            <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables_themeroller.css"/>#}
+                {#<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables_themeroller.css"/>#}
                 <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}teakwood/css/main.css"/>
                 <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}teakwood/css/treeview.css"/>
             {% endblock %}
@@ -111,7 +109,6 @@
         {% endif %}
 	</span>
                 </h3>
-
                 <div style="width:300px;">
                     <h1 style="width:100%;"></h1>
                 </div>
@@ -140,25 +137,28 @@
                 <div id="NaviTabs">
                     <ul id="MainTabs">
                         <li><a class="{% active request '^/$' %}" href="{{ home }}">Home</a></li>
+                        <li><a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
+                        <li><a class="{% active request '^/about/' %}" href="{{ about }}">About</a></li>
                         {% if user.is_authenticated %}
-                            <li><a class="{% active request '^/simesh/' %}" href="{{ domain }}">Domain</a></li>
-                            <li><a class="{% active request '^/datafactory/|^/datarequest/' %}"href="{{ data }}">Data</a></li>
-                            <li><a class="{% active request '^/model/' %}" href="{{ modelinputlist }}">Model</a></li>
-                            <li><a class="{% active request '^/simfactory/' %}" href="{{ job }}">Simulation</a></li>
-                            <li><a class="{% active request '^/simlab/' %}" href="{{ laboratory }}">Laboratory</a></li>
-                            <li><a class="{% active request '^/simviz/' %}" href="{{ plot }}">Plot</a></li>
-                            <li><a class="{% active request '^/model/' %}" href="{{ report }}">Report</a></li>
-                            <li><a class="{% active request '^/about/' %}" href="{{ about }}">About</a></li>
+                            <!--<li><a class="{% active request '^/simesh/' %}" href="{{ domain }}">Domain</a></li>-->
+                            <!--<li><a class="{% active request '^/datafactory/|^/datarequest/' %}"href="{{ data }}">Data</a></li>-->
+                            <!--<li><a class="{% active request '^/model/' %}" href="{{ modelinputlist }}">Models</a></li>-->
+                            <!--<li><a class="{% active request '^/simfactory/' %}" href="{{ job }}">Jobs</a></li>-->
+                            <!--<li><a class="{% active request '^/simlab/' %}" href="{{ laboratory }}">Laboratory</a></li>-->
+                            <!--<li><a class="{% active request '^/simviz/' %}" href="{{ plot }}">Plot</a></li>-->
+                            <!--<li><a class="{% active request '^/model/' %}" href="{{ report }}">Report</a></li>-->
                             <li style="float: right; margin-right: 30px;">
-                                <a class="{% active request '^/project/' %}" href="{{ projectlist }}">My Projects</a>
-                                <a class="{% active request '^/profiles/' %}"href="/profiles/{{ user.username }}">Profile</a>
+                                <a class="{% active request '^/profiles/' %}"href="/profiles/{{ user.username }}">User</a>
+                                <a class="{% active request '^/model/' %}" href="{{ modelinputlist }}">Models</a>
+                                <a class="{% active request '^/simfactory/' %}" href="{{ job }}">Jobs</a>
+                                <a class="{% active request '^/project/' %}" href="{{ projectlist }}"> Projects</a>
+                                <a class="{% active request '^/models/' %}" href="{{ report }}">Report</a>
                                 {% if user.is_active and user.is_superuser %}
-                                <a class="{% active request '^/myadmin/' %}" href="{{ myadmin }}">Administor</a>
-                        {% endif %}
-                                <a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
+                                <a class="{% active request '^/myadmin/' %}" href="{{ myadmin }}">Management</a></li>
+                        <!--{% endif %}-->
+                                <!--<a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>-->
                         {% else %}
-                            <li><a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>
-{#                            <li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>#}
+                            <!--<li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>-->
 
                         {% endif %}
 

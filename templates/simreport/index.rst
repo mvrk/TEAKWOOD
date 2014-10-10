@@ -7,7 +7,7 @@
 .. image:: ../simreport/_static/Teakwood_logo.jpg
 
 ===========================================
-AutomatiTeakwoodte Report
+AutomatiTeakwood Report
 ===========================================
 
 
