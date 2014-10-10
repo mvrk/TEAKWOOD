@@ -511,7 +511,7 @@ div#NaviTabs a:link, div#NaviTabs a:visited {
 }
 
 #NaviTabs ul#MainTabs a:link.active, #NaviTabs ul#MainTabs a:visited.active {
-    background: #e5e5e5;
+    background: #461D7C;
     border-bottom: 1px solid #e5e5e5;
     color: #222;
     font-weight: bold;

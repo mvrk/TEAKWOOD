@@ -212,6 +212,7 @@ INSTALLED_APPS = (
     #    'django.contrib.gis',
     #    'django_extensions',
     #    'olwidget',
+    'grappelli',
     'registration',
     'djcelery',
     'apps.teakwood',
