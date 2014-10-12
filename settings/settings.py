@@ -127,11 +127,11 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 
-# TODO this is a specific setup for TEAKWOOD since we don't have enough space on the VM.
+# TODO this is a specific setup for TEAKWOOD if we don't have enough space on the VM.
 # we have to rely on mounted external storage for this.
 if HOSTNAME == "localhost:8000":
-    MEDIA_ROOT = ' '
-    # MEDIA_ROOT = "/data/media/"
+    # MEDIA_ROOT = ' '
+    MEDIA_ROOT = "/media/"
 
 else:
     MEDIA_ROOT = os.path.normpath(os.path.join(teakwood_home, 'media/').replace('\\', '/'))
@@ -313,7 +313,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 # Django-registration settings
-# One-week activation window; you may, of course, use a different value.
+# One-week activation window; you may use a different value.
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_OPEN = True
 # Accounts

@@ -2345,3 +2345,977 @@ error: [Errno 111] Connection refused
 [10/Oct/2014 01:40:55] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
 [10/Oct/2014 01:40:55] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
 [10/Oct/2014 01:40:55] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:25:27] ERROR [django.request:215] Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 85, in logout
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:25:27] ERROR [django.request:215] Internal Server Error: /logout/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 85, in logout
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:25:28] WARNING [django.request:142] Not Found: /favicon.ico
+[10/Oct/2014 12:25:28] WARNING [django.request:142] Not Found: /favicon.ico
+[10/Oct/2014 12:25:33] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:25:33] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:25:48] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:25:48] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:28:57] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:28:57] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:28:58] WARNING [django.request:142] Not Found: /favicon.ico
+[10/Oct/2014 12:28:58] WARNING [django.request:142] Not Found: /favicon.ico
+[10/Oct/2014 12:34:32] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:34:32] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:35:49] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:35:49] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[10/Oct/2014 12:44:47] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:44:47] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:44:47] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:44:47] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:45:53] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U2/P1
+[10/Oct/2014 12:46:17] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U2/P1/M1/MODELINPUT
+[10/Oct/2014 12:47:18] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:47:18] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:47:18] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[10/Oct/2014 12:47:18] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 13:31:40] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[11/Oct/2014 13:31:40] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[11/Oct/2014 14:02:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:02:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:02:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:02:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:20:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:20:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:20:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 14:20:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 22:07:17] WARNING [django.request:142] Not Found: /does-not-exist
+[11/Oct/2014 22:07:17] WARNING [django.request:142] Not Found: /does-not-exist
+[11/Oct/2014 22:07:40] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 22:07:40] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 22:07:40] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[11/Oct/2014 22:07:40] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:38:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:38:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:38:24] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:38:24] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/delft3d.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/delft3d.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/adcirc.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/adcirc.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/fvcom.jpg
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/cafunwave.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/fvcom.jpg
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/cafunwave.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:41:05] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:41:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:10] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:21] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[12/Oct/2014 12:42:21] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[12/Oct/2014 12:42:30] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[12/Oct/2014 12:42:30] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[12/Oct/2014 12:42:53] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:53] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:53] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:42:53] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:43:04] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:43:04] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:43:04] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:43:04] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:44:16] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:44:16] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:44:16] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:44:16] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/delft3d.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/delft3d.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/adcirc.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/cafunwave.png
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/adcirc.png
+[12/Oct/2014 12:45:58] WARNING [django.request:142] Not Found: /model/list/images/fvcom.jpg
+[12/Oct/2014 12:45:57] WARNING [django.request:142] Not Found: /model/list/images/cafunwave.png
+[12/Oct/2014 12:45:58] WARNING [django.request:142] Not Found: /model/list/images/fvcom.jpg
+[12/Oct/2014 12:45:58] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:45:58] WARNING [django.request:142] Not Found: /model/list/images/swan.png
+[12/Oct/2014 12:46:29] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:46:29] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:46:29] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:46:29] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:53:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:53:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:53:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:53:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:55:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:55:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:55:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:55:46] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:57:36] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:57:36] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:57:36] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 12:57:36] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:02:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:02:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:02:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:02:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:03:00] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:03:00] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:03:01] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:03:01] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:07:41] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:07:41] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:07:41] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:07:41] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:08:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:08:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:08:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:08:15] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:11:57] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:11:57] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:11:57] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:11:57] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:16:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:16:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:16:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:16:17] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:16:17] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 148, in get_template
+    template = get_template_from_string(template, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 262, in do_include
+    isolated_context=isolated_context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 145, in __init__
+    t = get_template(template_path)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: admin/css/base.css
+[12/Oct/2014 13:16:17] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 148, in get_template
+    template = get_template_from_string(template, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 262, in do_include
+    isolated_context=isolated_context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 145, in __init__
+    t = get_template(template_path)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: admin/css/base.css
+[12/Oct/2014 13:21:50] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:21:50] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:21:51] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:21:51] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:23:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:23:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:23:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:23:23] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:26:19] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:26:19] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:26:19] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:26:19] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:26:20] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+[12/Oct/2014 13:26:20] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+[12/Oct/2014 13:27:25] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:27:25] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:27:25] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:27:25] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:27:25] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+[12/Oct/2014 13:27:25] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 214, in do_extends
+    nodelist = parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 267, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 189, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 265, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 320, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'static', expected 'endblock'
+[12/Oct/2014 13:31:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:14] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:14] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:31:48] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 246, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 346, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 558, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 627, in args_check
+    (name, len(nondefs), plen))
+TemplateSyntaxError: default requires 1 arguments, 0 provided
+[12/Oct/2014 13:31:48] ERROR [django.request:215] Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 101, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 98, in get_parent
+    return get_template(parent)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 145, in get_template
+    template, origin = find_template(template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 134, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 42, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 48, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 246, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 346, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 558, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 627, in args_check
+    (name, len(nondefs), plen))
+TemplateSyntaxError: default requires 1 arguments, 0 provided
+[12/Oct/2014 13:32:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:32:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:32:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:32:13] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:33:51] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:33:51] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:33:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:33:52] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:30] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:42] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:42] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:42] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:34:42] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:36:28] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:36:28] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:36:28] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:36:28] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:37:06] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:37:06] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 13:49:13] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 48, in open
+    local_hostname=DNS_NAME.get_fqdn())
+  File "/usr/lib64/python2.7/smtplib.py", line 250, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 310, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 285, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[12/Oct/2014 13:49:13] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 48, in open
+    local_hostname=DNS_NAME.get_fqdn())
+  File "/usr/lib64/python2.7/smtplib.py", line 250, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 310, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 285, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[12/Oct/2014 14:17:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 14:17:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 14:17:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 14:17:12] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:17:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:17:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:17:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:17:48] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:55:11] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:55:11] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:55:11] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 15:55:11] WARNING [django.request:142] Not Found: /static/teakwood/img/teakwood.png
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /static/
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /static/
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /favicon.ico
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /favicon.ico
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /favicon.ico
+[12/Oct/2014 16:17:47] WARNING [django.request:142] Not Found: /favicon.ico
+[12/Oct/2014 16:23:25] WARNING [django.request:142] Not Found: /static/
+[12/Oct/2014 16:23:25] WARNING [django.request:142] Not Found: /static/
