@@ -79,7 +79,7 @@ def runscrapy(stationID, startDate, endDate, **kwargs):
 if __name__ == "__main__":
     print "in main!"
     parser = OptionParser()
-    parser.add_option("-p", "--provider", dest="provider", 
+    parser.add_option("-p", "--provider", dest="provider",
 		help="data provider")
     parser.add_option("-s", "--station", dest="station",
         help="station name")

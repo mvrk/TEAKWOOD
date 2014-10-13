@@ -187,8 +187,7 @@ def domain_export_depth(request, domain_id):
 
     return exportfile(fin_name=depth_fout_name, fout_name="teakwood_depth.nc", content_type='application/x-netcdf')
 
-# using Jerry's stage 2 arc 3 data
-# input (lat, lon) outout (idx_lat, idx_lon)
+
 def depth_index(depth_file, latlon):
     _lat, _lon = latlon
 

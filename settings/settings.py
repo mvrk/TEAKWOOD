@@ -215,6 +215,7 @@ INSTALLED_APPS = (
     'grappelli',
     'registration',
     'djcelery',
+    'profiles',
     'apps.teakwood',
     'apps.simfactory',
     'apps.simlab',

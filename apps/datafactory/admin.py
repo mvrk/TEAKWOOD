@@ -3,4 +3,4 @@ from models import Station, DataRequest, BuoyData
 
 admin.site.register(Station)
 admin.site.register(DataRequest)
-admin.site.register(BuoyData)
+admin.site.register(BuoyData)#
