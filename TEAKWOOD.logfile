@@ -4405,3 +4405,303 @@ Traceback (most recent call last):
   File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
     % self.model._meta.object_name)
 DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:24:15] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:24:15] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:30:36] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:30:36] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:30:41] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:30:41] ERROR [django.request:215] Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/debug.py", line 69, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/views.py", line 53, in login
+    current_site = get_current_site(request)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 92, in get_current_site
+    current_site = Site.objects.get_current()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/sites/models.py", line 25, in get_current
+    current_site = self.get(pk=sid)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/manager.py", line 131, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: Site matching query does not exist.
+[13/Oct/2014 01:36:17] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
+[13/Oct/2014 01:36:39] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT
+[13/Oct/2014 01:38:19] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 01:38:19] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 01:45:29] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 48, in open
+    local_hostname=DNS_NAME.get_fqdn())
+  File "/usr/lib64/python2.7/smtplib.py", line 250, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 310, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 285, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 111] Connection refused
+[13/Oct/2014 01:45:29] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 48, in open
+    local_hostname=DNS_NAME.get_fqdn())
+  File "/usr/lib64/python2.7/smtplib.py", line 250, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/lib64/python2.7/smtplib.py", line 310, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/lib64/python2.7/smtplib.py", line 285, in _get_socket
+    return socket.create_connection((host, port), timeout)
+  File "/usr/lib64/python2.7/socket.py", line 571, in create_connection
+    raise err
+error: [Errno 111] Connection refused
