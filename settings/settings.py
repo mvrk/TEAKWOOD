@@ -342,11 +342,19 @@ elif TEAKWOOD_AMQP == 'redis':
 # Where the URL is in the format of: redis://:password@hostname:port/db_number
     BROKER_URL = 'redis://localhost:6379/0'
 
-# Django Email
-#EMAIL_HOST = 'localhost:8000'
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_HOST_USER = 'teakwood@localhost:8000'
-#EMAIL_PORT = 25
+#Django Email
+# EMAIL_HOST = 'localhost:8000'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST_USER = 'teakwood@localhost:8000'
+# EMAIL_PORT = 25
+
+#Django Email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST_USER = 'mvrk.guo@gmail.com'
+EMAIL_HOST_PASSWORD = '699622Gr'
+EMAIL_PORT = 25
 
 # here you can define a system wide spatial region for your site
 # we don't need to maintain the site wise active staion list for

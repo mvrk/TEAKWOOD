@@ -149,13 +149,14 @@
                             <!--<li><a class="{% active request '^/model/' %}" href="{{ report }}">Report</a></li>-->
                             <li style="float: right; margin-right: 30px;">
                                 <a class="{% active request '^/profiles/' %}"href="/profiles/{{ user.username }}">User</a>
+                                <a class="{% active request '^/project/' %}" href="{{ projectlist }}"> Projects</a>
                                 <a class="{% active request '^/model/' %}" href="{{ modelinputlist }}">Models</a>
                                 <a class="{% active request '^/simfactory/' %}" href="{{ job }}">Jobs</a>
-                                <a class="{% active request '^/project/' %}" href="{{ projectlist }}"> Projects</a>
+
                                 <a class="{% active request '^/models/' %}" href="{{ report }}">Report</a>
                                 {% if user.is_active and user.is_superuser %}
                                 <a class="{% active request '^/myadmin/' %}" href="{{ myadmin }}">Management</a></li>
-                        <!--{% endif %}-->
+                        {% endif %}
                                 <!--<a class="{% active request '^/doc/' %}" href="{{ doc }}">Documents</a></li>-->
                         {% else %}
                             <!--<li><a class="{% active request data %}" href="{{ data }}">Data Factory</a></li>-->

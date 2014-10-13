@@ -1,9 +1,7 @@
 Hello,
 
-Welcome to Teakwood, your account has been successfully created.
-In order to log in, you will first be asked to verify this email 
-address, by clicking on the following link:
-
+Welcome to Teakwood web framework, your account has been successfully created.
+Please click the following link and active your account.
 http://{{site}}/activate/{{activation_key}}
 
 The activation key will expire in {{expiration_days}} days.
