@@ -15,8 +15,8 @@ from settings import settings
 TEAKWOOD_LOGO = "\n\
 ===========================================================\n\
              Welcome to TEAKWOOD world!!! \n\
-              (c) Copyright to The Authors \n\
-	      LGPL Licensed. No Warranty \n\
+              (c) Copyright to The Author\n\
+	          LGPL Licensed. No Warranty \n\
 ===========================================================\n"
 
 
@@ -35,7 +35,7 @@ class TeakwoodInstaller(object):
         cmd_start_celery = ''
 
         if settings.TEAKWOOD_AMQP == "rabbitmq":
-            cmd_start_celery = '/etc/init.d/celeryd start'
+            cmd_start_celery = '/celery multi start'
         elif settings.TEAKWOOD_AMQP == "django":
             cmd_start_celery = "nohup %s/manage.py celeryd -v 2 -c 2 -B -s %s/run/celery -E -l INFO -f %s/log/celery.log --pidfile %s/run/celery.pid >/dev/null 2>&1 &" % (
                 settings.teakwood_home, settings.teakwood_home, settings.teakwood_home, settings.teakwood_home)
@@ -50,7 +50,7 @@ class TeakwoodInstaller(object):
         cmd_stop_celery = ''
 
         if settings.TEAKWOOD_AMQP == "rabbitmq":
-            cmd_stop_celery = '/etc/init.d/celeryd stop'
+            cmd_stop_celery = '/celery multi stop'
         elif settings.TEAKWOOD_AMQP == "django":
             if os.path.exists("%s/run/celery.pid" % settings.teakwood_home):
                 cmd_stop_celery = "kill -15 `cat %s/run/celery.pid`" % settings.teakwood_home

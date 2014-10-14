@@ -39,5 +39,6 @@ from apps.simfactory.models import Machine
 
 machine_list = Machine.objects.all()
 for machine in machine_list:
-    ssh_cmd = "nohup ssh -TMNf %s@%s > /dev/null 2>&1 </dev/null &" % (machine.user, machine.hostname)
-    p=subprocess.Popen(ssh_cmd, cwd="/var/www", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if machine.available:
+        ssh_cmd = "nohup ssh -TMNf %s@%s > /dev/null 2>&1 </dev/null &" % (machine.account, machine.hostname)
+        p=subprocess.Popen(ssh_cmd, cwd="/var/www", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

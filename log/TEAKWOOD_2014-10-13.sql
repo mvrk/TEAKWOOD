@@ -35,7 +35,7 @@ CREATE TABLE `accounts_userprofile` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `user_id_refs_id_81d7010f` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +44,7 @@ CREATE TABLE `accounts_userprofile` (
 
 LOCK TABLES `accounts_userprofile` WRITE;
 /*!40000 ALTER TABLE `accounts_userprofile` DISABLE KEYS */;
-INSERT INTO `accounts_userprofile` VALUES (1,1,NULL,NULL,NULL,NULL,'smoothness',1,0);
+INSERT INTO `accounts_userprofile` VALUES (1,2,NULL,NULL,NULL,NULL,'smoothness',1,0),(2,3,'alex','guo','','student','smoothness',1,0),(3,1,NULL,NULL,NULL,NULL,'smoothness',1,0);
 /*!40000 ALTER TABLE `accounts_userprofile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,7 +152,7 @@ CREATE TABLE `auth_user` (
   `date_joined` datetime NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -161,7 +161,7 @@ CREATE TABLE `auth_user` (
 
 LOCK TABLES `auth_user` WRITE;
 /*!40000 ALTER TABLE `auth_user` DISABLE KEYS */;
-INSERT INTO `auth_user` VALUES (1,'rguo','','','guojiarui@gmail.com','pbkdf2_sha256$10000$3enC8Q0FDxjk$dMGMnzZz79MHffvJxglhG6/y2Qwq0FjVOiVJTfCJTKc=',1,1,1,'2014-10-13 17:20:37','2014-10-13 08:35:49'),(8,'test_user2','','','rguo@cct.lsu.edu','pbkdf2_sha256$10000$q2dWqCrUbaCo$u6dFhzOSIPKqdY1rxCfgmckzwZu3rV0mDFmGbiOBaz0=',0,0,0,'2014-10-13 17:06:21','2014-10-13 17:06:21'),(11,'user1','','','rguo2@lsu.edu','pbkdf2_sha256$10000$LJiuxXiLiaDv$QvGAB6K/aAR4KBveVb0G5+wj5mJeAbQYnbvun95MDQg=',0,0,0,'2014-10-13 17:47:57','2014-10-13 17:47:57');
+INSERT INTO `auth_user` VALUES (1,'rguo','','','guojiarui@gmail.com','pbkdf2_sha256$10000$f6sAMLlRq8SA$z8zErun5z3uxKGURezQbbpukUM3CW8PbpsJIFmnPsZY=',1,1,1,'2014-10-13 20:46:15','2014-10-13 17:51:21'),(2,'user1','','','rguo2@lsu.edu','pbkdf2_sha256$10000$nASi2VYg2hIM$SMeIE8rJ5YXNE8y8Ha0Hc4gOvCdFgYLjBA26RAAqu6w=',0,1,0,'2014-10-13 18:41:56','2014-10-13 17:53:53'),(3,'user2','','','rguo@cct.lsu.edu','pbkdf2_sha256$10000$JdeiGAVqX5CD$FRqBnvq51GDyh+ADZL1Kr5POq7K7ummyb8y2FyuYbSU=',0,1,0,'2014-10-13 18:30:01','2014-10-13 18:27:46'),(5,'user4','','','rguo2@lsu.edu','pbkdf2_sha256$10000$U4DITnDNUvME$u4oWfE840BHTxkAhjA2gggrmnmQPE4oxdbS3y2w9DNo=',0,0,0,'2014-10-13 20:45:57','2014-10-13 20:45:57');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -859,7 +859,7 @@ CREATE TABLE `coastalmodels_modelinput` (
   CONSTRAINT `prior_model_id_refs_id_9d31afcd` FOREIGN KEY (`prior_model_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `project_id_refs_id_ab0b773b` FOREIGN KEY (`project_id`) REFERENCES `workflow_project` (`id`),
   CONSTRAINT `user_id_refs_id_dd22bd31` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -868,7 +868,7 @@ CREATE TABLE `coastalmodels_modelinput` (
 
 LOCK TABLES `coastalmodels_modelinput` WRITE;
 /*!40000 ALTER TABLE `coastalmodels_modelinput` DISABLE KEYS */;
-INSERT INTO `coastalmodels_modelinput` VALUES (1,'RGUO_SWAN_M1',1,1,'2014-10-13 15:57:12','2014-10-13 15:57:18','',1,1,NULL,'users/U1/P1/M1/MODELINPUT',1,1,'file');
+INSERT INTO `coastalmodels_modelinput` VALUES (1,'USER2_SWAN_M1',3,1,'2014-10-13 18:30:36','2014-10-13 18:30:39','',1,1,NULL,'users/U3/P1/M1/MODELINPUT',1,1,'file'),(2,'USER1_SWAN_M2',2,1,'2014-10-13 18:45:11','2014-10-13 18:45:15','',2,1,NULL,'users/U2/P2/M2/MODELINPUT',1,1,'file'),(3,'RGUO_SWAN_M3',1,1,'2014-10-13 18:49:12','2014-10-13 18:49:27','',3,1,NULL,'users/U1/P3/M3/MODELINPUT',1,1,'file');
 /*!40000 ALTER TABLE `coastalmodels_modelinput` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -898,7 +898,7 @@ CREATE TABLE `coastalmodels_swanconfig` (
   CONSTRAINT `model_input_id_refs_id_dfe3d54f` FOREIGN KEY (`model_input_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `parameters_id_refs_id_43eb87f1` FOREIGN KEY (`parameters_id`) REFERENCES `coastalmodels_swanparameters` (`id`),
   CONSTRAINT `user_id_refs_id_6c6d1b6b` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -907,7 +907,7 @@ CREATE TABLE `coastalmodels_swanconfig` (
 
 LOCK TABLES `coastalmodels_swanconfig` WRITE;
 /*!40000 ALTER TABLE `coastalmodels_swanconfig` DISABLE KEYS */;
-INSERT INTO `coastalmodels_swanconfig` VALUES (1,'RGUO_SWAN_M1_C1',1,1,'2014-10-13 15:57:18','2014-10-13 15:57:18',NULL,1,NULL);
+INSERT INTO `coastalmodels_swanconfig` VALUES (1,'USER2_SWAN_M1_C1',3,1,'2014-10-13 18:30:39','2014-10-13 18:30:39',NULL,1,NULL),(2,'USER1_SWAN_M2_C2',2,1,'2014-10-13 18:45:15','2014-10-13 18:45:15',NULL,2,NULL),(3,'RGUO_SWAN_M3_C3',1,1,'2014-10-13 18:49:27','2014-10-13 18:49:27',NULL,3,NULL);
 /*!40000 ALTER TABLE `coastalmodels_swanconfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1172,7 +1172,7 @@ CREATE TABLE `django_admin_log` (
   KEY `django_admin_log_e4470c6e` (`content_type_id`),
   CONSTRAINT `content_type_id_refs_id_288599e6` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   CONSTRAINT `user_id_refs_id_c8665aa` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1181,6 +1181,7 @@ CREATE TABLE `django_admin_log` (
 
 LOCK TABLES `django_admin_log` WRITE;
 /*!40000 ALTER TABLE `django_admin_log` DISABLE KEYS */;
+INSERT INTO `django_admin_log` VALUES (1,'2014-10-13 20:59:57',1,18,'10','SWAN_SuperMike-II_Scripts',1,''),(2,'2014-10-13 21:21:24',1,18,'10','SWAN_SuperMike-II_Scripts',2,'Changed preprocessor.');
 /*!40000 ALTER TABLE `django_admin_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1233,7 +1234,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('1aa92c71706781bfe35cbb42b2092449','NGNiMDk1NGMyYmNlNDQ3Y2QxMWExNDJiM2Q0ZmU0OWFjMmI3YjE0MDqAAn1xAS4=\n','2014-10-27 17:45:41'),('9def28706662325ae62ef1d8c095f57c','YzIyNjY1ZjkwZjk0ZDI3NjgxNmQ3OGQ1MjI2MzM3NmJkZWU1ODI5NzqAAn1xAVUKdGVzdGNvb2tp\nZVUGd29ya2VkcQJzLg==\n','2014-10-27 17:48:38');
+INSERT INTO `django_session` VALUES ('209096e644dc1ccf9d7030eaf7782432','NDljZmE4MTk5NTdlNTZkMDMwMjE5ZDdiMmI5MDM5ZTY2N2M2YWEzMTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n','2014-10-27 20:46:15'),('9faaeb02d501537bd0850be445c19014','NGNiMDk1NGMyYmNlNDQ3Y2QxMWExNDJiM2Q0ZmU0OWFjMmI3YjE0MDqAAn1xAS4=\n','2014-10-27 19:36:23');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1258,7 +1259,7 @@ CREATE TABLE `django_site` (
 
 LOCK TABLES `django_site` WRITE;
 /*!40000 ALTER TABLE `django_site` DISABLE KEYS */;
-INSERT INTO `django_site` VALUES (1,'localhost:8090','Alex\'s Laptop'),(2,'localhost:8000','Teakwood'),(3,'Ubuntu','Alex\'s Laptop');
+INSERT INTO `django_site` VALUES (1,'localhost:8000','Alex\'s Laptop'),(2,'localhost:8000','Teakwood'),(3,'Ubuntu','Alex\'s Laptop');
 /*!40000 ALTER TABLE `django_site` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1471,7 +1472,7 @@ CREATE TABLE `fileupload_modelinputdata` (
   CONSTRAINT `group_id_refs_id_7b43f415` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   CONSTRAINT `model_input_id_refs_id_879871e` FOREIGN KEY (`model_input_id`) REFERENCES `coastalmodels_modelinput` (`id`),
   CONSTRAINT `user_id_refs_id_bcbcea4c` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1480,7 +1481,7 @@ CREATE TABLE `fileupload_modelinputdata` (
 
 LOCK TABLES `fileupload_modelinputdata` WRITE;
 /*!40000 ALTER TABLE `fileupload_modelinputdata` DISABLE KEYS */;
-INSERT INTO `fileupload_modelinputdata` VALUES (6,'buoy.loc',1,1,'2014-10-13 15:58:10','2014-10-13 15:58:10','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/buoy.loc'),(7,'bath.bot',1,1,'2014-10-13 15:58:10','2014-10-13 15:58:10','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/bath.bot'),(8,'INPUT',1,1,'2014-10-13 15:58:10','2014-10-13 15:58:10','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/INPUT'),(9,'grid.xy',1,1,'2014-10-13 15:58:10','2014-10-13 15:58:10','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/grid.xy'),(10,'ncep2011.wd',1,1,'2014-10-13 15:58:10','2014-10-13 15:58:10','',1,'/home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT/ncep2011.wd');
+INSERT INTO `fileupload_modelinputdata` VALUES (1,'bath.bot',3,1,'2014-10-13 18:31:17','2014-10-13 18:31:17','',1,'/home/alex/TEAKWOOD/media/users/U3/P1/M1/MODELINPUT/bath.bot'),(2,'buoy.loc',3,1,'2014-10-13 18:31:17','2014-10-13 18:31:17','',1,'/home/alex/TEAKWOOD/media/users/U3/P1/M1/MODELINPUT/buoy.loc'),(3,'grid.xy',3,1,'2014-10-13 18:31:17','2014-10-13 18:31:17','',1,'/home/alex/TEAKWOOD/media/users/U3/P1/M1/MODELINPUT/grid.xy'),(4,'INPUT',3,1,'2014-10-13 18:31:17','2014-10-13 18:31:17','',1,'/home/alex/TEAKWOOD/media/users/U3/P1/M1/MODELINPUT/INPUT'),(5,'ncep2011.wd',3,1,'2014-10-13 18:31:17','2014-10-13 18:31:17','',1,'/home/alex/TEAKWOOD/media/users/U3/P1/M1/MODELINPUT/ncep2011.wd'),(6,'bath.bot',2,1,'2014-10-13 18:45:30','2014-10-13 18:45:30','',2,'/home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT/bath.bot'),(7,'buoy.loc',2,1,'2014-10-13 18:45:30','2014-10-13 18:45:30','',2,'/home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT/buoy.loc'),(8,'INPUT',2,1,'2014-10-13 18:45:30','2014-10-13 18:45:30','',2,'/home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT/INPUT'),(9,'grid.xy',2,1,'2014-10-13 18:45:30','2014-10-13 18:45:30','',2,'/home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT/grid.xy'),(10,'ncep2011.wd',2,1,'2014-10-13 18:45:31','2014-10-13 18:45:31','',2,'/home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT/ncep2011.wd'),(11,'bath.bot',1,1,'2014-10-13 18:49:51','2014-10-13 18:49:51','',3,'/home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT/bath.bot'),(12,'buoy.loc',1,1,'2014-10-13 18:49:51','2014-10-13 18:49:51','',3,'/home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT/buoy.loc'),(13,'INPUT',1,1,'2014-10-13 18:49:51','2014-10-13 18:49:51','',3,'/home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT/INPUT'),(14,'grid.xy',1,1,'2014-10-13 18:49:51','2014-10-13 18:49:51','',3,'/home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT/grid.xy'),(15,'ncep2011.wd',1,1,'2014-10-13 18:49:51','2014-10-13 18:49:51','',3,'/home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT/ncep2011.wd');
 /*!40000 ALTER TABLE `fileupload_modelinputdata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1498,7 +1499,7 @@ CREATE TABLE `registration_registrationprofile` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `user_id_refs_id_cecd7f3c` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1507,7 +1508,7 @@ CREATE TABLE `registration_registrationprofile` (
 
 LOCK TABLES `registration_registrationprofile` WRITE;
 /*!40000 ALTER TABLE `registration_registrationprofile` DISABLE KEYS */;
-INSERT INTO `registration_registrationprofile` VALUES (7,8,'354815a0163661c12186cb4764d54cd3027a8f53'),(10,11,'21e8d450f4dd09db25d22b84b5633cb000f9a37c');
+INSERT INTO `registration_registrationprofile` VALUES (1,2,'ALREADY_ACTIVATED'),(2,3,'ALREADY_ACTIVATED'),(4,5,'f829cb304b070042844ec06b22d4ac3e2b813150');
 /*!40000 ALTER TABLE `registration_registrationprofile` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1608,7 +1609,7 @@ CREATE TABLE `simfactory_job` (
   CONSTRAINT `project_id_refs_id_5990d2a9` FOREIGN KEY (`project_id`) REFERENCES `workflow_project` (`id`),
   CONSTRAINT `script_template_id_refs_id_52e2009a` FOREIGN KEY (`script_template_id`) REFERENCES `simfactory_scripttemplate` (`id`),
   CONSTRAINT `user_id_refs_id_6aa2d403` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1617,6 +1618,7 @@ CREATE TABLE `simfactory_job` (
 
 LOCK TABLES `simfactory_job` WRITE;
 /*!40000 ALTER TABLE `simfactory_job` DISABLE KEYS */;
+INSERT INTO `simfactory_job` VALUES (1,'RGUO_SWAN_M3_J1',1,1,'2014-10-13 21:00:16','2014-10-13 21:00:16','',NULL,3,3,NULL,NULL,'U',NULL,4,1,1,'checkpt',1,'1:00:00','guojiarui@gmail.com',1,1,NULL,NULL,'hpc_charcol','users/U1/P3/M3/RGUO_SWAN_M3_J1','/work/alex/RGUO_SWAN_M3_J1',10,'teakwood.pbs',NULL,0,1,NULL,NULL),(2,'RGUO_SWAN_M3_J2',1,1,'2014-10-13 21:01:31','2014-10-13 21:01:31','',NULL,3,3,NULL,NULL,'U',NULL,4,1,1,'checkpt',1,'1:00:00','guojiarui@gmail.com',1,1,NULL,NULL,'hpc_charcol','users/U1/P3/M3/RGUO_SWAN_M3_J2','/work/alex/RGUO_SWAN_M3_J2',10,'teakwood.pbs',NULL,0,1,NULL,NULL),(3,'RGUO_SWAN_M3_J3',1,1,'2014-10-13 21:06:55','2014-10-13 21:06:55','',NULL,3,3,NULL,NULL,'U',NULL,4,1,1,'checkpt',1,'1:00:00','guojiarui@gmail.com',1,1,NULL,NULL,'hpc_charcol','users/U1/P3/M3/RGUO_SWAN_M3_J3','/work/alex/RGUO_SWAN_M3_J3',10,'teakwood.pbs',NULL,0,1,NULL,NULL),(4,'RGUO_SWAN_M3_J4',1,1,'2014-10-13 21:19:35','2014-10-13 21:19:35','',NULL,3,3,NULL,NULL,'U',NULL,4,1,1,'checkpt',1,'1:00:00','guojiarui@gmail.com',1,1,NULL,NULL,'hpc_charcol','users/U1/P3/M3/RGUO_SWAN_M3_J4','/work/alex/RGUO_SWAN_M3_J4',10,'teakwood.pbs',NULL,0,1,NULL,NULL),(5,'RGUO_SWAN_M3_J5',1,1,'2014-10-13 21:21:47','2014-10-13 21:21:47','',NULL,3,3,NULL,NULL,'U',NULL,4,1,1,'checkpt',1,'1:00:00','guojiarui@gmail.com',1,1,NULL,NULL,'hpc_charcol','users/U1/P3/M3/RGUO_SWAN_M3_J5','/work/alex/RGUO_SWAN_M3_J5',10,'teakwood.pbs',NULL,0,1,NULL,NULL);
 /*!40000 ALTER TABLE `simfactory_job` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1709,7 +1711,7 @@ CREATE TABLE `simfactory_scripttemplate` (
   KEY `simfactory_scripttemplate_5a994bc4` (`machine_id`),
   CONSTRAINT `machine_id_refs_id_b8f2c96a` FOREIGN KEY (`machine_id`) REFERENCES `simfactory_machine` (`id`),
   CONSTRAINT `model_id_refs_id_f4f11917` FOREIGN KEY (`model_id`) REFERENCES `coastalmodels_coastalmodel` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1718,7 +1720,7 @@ CREATE TABLE `simfactory_scripttemplate` (
 
 LOCK TABLES `simfactory_scripttemplate` WRITE;
 /*!40000 ALTER TABLE `simfactory_scripttemplate` DISABLE KEYS */;
-INSERT INTO `simfactory_scripttemplate` VALUES (1,1,1,'export SWAN_HOME=/home/alex/tools/swan\r\nMPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\n','date','$MPI_RUN  -np $NPROCS $SWAN_HOME/swan.exe  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','',''),(2,1,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\nexport SWAN_HOME=/home/teakwood/swan\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=$SWAN_HOME:/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $SWAN_HOME/swan.exe  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(3,2,1,'# Specify the config file to be used here (will be set in Teakwood)\r\nargfile=config_flow2d3d.ini\r\n\r\n# Set the directory containing delftflow.exe here\r\nexport ARCH=intel\r\nexport D3D_HOME=/usr/local/packages/delft3d/5.00.09.1882/mvapich2-1.8.1-gcc-4.7.0\r\nexport MPI_RUN=/usr/local/packages/mvapich2/1.8.1/gcc-4.7.0/bin/mpirun \r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=$D3D_HOME/bin:$D3D_HOME/lib:$LD_LIBRARY_PATH','date','# run mvapich2 jobs\r\n$MPI_RUN -np $NPROCS $D3D_HOME/bin/deltares_hydro.tcl $argfile > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','# Specify the config file to be used here (will be set in Teakwood)\r\n# env variables from the pbs script generator:\r\n# WORK_DIR, NPROCS, OVERALL_RUNID, NESTED_RUNID\r\n\r\nargfile=config_flow2d3d.ini\r\n\r\n# Set the directory containing delftflow.exe here\r\nexport ARCH=intel\r\nexport D3D_HOME=/usr/local/packages/delft3d/5.00.09.1882/mvapich2-1.8.1-gcc-4.7.0\r\nexport MPI_RUN=/usr/local/packages/mvapich2/1.8.1/gcc-4.7.0/bin/mpirun \r\nexport LD_LIBRARY_PATH=$D3D_HOME/bin:$D3D_HOME/lib:$LD_LIBRARY_PATH\r\n\r\nD3D_EXE=\"${D3D_HOME}/bin/deltares_hydro.tcl\"\r\nnesthd1=\"${D3D_HOME}/bin/nesthd1\"\r\nnesthd2=\"${D3D_HOME}/bin/nesthd2\"\r\n\r\n# cd the nesting dir\r\necho \"Running nesthd1 and generate obs file ...\"\r\n\r\n# create the input file for nesthd1\r\n# $NESTED_RUNID.bnd should be the local boundary that others will upload.\r\ncat > ./nesthd1.input <<DELIM\r\n$OVERALL_RUNID.grd\r\n$OVERALL_RUNID.enc\r\n$NESTED_RUNID.grd\r\n$NESTED_RUNID.enc\r\n$NESTED_RUNID.bnd\r\n$NESTED_RUNID.adm\r\n$OVERALL_RUNID.obs\r\nDELIM\r\n\r\n# generate obsfile and copy it to overall dir.\r\n${nesthd1} < nesthd1.input > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\necho \"Finish running nesthd1.\"\r\n\r\necho \"Running the overall mode and generate trih-$OVERALL_RUNID.dat|def ...\"\r\nsed \"s/Filsta.*/Filsta = #$OVERALL_RUNID.obs#/\" < \"$OVERALL_RUNID.mdf\" >  \"$OVERALL_RUNID.mdf.tmp\"\r\nmv \"$OVERALL_RUNID.mdf.tmp\" \"$OVERALL_RUNID.mdf\"\r\n\r\n# automatically generate $argfile\r\ncat > ./$argfile <<DELIM\r\n[FileInformation]\r\n   FileCreationDate = `date`\r\n   FileVersion      = 00.01\r\n[Component]\r\n   Name    = flow2d3d\r\n   MDFfile = $OVERALL_RUNID\r\nDELIM\r\n\r\n# run overall and copy trih-*.dat and trih-*.def to nesting\r\n\r\n$MPI_RUN  -np $NPROCS ${D3D_EXE} \"$argfile\" >> $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\necho \"Finish running the overall model.\"\r\n\r\necho \"Running nesthd2 and generate $NESTED_RUNID.bct ...\"\r\n\r\ncat > ./nesthd2.input <<DELIM\r\n$NESTED_RUNID.bnd\r\n$NESTED_RUNID.adm\r\n$OVERALL_RUNID\r\n$NESTED_RUNID.bct\r\n$NESTED_RUNID.bcc\r\n$NESTED_RUNID.dia\r\n$A0_CORRECTION\r\nDELIM\r\n\r\n# run nesthd2 and copy files to Bsound\r\n${nesthd2} < nesthd2.input >> $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\necho \"Finish running nesthd2.\"\r\n\r\necho \"Running the nested model ...\"\r\nsed \"s/FilbcT.*/FilbcT = #$NESTED_RUNID.bct#/\" < \"$NESTED_RUNID.mdf\" >  \"$NESTED_RUNID.mdf.tmp\"\r\nmv \"$NESTED_RUNID.mdf.tmp\" \"$NESTED_RUNID.mdf\"\r\n# run the Bsound model\r\n# automatically generate $argfile\r\ncat > ./$argfile <<DELIM\r\n[FileInformation]\r\n   FileCreationDate = `date`\r\n   FileVersion      = 00.01\r\n[Component]\r\n   Name    = flow2d3d\r\n   MDFfile = $NESTED_RUNID\r\nDELIM\r\n\r\n$MPI_RUN  -np $NPROCS ${D3D_EXE} \"$argfile\" >> $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\necho \"Finish running the nested model.\"','','/data/klhu/viz/d3d_field_view.sh','trim'),(4,2,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\n# Specify the config file to be used here (will be set in Teakwood)\r\nargfile=config_flow2d3d.ini\r\n\r\nexport ARCH=intel\r\nexport D3D_HOME=/home/teakwood/delft3d/trunk/bin/lnx\r\n\r\nexedir=$D3D_HOME/flow2d3d/bin\r\nlibdir=$D3D_HOME/flow2d3d/lib\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=$exedir:$libdir:/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $exedir/deltares_hydro.exe $argfile > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(5,4,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\nexport CAFUNWAVE_HOME=/home/teakwood/cafunwave\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $CAFUNWAVE_HOME/exe/cafunwave.exe  cafunwave.par > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(6,5,1,'# set up running environment\r\nexport FVCOM_HOME=/home/alex/tools/fvcom\r\nexport MPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\nsed \"s/INPDIR.*/INPDIR = \\.\\//\" < \"${CASE_NAME}_run.dat\" >  \"${CASE_NAME}_run.tmp\"\r\nmv \"${CASE_NAME}_run.tmp\" \"${CASE_NAME}_run.dat\"','date','# run job\r\n$MPI_RUN -np $NPROCS $FVCOM_HOME/fvcom_Joao_Variable_Wind_LONI $CASE_NAME > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','',''),(7,3,1,'# set environment variables\r\nexport MPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\nexport ADCIRC_HOME=/home/alex/tools/adcirc\r\n\r\n# create option files for adcprep\r\ncat > ./opt1 <<DELIM\r\n$NPROCS\r\n1\r\nfort.14\r\nDELIM\r\n\r\ncat > ./opt2 <<DELIM\r\n$NPROCS\r\n2\r\nDELIM\r\n','date','#run adcirc prepariation\r\n\r\n$ADCIRC_HOME/adcprep < opt1\r\n$ADCIRC_HOME/adcprep < opt2\r\n\r\n# run mpi job\r\nif $SWAN; then\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcswan > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nelse\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcirc > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nfi','','','',''),(8,3,4,'# set environment variables\r\nexport MPI_RUN=/usr/local/packages/mvapich2/1.8.1/Intel-13.0.0/bin/mpirun\r\nexport ADCIRC_HOME=/home/alex/tools/adcirc\r\n\r\n# create option files for adcprep\r\ncat > ./opt1 <<DELIM\r\n$NPROCS\r\n1\r\nfort.14\r\nDELIM\r\n\r\ncat > ./opt2 <<DELIM\r\n$NPROCS\r\n2\r\nDELIM','date','#run adcirc prepariation\r\n\r\n$ADCIRC_HOME/adcprep < opt1\r\n$ADCIRC_HOME/adcprep < opt2\r\n\r\n# run mpi job\r\nif $SWAN; then\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcswan > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nelse\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcirc > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nfi','','','',''),(9,6,2,'export WINE=/usr/bin/wine\r\nexport EFDC=/home/teakwood/efdc/efdc.exe','date','$WINE  $EFDC  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','','');
+INSERT INTO `simfactory_scripttemplate` VALUES (1,1,1,'export SWAN_HOME=/home/alex/tools/swan\r\nMPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\n','date','$MPI_RUN  -np $NPROCS $SWAN_HOME/swan.exe  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','',''),(2,1,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\nexport SWAN_HOME=/home/teakwood/swan\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=$SWAN_HOME:/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $SWAN_HOME/swan.exe  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(4,2,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\n# Specify the config file to be used here (will be set in Teakwood)\r\nargfile=config_flow2d3d.ini\r\n\r\nexport ARCH=intel\r\nexport D3D_HOME=/home/teakwood/delft3d/trunk/bin/lnx\r\n\r\nexedir=$D3D_HOME/flow2d3d/bin\r\nlibdir=$D3D_HOME/flow2d3d/lib\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=$exedir:$libdir:/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $exedir/deltares_hydro.exe $argfile > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(5,4,2,'# intel compiler\r\nsource /home/teakwood/local/intel/composer_xe_2013.0.079/bin/compilervars.sh intel64\r\n\r\nexport CAFUNWAVE_HOME=/home/teakwood/cafunwave\r\n\r\nMPI_RUN=/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/bin/mpirun\r\n\r\n# Set some (environment) parameters\r\nexport LD_LIBRARY_PATH=/home/teakwood/local/lib:/home/teakwood/local/mpich2-1.5-intel-13-gcc-4.7.2/lib:$LD_LIBRARY_PATH','date','$MPI_RUN  -np $NPROCS $CAFUNWAVE_HOME/exe/cafunwave.exe  cafunwave.par > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err',NULL,NULL,NULL,NULL),(6,5,1,'# set up running environment\r\nexport FVCOM_HOME=/home/alex/tools/fvcom\r\nexport MPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\nsed \"s/INPDIR.*/INPDIR = \\.\\//\" < \"${CASE_NAME}_run.dat\" >  \"${CASE_NAME}_run.tmp\"\r\nmv \"${CASE_NAME}_run.tmp\" \"${CASE_NAME}_run.dat\"','date','# run job\r\n$MPI_RUN -np $NPROCS $FVCOM_HOME/fvcom_Joao_Variable_Wind_LONI $CASE_NAME > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','',''),(7,3,1,'# set environment variables\r\nexport MPI_RUN=/usr/local/packages/mvapich/1.1/intel-11.1/bin/mpirun\r\nexport ADCIRC_HOME=/home/alex/tools/adcirc\r\n\r\n# create option files for adcprep\r\ncat > ./opt1 <<DELIM\r\n$NPROCS\r\n1\r\nfort.14\r\nDELIM\r\n\r\ncat > ./opt2 <<DELIM\r\n$NPROCS\r\n2\r\nDELIM\r\n','date','#run adcirc prepariation\r\n\r\n$ADCIRC_HOME/adcprep < opt1\r\n$ADCIRC_HOME/adcprep < opt2\r\n\r\n# run mpi job\r\nif $SWAN; then\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcswan > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nelse\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcirc > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nfi','','','',''),(8,3,4,'# set environment variables\r\nexport MPI_RUN=/usr/local/packages/mvapich2/1.8.1/Intel-13.0.0/bin/mpirun\r\nexport ADCIRC_HOME=/home/alex/tools/adcirc\r\n\r\n# create option files for adcprep\r\ncat > ./opt1 <<DELIM\r\n$NPROCS\r\n1\r\nfort.14\r\nDELIM\r\n\r\ncat > ./opt2 <<DELIM\r\n$NPROCS\r\n2\r\nDELIM','date','#run adcirc prepariation\r\n\r\n$ADCIRC_HOME/adcprep < opt1\r\n$ADCIRC_HOME/adcprep < opt2\r\n\r\n# run mpi job\r\nif $SWAN; then\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcswan > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nelse\r\n  $MPI_RUN -np $NPROCS $ADCIRC_HOME/padcirc > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err\r\nfi','','','',''),(9,6,2,'export WINE=/usr/bin/wine\r\nexport EFDC=/home/teakwood/efdc/efdc.exe','date','$WINE  $EFDC  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','',''),(10,1,4,'export SWAN_HOME=/home/rguo/swan4101/\r\nMPI_RUN=/usr/local/packages/openmpi/1.6.2/Intel-13.0.0/bin/mpirun\r\n','date','$MPI_RUN  -np $NPROCS $SWAN_HOME/swan.exe  > $WORK_DIR/teakwood.out 2> $WORK_DIR/teakwood.err','','','','');
 /*!40000 ALTER TABLE `simfactory_scripttemplate` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1898,7 +1900,7 @@ CREATE TABLE `workflow_project` (
   KEY `workflow_project_bda51c3c` (`group_id`),
   CONSTRAINT `group_id_refs_id_d734ab5a` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   CONSTRAINT `user_id_refs_id_c436e247` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1907,7 +1909,7 @@ CREATE TABLE `workflow_project` (
 
 LOCK TABLES `workflow_project` WRITE;
 /*!40000 ALTER TABLE `workflow_project` DISABLE KEYS */;
-INSERT INTO `workflow_project` VALUES (1,'project1',1,1,'2014-10-13 15:56:55','2014-10-13 15:56:56','','users/U1/P1');
+INSERT INTO `workflow_project` VALUES (1,'project1',3,1,'2014-10-13 18:30:20','2014-10-13 18:30:20','','users/U3/P1'),(2,'project1',2,1,'2014-10-13 18:44:55','2014-10-13 18:44:55','ss','users/U2/P2'),(3,'project1',1,1,'2014-10-13 18:48:12','2014-10-13 18:48:12','','users/U1/P3');
 /*!40000 ALTER TABLE `workflow_project` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1920,4 +1922,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-13 12:49:33
+-- Dump completed on 2014-10-13 16:30:51

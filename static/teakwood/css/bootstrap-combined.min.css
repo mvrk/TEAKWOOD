@@ -736,8 +736,8 @@ a.thumbnail:hover,a.thumbnail:focus{border-color:#FDD023;-webkit-box-shadow:0 1p
 .alert-success h4{color:#468847;}
 .alert-danger,.alert-error{background-color:#f2dede;border-color:#eed3d7;color:#461D7C;}
 .alert-danger h4,.alert-error h4{color:#461D7C;}
-.alert-info{background-color:#d9edf7;border-color:#bce8f1;color:#fdd023;}
-.alert-info h4{color:#fdd023;}
+.alert-info{background-color:#DDDDDD;border-color:#bce8f1;color:#461D7C;}
+.alert-info h4{color:#461d7c;}
 .alert-block{padding-top:14px;padding-bottom:14px;}
 .alert-block>p,.alert-block>ul{margin-bottom:0;}
 .alert-block p+p{margin-top:5px;}

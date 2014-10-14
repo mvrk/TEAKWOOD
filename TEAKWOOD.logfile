@@ -5925,3 +5925,1417 @@ Traceback (most recent call last):
   File "/usr/lib64/python2.7/smtplib.py", line 614, in login
     raise SMTPAuthenticationError(code, resp)
 SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbsKL\n5.7.14 1-Ve4jAEyJmBROucPAEE9RFaFdZiAg0p4q4ZKoyPoGbwGsCbhVQkTCqQThslbGgUlfAiwv\n5.7.14 YTUCatLXE2sXrGIDb-zkeMjhLFfQngU_0TcuTT77fhMH4SP1W2zvHPHBMxM0l-O6ga2NCz\n5.7.14 e0dANjL8nXBVV5IrjnCKMrcQBUW7EUVTKQNJ2j2LklnLsaXGNRuG6cSkWybyYPUia1WL8t\n5.7.14 TEYIlJA> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 a37sm6163948oic.16 - gsmtp')
+[13/Oct/2014 15:43:26] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 54, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib64/python2.7/smtplib.py", line 614, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuM7\n5.7.14 UyV53BVGsEmsaT2xrMSWGxQElzRv6vYlME0XFLAzk7E7L6TjHAMpeyHob95eWdifWmjmto\n5.7.14 Dm8YrBOb5xfMHdNnwEV0aoPv1qK0-sdCdgTOVzDevdMTdMZUWfXVhHuyFm4JYpz-we1_3-\n5.7.14 LoMq-B6uJUbAYG8JUziGORqsPenLU07H8BuCRYJ1l1ERo3zuDYSP2CQRNumojWVmwWN6_J\n5.7.14 cobMeWA> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 rw6sm9556858obb.28 - gsmtp')
+[13/Oct/2014 15:43:26] ERROR [django.request:215] Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 48, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 79, in dispatch
+    return super(RegistrationView, self).dispatch(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/generic/base.py", line 69, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 35, in post
+    return self.form_valid(request, form)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/views.py", line 82, in form_valid
+    new_user = self.register(request, **form.cleaned_data)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/backends/default/views.py", line 80, in register
+    password, site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/transaction.py", line 224, in inner
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 91, in create_inactive_user
+    registration_profile.send_activation_email(site)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/registration/models.py", line 270, in send_activation_email
+    self.user.email_user(subject, message, settings.DEFAULT_FROM_EMAIL)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/models.py", line 374, in email_user
+    send_mail(subject, message, from_email, [self.email])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    connection=connection).send()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/message.py", line 248, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 85, in send_messages
+    new_conn_created = self.open()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/mail/backends/smtp.py", line 54, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib64/python2.7/smtplib.py", line 614, in login
+    raise SMTPAuthenticationError(code, resp)
+SMTPAuthenticationError: (534, '5.7.14 <https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbuM7\n5.7.14 UyV53BVGsEmsaT2xrMSWGxQElzRv6vYlME0XFLAzk7E7L6TjHAMpeyHob95eWdifWmjmto\n5.7.14 Dm8YrBOb5xfMHdNnwEV0aoPv1qK0-sdCdgTOVzDevdMTdMZUWfXVhHuyFm4JYpz-we1_3-\n5.7.14 LoMq-B6uJUbAYG8JUziGORqsPenLU07H8BuCRYJ1l1ERo3zuDYSP2CQRNumojWVmwWN6_J\n5.7.14 cobMeWA> Please log in via your web browser and then try again.\n5.7.14 Learn more at\n5.7.14 https://support.google.com/mail/bin/answer.py?answer=78754 rw6sm9556858obb.28 - gsmtp')
+[13/Oct/2014 15:43:27] WARNING [django.request:142] Not Found: /favicon.ico
+[13/Oct/2014 15:43:27] WARNING [django.request:142] Not Found: /favicon.ico
+[13/Oct/2014 16:00:17] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:00:17] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:01:32] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:01:32] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:06:55] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:06:55] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:19:36] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:19:36] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:21:48] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:21:48] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/3/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:33:38] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1
+[13/Oct/2014 16:34:01] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:01] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:08] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:08] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:13] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:13] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:29] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:29] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 366, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/views/decorators/cache.py", line 89, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 196, in inner
+    return view(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 25, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 91, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/decorators.py", line 21, in bound_func
+    return func(self, *args2, **kwargs2)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1153, in changelist_view
+    response = self.response_action(request, queryset=cl.get_query_set(request))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/options.py", line 908, in response_action
+    response = func(self, request, queryset)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/actions.py", line 35, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 132, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 186, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 171, in _nested
+    ret = [format_callback(obj)]
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/admin/util.py", line 125, in format_callback
+    escape(obj)))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/functional.py", line 176, in wrapper
+    return func(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/html.py", line 36, in escape
+    return mark_safe(force_unicode(html).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&#39;'))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:33] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:33] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:40] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:34:40] ERROR [django.request:215] Internal Server Error: /admin/simfactory/scripttemplate/9/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 84, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 599, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaultfilters.py", line 39, in _dec
+    args[0] = force_unicode(args[0])
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/encoding.py", line 71, in force_unicode
+    s = unicode(s)
+  File "/home/alex/TEAKWOOD/apps/simfactory/models.py", line 256, in __unicode__
+    return "%s_%s_Scripts" % (self.model.name, self.machine.name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/fields/related.py", line 350, in __get__
+    rel_obj = qs.get(**params)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/db/models/query.py", line 366, in get
+    % self.model._meta.object_name)
+DoesNotExist: CoastalModel matching query does not exist.
+[13/Oct/2014 16:36:45] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P1/M1/MODELINPUT
+[13/Oct/2014 16:37:38] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:37:38] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:50:29] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:50:29] ERROR [django.request:215] Internal Server Error: /simfactory/job/add/1/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 75, in job_add
+    job_submit(request, pmodel.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/alex/TEAKWOOD/apps/simfactory/views.py", line 226, in job_submit
+    t_job_submit.delay(job.id)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 453, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/task.py", line 555, in apply_async
+    **dict(self._get_exec_options(), **options)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/base.py", line 353, in send_task
+    reply_to=reply_to or self.oid, **options
+  File "/home/alex/teakwood/lib/python2.7/site-packages/celery/app/amqp.py", line 305, in publish_task
+    **kwargs
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/messaging.py", line 168, in publish
+    routing_key, mandatory, immediate, exchange, declare)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 457, in _ensured
+    interval_max)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 369, in ensure_connection
+    interval_start, interval_step, interval_max, callback)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/utils/__init__.py", line 243, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 237, in connect
+    return self.connection
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 741, in connection
+    self._connection = self._establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/connection.py", line 696, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/kombu/transport/pyamqp.py", line 112, in establish_connection
+    conn = self.Connection(**opts)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 165, in __init__
+    self.transport = self.Transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/connection.py", line 186, in Transport
+    return create_transport(host, connect_timeout, ssl)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 299, in create_transport
+    return TCPTransport(host, connect_timeout)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/amqp/transport.py", line 95, in __init__
+    raise socket.error(last_err)
+error: [Errno 111] Connection refused
+[13/Oct/2014 16:53:57] WARNING [django.request:142] Not Found: /simfactory/
+[13/Oct/2014 16:53:57] WARNING [django.request:142] Not Found: /simfactory/
+[13/Oct/2014 17:07:35] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U2/P2
+[13/Oct/2014 17:07:46] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U2/P2/M2/MODELINPUT
+[13/Oct/2014 20:23:37] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P3
+[13/Oct/2014 20:23:56] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P3/M3/MODELINPUT
+[13/Oct/2014 20:46:10] WARNING [django.request:142] Not Found: /simfactory/job
+[13/Oct/2014 20:46:10] WARNING [django.request:142] Not Found: /simfactory/job
+[13/Oct/2014 20:46:13] WARNING [django.request:142] Not Found: /simfactory/
+[13/Oct/2014 20:46:13] WARNING [django.request:142] Not Found: /simfactory/
