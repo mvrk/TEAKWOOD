@@ -14,10 +14,141 @@
 
     <fieldset>
         <legend><h3>Download</h3></legend>
-
-        The first stable release will be available for downloading at the end of September 2014. However I provides the beta version in github for testing now. see<a href="https://github.com/mvrk/TEAKWOOD" target="_blank">
+    <div class="well">
+ The first stable release will be available for downloading at the end of September 2014. However, I provide the beta version in Github for testing now. see<a href="https://github.com/mvrk/TEAKWOOD" target="_blank">
                     TEAKWOOD</a> at github.
+        </div>
     </fieldset>
         <legend><h3>Installation</h3></legend>
 
+ <p>Teakwood is a Django powered web framework which integrated a lot of third party python packages. Some of the packages require extra libs or development packages to work, so before run Teakwood,
+    we need to resolve these dependencies. The following installing process is just based on my system experience (my system is Fedora 20 x86_64 with Python 2.7.5 pre installed).
+   If your machine is RHEL/CentOS/Fedora,follow this step by step tutorial will mostly lead you to success. However, if your machine runs other type of Linux or MacOS, you need to find the equivalent package name accordingly.
+   (Note: I assume the installation is for root user, if normal user, sudo is needed.)</p><br> </br>
+<h4> &#8667 System Requirement</h4>
+<p>Since I am doing software development on Virtual Server, "Development tools" is an necessary. Development tools are a yum group, which is a predefined bundle of software that can be installed at once,
+    instead of having to install each application separately.during the installation. Please notify that during the installation, they may recall extra libs or '*-devels', just install them accordingly.
+For example, mine recalled libxsl and libffi.</p>
+<pre><code>yum clean all
+yum groupinstall "Development tool"
+yum install python-devel libevent-devel
+yum install libxslt-devel libxml2-devel
+yum install libffi-devel
+yum install libevent-devel
+yum install torque</code></pre>
+<p></p><br></br>
+
+
+<h4> &#8667 Database</h4>
+<p>Teakwood use mysql database. so make sure mysql-server and mysql-devel is installed.</p>
+<pre><code>yum install mysql-server
+yum install mysql-devel</code></pre>
+ <p>After installation, start mysql-server.</p>
+<pre><code>/sbin/service mysqld start</code></pre>
+<p>If you want an better control of your database, I recommend phpMyAdmin. The installation in my computer is like this:</p>
+<pre><code>rpm -Uvh http://rpms.famillecollet.com/remi-release-20.rpm
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+yum --enablerepo=remi install phpMyAdmin</code></pre>
+ <p>After installation, you should be able to login your database from browser.</p>
+<pre><code>http://localhost/phpMyAdmin/</code></pre>
+<div class="well">
+<b>Note:You can create an database naming "TEAKWOOD"now, later Teakwood syncdb will use it.</b></div>
+    <br></br>
+ <h4> &#8667 Version Control</h4>
+<p>Teakwood uses git as version control. Git is a very popular version control software. Also, Teakwood code can be found
+    at <a href="https://github.com/mvrk/TEAKWOOD" target="_blank">Github.</a></p>
+<pre><code>yum install git</code></pre>
+ <p> Practice these useful git commands if you are not familiar with:</p>
+<pre><code>git init
+git add -A .
+git commit -m 'first commit'
+git remote add origin git@github.com:user/WebApp.git
+git add/rm -rf
+git status
+git commit
+git push -u username master
+git clone
+git pull
+git log
+git checkout
+git revert</code></pre>
+<p></p><br></br>
+
+<h4> &#8667 Virtual Environment</h4>
+<p>It is highly recommend that we set up an independent working environment for Teakwood project. I use "virtualenv", install and set up is fairly easy.</p>
+<pre><code>pip install virutalenv
+virutualenv vir
+source ~/vir/bin/activate</bin></code></pre>
+<p></p><br></br>
+<h4> &#8667 Latex+sphinx</h4>
+<p>Teakwood uses sphinx packge to generate diverse documentations such as html, latex, pdf, etc. so these tools need to be installed.</p>
+<pre><code>pip install sphinx
+yum install texlive
+yum install texlive-collection*
+</code></pre>
+<p></p><br></br>
+
+ <h4> &#8667  Asynchronous handling </h4>
+<p>Asynchronous, or non-blocking, processing is a method of separating the execution of certain tasks from the main flow of a program.  In Django project, Celery and RabbitMQ
+ is considered as the most popular couple for handle non-blocking cases. </p>
+<pre><code>pip install celery
+yum install rabbitmq-sever</code></pre>
+ <p>Start them by run their executes.</p>
+<pre><code>rabbitmq-server start
+celery multi start</code></pre>
+<p></p><br></br>
+
+ <h4> &#8667 Install Teakwood </h4>
+<p>Finally we are here. Installing Teakwood becomes easy once we done with all the dependencies, just remember that the installation should be in a virtual environment. Firstly,
+    Fetch Teakwood source code from Github "using git clone" command </p>
+<pre><code>git clone git://github.com/mvrk/TEAKWOOD.git</code></pre>
+<p>Then install the python third party packages, and run syncdb and runserver command. Caution, make sure you run the commands in their executable path.</p>
+<pre><code>pip install -r requirement.txt
+python managy.py syncdb
+python managy.py runserver</code></pre>
+<p>Your should see some info like this when run syncdb command:</p>
+<pre><code>Creating tables ...
+Creating table auth_permission
+Creating table auth_group_permissions
+Creating table auth_group
+Creating table auth_user_user_permissions
+Creating table auth_user_groups
+Creating table auth_user
+Creating table django_content_type
+Creating table django_session
+Creating table django_site
+Creating table django_admin_log
+Creating table registration_registrationprofile
+Creating table celery_taskmeta
+Creating table celery_tasksetmeta
+Creating table djcelery_intervalschedule
+Creating table djcelery_crontabschedule
+Creating table djcelery_periodictasks
+..........
+
+You just installed Django's auth system, which means you don't have any superusers defined.
+Would you like to create one now? (yes/no): yes
+Username (leave blank to use 'alex'):
+E-mail address: abc@abc.com
+Password:
+Password (again):
+Superuser created successfully.
+Installing custom SQL ...
+Installing indexes ...
+Installed 0 object(s) from 0 fixture(s)</code></pre>
+
+<p>And you will see this beatiful message when run runserver command:</p>
+<pre><code>Validating models...
+0 errors found
+Django version 1.4.5, using settings 'settings.settings'
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.</code></pre>
+ <br></br>
+<p>Done! Enjoy your Teakwood!</p>
+
+
+
 {% endblock %}
+
+
+

@@ -352,8 +352,8 @@ elif TEAKWOOD_AMQP == 'redis':
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = 'mvrk.guo@gmail.com'
-EMAIL_HOST_PASSWORD = 'not telling you'
+EMAIL_HOST_USER = 'guojiarui@gmail.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 25
 
 # here you can define a system wide spatial region for your site

@@ -53,47 +53,47 @@ $(document).ready(function () {
         <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
     <div class="jumbotron">
-        <p class="lead">Teakwood, faciliate your computing task.</p>
-        <a class="btn btn-large btn-success" href="{% url teakwood_tutorials %}">Quickstart
-            Tutorials</a>
+        <p class="lead">Teakwood, an open source web frame work that can facilitate your computing task.</p>
+        <a class="btn btn-large btn-success" href="{% url teakwood_about %}">A Quick Review
+            </a>
 
-                <Teakwood, where computing start !</h2>
+
         <hr>
     </div>
 {% endblock %}
 
 
 {% block components %}
+
+<body bgcolor="#E6E6FA">
+
     <div class="row-fluid">
+        <div class ="table">
         <div class="span3">
-            <h2>Models</h2>
+            <h4>Total Management</h4>
 
-            <p>Support open source coastal modelling tools, including, etc.</p>
+            <p>Teakwood Admin system provide total control of your users, models, jobs, projects and computing resources.</p>
 
-                        <p><a class="btn" href="#">View supported open source models &raquo;</a></p>
+   </div>
+        <div class="span3">
+            <h4>Easy Deployment</h4>
+
+            <p>Deploy your open source packages on dedicated servers, supercomputers and Cloud with minimum effort. One deployment, forever convenient.</p>
+
         </div>
         <div class="span3">
-            <h2>Deployment</h2>
+            <h4> Job Report</h4>
 
-            <p>Deploy your open source packages on dedicated servers, supercomputers or Amazon cloud with minimum footprints on
-                the systems. your job can run locally or remotely.</p>
+            <p>Teakwood will periodically store output data, with immediate data ready in console, four your convenience</p>
 
-                        <p><a class="btn" href="#">View deployment workflow &raquo;</a></p>
         </div>
         <div class="span3">
-            <h2>Analysis</h2>
-
-            <p>Enable model validation and verification by comparing against
-                observational data.</p>
-
-                        <p><a class="btn" href="#">View data analysis toolkit &raquo;</a></p>
-        </div>
-        <div class="span3">
-            <h2>Visualization</h2>
+            <h4>Visualization</h4>
 
             <p>Depending on your data type, we could visualize your data by provide high-quality charts and dynamic scaling.</p>
 
-                        <p><a class="btn" href="#">View visualization tools &raquo;</a></p>
         </div>
     </div>
+    </div>
+    </body>
 {% endblock %}
