@@ -1,6 +1,6 @@
 import os, errno
 from glob import glob
-import codecs
+#import codecs
 import subprocess
 import tempfile, zipfile
 from django.http import HttpResponse
@@ -96,7 +96,8 @@ def send_zipfile(request):
 
 
 def render_to_file(filename, template, context):
-    codecs.open(filename, 'w', 'utf-8').write(render_to_string(template, context))
+    log.info(render_to_string(template, context))
+    open(filename, 'w', 'utf-8').write(render_to_string(template, context))
 
 # create symbolic links for all files under src_dir under dst_dir
 def symlink_all(src_dir, dst_dir):

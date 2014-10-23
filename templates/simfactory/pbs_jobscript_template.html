@@ -37,6 +37,14 @@ export WORK_DIR={{ job.machine.workingdirectory }}/{{ job.name }}
 cd $WORK_DIR
 export NPROCS={{ job.slots }}
 
+{#TODO need to fix both FVCOM and DELFT3D and prepare for ADCIRC and SWAN #}
+# special treatment for FVCOM
+{% if job.model_input.model.name == "FVCOM" %}
+export CASE_NAME={{ job.model_input.fvcom_config.case_name }}
+{% endif %}
+# special treatment for ADCIRC
+{% if job.model_input.model.name == "ADCIRC" %}
+    {% if job.model_input.adcirc_config.swan %}
 export SWAN=true
     {% else %}
 export SWAN=false
