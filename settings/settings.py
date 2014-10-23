@@ -2,7 +2,6 @@
 import os, sys, socket
 
 import djcelery
-
 djcelery.setup_loader()
 
 # an extra join is necessary due to the file structure used.
@@ -212,7 +211,7 @@ INSTALLED_APPS = (
     #    'django.contrib.gis',
     #    'django_extensions',
     #    'olwidget',
-    'grappelli',
+    #'grappelli',
     'registration',
     'djcelery',
     'profiles',
@@ -221,7 +220,6 @@ INSTALLED_APPS = (
     'apps.simlab',
     'apps.coastalmodels',
     'apps.datafactory',
-    #    'geraldo',
     'apps.simreport',
     'apps.simesh',
     'apps.simviz',
@@ -376,3 +374,4 @@ DATAFACTORY_STATIONS = {
         'src_url': 'http://tidesandcurrents.noaa.gov/cdata/StationListFormat?type=Current%20Data&filter=active&format=csv',
     },
 }
+

@@ -61,7 +61,7 @@
             <th>Name</th>
             <th>User</th>
             <th>Group</th>
-            <th>Domain</th>
+            <!--<th>Domain</th>-->
             <th>Model Input</th>
             {#                <th>Mesh</th>#}
             <th>Job</th>
@@ -83,26 +83,26 @@
             </td>
             <td>{{ p.user }}</td>
             <td>{{ p.group }}</td>
-            <td>
-                {% if not p.domain %}
-                    <a href="{% url simesh_domainadd p.id %}"
-                       title="Select a new domain for project {{ p.name }}">
-                        <i class="icon-plus-sign"></i>
-                    </a>
-                {% else %}
-                    <a href="{% url simesh_domainview p.domain.id %}"
-                       title="Show domain details">
-                            <span style="margin: 5px;" class="label label-info">
-                                <span class="badge badge-important">D{{ p.domain.id }} </span>
+            <!--<td>-->
+                <!--{% if not p.domain %}-->
+                    <!--<a href="{% url simesh_domainadd p.id %}"-->
+                       <!--title="Select a new domain for project {{ p.name }}">-->
+                        <!--<i class="icon-plus-sign"></i>-->
+                    <!--</a>-->
+                <!--{% else %}-->
+                    <!--<a href="{% url simesh_domainview p.domain.id %}"-->
+                       <!--title="Show domain details">-->
+                            <!--<span style="margin: 5px;" class="label label-info">-->
+                                <!--<span class="badge badge-important">D{{ p.domain.id }} </span>-->
 
-{#                                   <span class="badge badge-important">P{{ p.id }}</span>#}
-{#                                   <span class="badge badge-warning">D{{ p.domain.id }} </span>#}
-{#                                <i class="icon-globe icon-white"></i>#}
-                                {{ p.domain.name }}
-                             </span>
-                    </a>
-                {% endif %}
-            </td>
+<!--{#                                   <span class="badge badge-important">P{{ p.id }}</span>#}-->
+<!--{#                                   <span class="badge badge-warning">D{{ p.domain.id }} </span>#}-->
+<!--{#                                <i class="icon-globe icon-white"></i>#}-->
+                                <!--{{ p.domain.name }}-->
+                             <!--</span>-->
+                    <!--</a>-->
+                <!--{% endif %}-->
+            <!--</td>-->
             <td>
                 <table style="width: 100%">
                     <tr>

@@ -7909,3 +7909,251 @@ SMTPSenderRefused: (530, '5.5.1 Authentication Required. Learn more at\n5.5.1 ht
 [14/Oct/2014 10:27:08] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P5/M5/MODELINPUT
 [14/Oct/2014 11:02:04] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P6
 [14/Oct/2014 11:02:23] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P6/M6/MODELINPUT
+[15/Oct/2014 14:31:34] WARNING [django.request:142] Not Found: /favicon.ico
+[15/Oct/2014 14:31:34] WARNING [django.request:142] Not Found: /favicon.ico
+[17/Oct/2014 10:28:36] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P7
+[17/Oct/2014 10:28:49] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P7/M7/MODELINPUT
+[17/Oct/2014 17:48:32] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[17/Oct/2014 17:48:32] WARNING [django.request:142] Not Found: /static/djcelery/style.css
+[20/Oct/2014 11:09:01] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P8
+[20/Oct/2014 11:09:15] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P8/M8/MODELINPUT
+[20/Oct/2014 11:10:28] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P3/M9/MODELINPUT
+[20/Oct/2014 11:20:11] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P8/M10/MODELINPUT
+[22/Oct/2014 08:53:44] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P3/M11/MODELINPUT
+[22/Oct/2014 08:55:15] WARNING [django.request:142] Not Found: /favicon.ico
+[22/Oct/2014 08:55:15] WARNING [django.request:142] Not Found: /favicon.ico
+[22/Oct/2014 14:05:04] INFO [utils.system:17] mkdir -p /home/alex/TEAKWOOD/media/users/U1/P8/M12/MODELINPUT
+[22/Oct/2014 14:12:46] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/TEAKWOOD/settings/urls.py", line 38, in <module>
+    url(r'^', include('apps.simviz.urls')),
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named simviz.urls
+[22/Oct/2014 14:12:46] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/TEAKWOOD/settings/urls.py", line 38, in <module>
+    url(r'^', include('apps.simviz.urls')),
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named simviz.urls
+[22/Oct/2014 14:14:38] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/TEAKWOOD/settings/urls.py", line 44, in <module>
+    url(r'^', include('apps.datafactory.urls')),
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named datafactory.urls
+[22/Oct/2014 14:14:38] ERROR [django.request:215] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 101, in get_response
+    request.path_info)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 298, in resolve
+    for pattern in self.url_patterns:
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 328, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/urlresolvers.py", line 323, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/alex/TEAKWOOD/settings/urls.py", line 44, in <module>
+    url(r'^', include('apps.datafactory.urls')),
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 24, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+ImportError: No module named datafactory.urls
+[22/Oct/2014 14:15:24] ERROR [django.request:215] Internal Server Error: /project/list/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 368, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 30, in render
+    output = self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 185, in render
+    nodelist.append(node.render(context))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'simesh_domainadd' with arguments '(8L,)' and keyword arguments '{}' not found.
+[22/Oct/2014 14:15:24] ERROR [django.request:215] Internal Server Error: /project/list/
+Traceback (most recent call last):
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/core/handlers/base.py", line 136, in get_response
+    response = response.render()
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 104, in render
+    self._set_content(self.rendered_content)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/response.py", line 81, in rendered_content
+    content = template.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 368, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 30, in render
+    output = self.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 185, in render
+    nodelist.append(node.render(context))
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 281, in render
+    return nodelist.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/base.py", line 823, in render
+    bit = self.render_node(node, context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/debug.py", line 74, in render_node
+    return node.render(context)
+  File "/home/alex/teakwood/lib/python2.7/site-packages/django/template/defaulttags.py", line 424, in render
+    raise e
+NoReverseMatch: Reverse for 'simesh_domainadd' with arguments '(8L,)' and keyword arguments '{}' not found.

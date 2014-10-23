@@ -13,7 +13,7 @@ from django.db import models
 from django.views.generic import ListView
 #from telepathy import DoesNotExist
 from django.core.exceptions import ObjectDoesNotExist
-from apps.simesh.models import SimeshPOI
+# from apps.simesh.models import SimeshPOI
 from apps.workflow.models import Project
 from apps.teakwood.models import CommonInfo
 from apps.coastalmodels.models import ModelInput, CoastalModel
